@@ -1,0 +1,21 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # DO NOT use container_name - prevents parallel instances
+    stdin_open: true
+    tty: true
+    environment:
+      # Pass host port to container for scripts/configs that need it
+      - VITE_HOST_PORT=${VITE_PORT:-5173}
+    ports:
+      # Host port is variable, container port is fixed
+      - '${VITE_PORT:-5173}:5173'
+      - '${PREVIEW_PORT:-4173}:4173'
+    volumes:
+      # Project workspace
+      - ..:/workspace
+      # Claude CLI state (read-write for token refresh)
+      - ~/.claude:/home/dev/.claude:rw
+    working_dir: /workspace

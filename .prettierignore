@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Content and docs (markdown files)
+content/
+docs/
+
+# Misc
+coverage/
+*.log
+pnpm-lock.yaml

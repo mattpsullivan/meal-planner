@@ -1,0 +1,242 @@
+# Week 2: Indian + Asian
+# Vegan Meal Prep - Veganuary 2026
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-2
+week_number: 2
+year: 2026
+name: "Week 2: Indian + Asian"
+theme: Indian + Asian
+start_date: 2026-01-08
+end_date: 2026-01-14
+
+# Total prep time for batch cooking session
+prep_time_total: 150  # 2.5 hours
+
+# Components prepared during batch cooking session
+components:
+  grains:
+    - components/grains/coconut-basmati-rice.cook
+    - components/grains/garlic-noodles.cook
+  proteins:
+    - components/proteins/coconut-chickpea-curry.cook
+    - components/proteins/peanut-lentils.cook
+    - components/proteins/crispy-sesame-cauliflower.cook
+  sauces:
+    - components/sauces/peanut-sauce.cook
+    - components/sauces/tikka-style-sauce.cook
+    - components/sauces/ginger-sesame-dressing.cook
+  vegetables:
+    - components/vegetables/curry-roasted-vegetables.cook
+    - components/vegetables/stir-fry-vegetable-mix.cook
+  breakfast:
+    - components/breakfast/mango-chia-pudding.cook
+    - components/breakfast/savory-spiced-oatmeal.cook
+    - components/breakfast/smoothie-bowl-packs.cook
+  snacks:
+    - components/snacks/curried-cashews.cook
+    - components/snacks/coconut-date-balls.cook
+    - components/snacks/crispy-chickpea-poppers.cook
+
+# Daily meal schedule
+days:
+  - day: 1
+    date: 2026-01-08
+    day_name: Thursday
+    is_prep_day: true
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-bowl-packs.cook
+        note: "Tropical smoothie bowl"
+      lunch:
+        description: "Use Week 1 Leftovers"
+        note: "Finish anything remaining from last week"
+      dinner:
+        recipe: meals/bowls/curry-rice-bowl.cook
+        note: "Coconut Chickpea Curry + Rice"
+      snacks:
+        - recipe: components/snacks/curried-cashews.cook
+
+  - day: 2
+    date: 2026-01-09
+    day_name: Friday
+    meals:
+      breakfast:
+        recipe: components/breakfast/mango-chia-pudding.cook
+        note: "Jar 1"
+      lunch:
+        recipe: meals/bowls/curry-rice-bowl.cook
+        note: "Curry Bowl variation"
+      dinner:
+        recipe: meals/bowls/peanut-noodle-bowl.cook
+      snacks:
+        - recipe: components/snacks/coconut-date-balls.cook
+
+  - day: 3
+    date: 2026-01-10
+    day_name: Saturday
+    meals:
+      breakfast:
+        recipe: components/breakfast/savory-spiced-oatmeal.cook
+        note: "Top with avocado and crispy chickpeas"
+      lunch:
+        recipe: meals/bowls/peanut-noodle-bowl.cook
+        note: "Cold peanut noodles - delicious straight from fridge"
+      dinner:
+        recipe: meals/bowls/crispy-cauliflower-rice-bowl.cook
+      snacks:
+        - recipe: components/snacks/crispy-chickpea-poppers.cook
+
+  - day: 4
+    date: 2026-01-11
+    day_name: Sunday
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-bowl-packs.cook
+        note: "Pack 2"
+      lunch:
+        recipe: meals/bowls/buddha-bowl.cook
+      dinner:
+        recipe: meals/wraps/thai-lettuce-wraps.cook
+      snacks:
+        - recipe: components/snacks/curried-cashews.cook
+
+  - day: 5
+    date: 2026-01-12
+    day_name: Monday
+    meals:
+      breakfast:
+        recipe: components/breakfast/mango-chia-pudding.cook
+        note: "Jar 2"
+      lunch:
+        recipe: meals/bowls/curry-rice-bowl.cook
+      dinner:
+        recipe: meals/bowls/veggie-stir-fry.cook
+      snacks:
+        - recipe: components/snacks/coconut-date-balls.cook
+
+  - day: 6
+    date: 2026-01-13
+    day_name: Tuesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/savory-spiced-oatmeal.cook
+        note: "Top with avocado and greens"
+      lunch:
+        recipe: meals/bowls/peanut-noodle-bowl.cook
+        note: "Noodle Salad variation"
+      dinner:
+        recipe: meals/bowls/loaded-curry-baked-potatoes.cook
+      snacks:
+        - recipe: components/snacks/crispy-chickpea-poppers.cook
+
+  - day: 7
+    date: 2026-01-14
+    day_name: Wednesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/mango-chia-pudding.cook
+        note: "Jar 3"
+      lunch:
+        description: "Mix & Match Bowl"
+        note: "Whatever components remain - get creative!"
+      dinner:
+        description: "Clean-Out Stir-Fry"
+        note: "Quick stir-fry with remaining vegetables, protein, and sauce"
+      snacks:
+        - description: "Whatever's left"
+
+# Prep timeline for batch cooking session
+prep_timeline:
+  - time: "0:00"
+    task: Start basmati rice (rice cooker or stovetop)
+    recipe: components/grains/coconut-basmati-rice.cook
+    duration: 20
+  - time: "0:05"
+    task: Start lentils cooking
+    recipe: components/proteins/peanut-lentils.cook
+    duration: 25
+  - time: "0:10"
+    task: Prep all vegetables (big chopping session)
+    duration: 20
+  - time: "0:30"
+    task: Start coconut chickpea curry
+    recipe: components/proteins/coconut-chickpea-curry.cook
+    duration: 30
+  - time: "0:35"
+    task: Make tikka-style sauce base
+    recipe: components/sauces/tikka-style-sauce.cook
+    duration: 15
+  - time: "0:50"
+    task: Prep and roast cauliflower
+    recipe: components/proteins/crispy-sesame-cauliflower.cook
+    duration: 30
+  - time: "0:55"
+    task: Make peanut sauce
+    recipe: components/sauces/peanut-sauce.cook
+    duration: 10
+  - time: "1:05"
+    task: Make ginger-sesame dressing
+    recipe: components/sauces/ginger-sesame-dressing.cook
+    duration: 5
+  - time: "1:10"
+    task: Combine lentils with peanut sauce
+    recipe: components/proteins/peanut-lentils.cook
+    duration: 5
+  - time: "1:20"
+    task: Prep stir-fry vegetable mix
+    recipe: components/vegetables/stir-fry-vegetable-mix.cook
+    duration: 10
+  - time: "1:30"
+    task: Roast curry vegetables
+    recipe: components/vegetables/curry-roasted-vegetables.cook
+    duration: 35
+  - time: "1:40"
+    task: Cook garlic noodles
+    recipe: components/grains/garlic-noodles.cook
+    duration: 10
+  - time: "1:50"
+    task: Make chia pudding (3 portions)
+    recipe: components/breakfast/mango-chia-pudding.cook
+    duration: 10
+  - time: "2:00"
+    task: Make coconut date balls
+    recipe: components/snacks/coconut-date-balls.cook
+    duration: 10
+  - time: "2:10"
+    task: Make curried cashews
+    recipe: components/snacks/curried-cashews.cook
+    duration: 15
+  - time: "2:15"
+    task: Prep savory oatmeal base
+    recipe: components/breakfast/savory-spiced-oatmeal.cook
+    duration: 10
+  - time: "2:20"
+    task: Make smoothie bowl packs
+    recipe: components/breakfast/smoothie-bowl-packs.cook
+    duration: 5
+  - time: "2:25"
+    task: Roast chickpea poppers
+    recipe: components/snacks/crispy-chickpea-poppers.cook
+    duration: 40
+  - time: "2:30"
+    task: Clean up and store everything
+    duration: 15
+
+# Grocery list additions (items not fully captured in component recipes)
+grocery_additions:
+  produce:
+    - name: avocados
+      amount: 4
+      note: "For oatmeal topping, bowls"
+    - name: limes
+      amount: 6
+      note: "For peanut sauce, curry, noodles"
+    - name: butter lettuce
+      amount: 2
+      unit: heads
+      note: "For lettuce wraps"
+    - name: cucumber
+      amount: 2
+      note: "For noodle bowls"

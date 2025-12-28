@@ -1,0 +1,272 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/vegan-meal-prep/schemas/mealplan.v1.json",
+  "title": "Meal Plan",
+  "description": "Schema for weekly meal planning files (.mealplan) that reference Cooklang recipes",
+  "type": "object",
+  "required": ["id", "week_number", "year", "days"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to the schema file"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^week-[0-9]+$",
+      "description": "Unique identifier for this meal plan (e.g., 'week-1')"
+    },
+    "week_number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 53,
+      "description": "Week number within the year (1-53)"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2020,
+      "maximum": 2100,
+      "description": "Year for this meal plan"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name for this week (e.g., 'Week 1: Mediterranean + Mexican')"
+    },
+    "theme": {
+      "type": "string",
+      "description": "Cuisine theme(s) for this week"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Start date in ISO 8601 format (YYYY-MM-DD)"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "End date in ISO 8601 format (YYYY-MM-DD)"
+    },
+    "prep_time_total": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total batch cooking prep time in minutes"
+    },
+    "components": {
+      "type": "object",
+      "description": "Components prepared during batch cooking, grouped by category",
+      "properties": {
+        "grains": {
+          "$ref": "#/definitions/recipeList"
+        },
+        "proteins": {
+          "$ref": "#/definitions/recipeList"
+        },
+        "sauces": {
+          "$ref": "#/definitions/recipeList"
+        },
+        "vegetables": {
+          "$ref": "#/definitions/recipeList"
+        },
+        "breakfast": {
+          "$ref": "#/definitions/recipeList"
+        },
+        "snacks": {
+          "$ref": "#/definitions/recipeList"
+        }
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/recipeList"
+      }
+    },
+    "days": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 7,
+      "description": "Daily meal schedules for the week",
+      "items": {
+        "$ref": "#/definitions/day"
+      }
+    },
+    "prep_timeline": {
+      "type": "array",
+      "description": "Ordered timeline of tasks for batch cooking session",
+      "items": {
+        "$ref": "#/definitions/prepStep"
+      }
+    },
+    "grocery_additions": {
+      "type": "object",
+      "description": "Additional grocery items not captured in component recipes",
+      "properties": {
+        "produce": {
+          "$ref": "#/definitions/groceryItemList"
+        },
+        "pantry": {
+          "$ref": "#/definitions/groceryItemList"
+        },
+        "refrigerated": {
+          "$ref": "#/definitions/groceryItemList"
+        },
+        "frozen": {
+          "$ref": "#/definitions/groceryItemList"
+        },
+        "spices": {
+          "$ref": "#/definitions/groceryItemList"
+        }
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/groceryItemList"
+      }
+    }
+  },
+  "definitions": {
+    "recipePath": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9/_-]+\\.cook$",
+      "description": "Relative path to a .cook recipe file"
+    },
+    "recipeList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/recipePath"
+      }
+    },
+    "day": {
+      "type": "object",
+      "required": ["day", "meals"],
+      "properties": {
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 7,
+          "description": "Day number within the week (1-7)"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date in ISO 8601 format"
+        },
+        "day_name": {
+          "type": "string",
+          "enum": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "description": "Name of the day"
+        },
+        "is_prep_day": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether this is the batch cooking prep day"
+        },
+        "meals": {
+          "type": "object",
+          "description": "Meals for this day",
+          "properties": {
+            "breakfast": {
+              "$ref": "#/definitions/mealEntry"
+            },
+            "lunch": {
+              "$ref": "#/definitions/mealEntry"
+            },
+            "dinner": {
+              "$ref": "#/definitions/mealEntry"
+            },
+            "snacks": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/mealEntry"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "mealEntry": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "recipe": {
+              "$ref": "#/definitions/recipePath"
+            },
+            "note": {
+              "type": "string",
+              "description": "Additional notes for this meal"
+            }
+          },
+          "required": ["recipe"]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string",
+              "description": "Freeform description for ad-hoc meals without a recipe"
+            },
+            "note": {
+              "type": "string",
+              "description": "Additional notes"
+            }
+          },
+          "required": ["description"]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "prepStep": {
+      "type": "object",
+      "required": ["time", "task"],
+      "properties": {
+        "time": {
+          "type": "string",
+          "pattern": "^[0-9]{1,2}:[0-9]{2}$",
+          "description": "Time marker in H:MM or HH:MM format (e.g., '0:00', '1:30')"
+        },
+        "task": {
+          "type": "string",
+          "description": "Description of the prep task"
+        },
+        "recipe": {
+          "$ref": "#/definitions/recipePath"
+        },
+        "duration": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Duration of this task in minutes"
+        },
+        "note": {
+          "type": "string",
+          "description": "Additional notes for this step"
+        }
+      }
+    },
+    "groceryItem": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the grocery item"
+        },
+        "amount": {
+          "oneOf": [{ "type": "number" }, { "type": "string" }],
+          "description": "Quantity (can be number or string like '5-6')"
+        },
+        "unit": {
+          "type": "string",
+          "description": "Unit of measurement"
+        },
+        "note": {
+          "type": "string",
+          "description": "Usage notes"
+        }
+      }
+    },
+    "groceryItemList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/groceryItem"
+      }
+    }
+  }
+}

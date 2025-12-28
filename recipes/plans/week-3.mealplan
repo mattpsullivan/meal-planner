@@ -1,0 +1,278 @@
+# Week 3: Middle Eastern + American Comfort
+# Vegan Meal Prep - Veganuary 2026
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-3
+week_number: 3
+year: 2026
+name: "Week 3: Middle Eastern + American Comfort"
+theme: Middle Eastern + American Comfort
+start_date: 2026-01-15
+end_date: 2026-01-21
+
+# Total prep time for batch cooking session
+prep_time_total: 160  # 2.5-3 hours
+
+# Components prepared during batch cooking session
+components:
+  grains:
+    - components/grains/mujadara.cook
+    - components/grains/fluffy-couscous.cook
+    - components/grains/creamy-mashed-potatoes.cook
+  proteins:
+    - components/proteins/baked-falafel.cook
+    - components/proteins/hearty-vegan-chili.cook
+    - components/proteins/bbq-lentils.cook
+  sauces:
+    - components/sauces/green-tahini-sauce.cook
+    - components/sauces/garlic-sauce-toum.cook
+    - components/sauces/cashew-mac-sauce.cook
+  vegetables:
+    - components/vegetables/zaatar-roasted-vegetables.cook
+    - components/vegetables/roasted-broccoli.cook
+  breakfast:
+    - components/breakfast/shakshuka-style-beans.cook
+    - components/breakfast/banana-oat-pancake-batter.cook
+    - components/breakfast/week3-smoothie-packs.cook
+  snacks:
+    - components/snacks/baba-ganoush.cook
+    - components/snacks/almond-butter-stuffed-dates.cook
+    - components/snacks/spiced-popcorn.cook
+
+# Daily meal schedule
+days:
+  - day: 1
+    date: 2026-01-15
+    day_name: Thursday
+    is_prep_day: true
+    meals:
+      breakfast:
+        recipe: components/breakfast/week3-smoothie-packs.cook
+        note: "Berry spinach smoothie"
+      lunch:
+        description: "Use Week 2 Leftovers"
+        note: "Finish anything remaining from last week"
+      dinner:
+        recipe: meals/bowls/falafel-bowl.cook
+        note: "Falafel Bowl with couscous"
+      snacks:
+        - recipe: components/snacks/baba-ganoush.cook
+          note: "With pita bread"
+
+  - day: 2
+    date: 2026-01-16
+    day_name: Friday
+    meals:
+      breakfast:
+        recipe: components/breakfast/banana-oat-pancake-batter.cook
+        note: "Cook fresh pancakes from batter"
+      lunch:
+        recipe: meals/wraps/falafel-wrap.cook
+      dinner:
+        recipe: meals/bowls/vegan-chili-bowl.cook
+        note: "With cornbread"
+      snacks:
+        - recipe: components/snacks/almond-butter-stuffed-dates.cook
+
+  - day: 3
+    date: 2026-01-17
+    day_name: Saturday
+    meals:
+      breakfast:
+        recipe: components/breakfast/shakshuka-style-beans.cook
+        note: "Serve with crusty bread or pita"
+      lunch:
+        description: "Chili-Loaded Baked Potato"
+        note: "Microwave potato, top with warm chili, avocado, sour cream"
+      dinner:
+        recipe: meals/bowls/mujadara-bowl.cook
+        note: "With extra crispy onions and baba ganoush"
+      snacks:
+        - recipe: components/snacks/spiced-popcorn.cook
+
+  - day: 4
+    date: 2026-01-18
+    day_name: Sunday
+    meals:
+      breakfast:
+        recipe: components/breakfast/banana-oat-pancake-batter.cook
+        note: "Reheat pre-made or cook fresh"
+      lunch:
+        recipe: meals/plates/week3-mezze-plate.cook
+      dinner:
+        recipe: meals/bowls/mac-and-cheese.cook
+        note: "With roasted broccoli"
+      snacks:
+        - recipe: components/snacks/baba-ganoush.cook
+
+  - day: 5
+    date: 2026-01-19
+    day_name: Monday
+    meals:
+      breakfast:
+        recipe: components/breakfast/week3-smoothie-packs.cook
+        note: "Tropical or berry smoothie"
+      lunch:
+        recipe: meals/bowls/mujadara-bowl.cook
+        note: "Leftover mujadara with fresh toppings"
+      dinner:
+        recipe: meals/bowls/bbq-lentil-bowl.cook
+      snacks:
+        - recipe: components/snacks/almond-butter-stuffed-dates.cook
+
+  - day: 6
+    date: 2026-01-20
+    day_name: Tuesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/shakshuka-style-beans.cook
+        note: "Last portion"
+      lunch:
+        recipe: meals/sandwiches/bbq-lentil-sandwich.cook
+      dinner:
+        description: "Falafel + Mujadara Combo"
+        note: "Mix and match Middle Eastern components - make a big bowl"
+      snacks:
+        - recipe: components/snacks/spiced-popcorn.cook
+
+  - day: 7
+    date: 2026-01-21
+    day_name: Wednesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/banana-oat-pancake-batter.cook
+        note: "Finish the batch"
+      lunch:
+        description: "Mix & Match Bowl"
+        note: "Combine remaining components creatively"
+      dinner:
+        description: "Clean-Out Comfort Bowl"
+        note: "Whatever's left - chili over mashed potatoes, falafel with mac sauce, get creative!"
+      snacks:
+        - description: "Whatever's left"
+
+# Prep timeline for batch cooking session
+prep_timeline:
+  - time: "0:00"
+    task: Start mujadara (lentils + rice, long cook time)
+    recipe: components/grains/mujadara.cook
+    duration: 50
+  - time: "0:05"
+    task: Start caramelizing onions for mujadara (takes 30+ min, mostly passive)
+    recipe: components/grains/mujadara.cook
+    duration: 40
+  - time: "0:10"
+    task: Start vegan chili (Instant Pot or stovetop)
+    recipe: components/proteins/hearty-vegan-chili.cook
+    duration: 60
+  - time: "0:15"
+    task: Char eggplants for baba ganoush
+    recipe: components/snacks/baba-ganoush.cook
+    duration: 20
+  - time: "0:20"
+    task: Make falafel mixture in food processor
+    recipe: components/proteins/baked-falafel.cook
+    duration: 10
+  - time: "0:30"
+    task: Shape and bake falafel
+    recipe: components/proteins/baked-falafel.cook
+    duration: 25
+  - time: "0:35"
+    task: Boil potatoes for mash
+    recipe: components/grains/creamy-mashed-potatoes.cook
+    duration: 20
+  - time: "0:45"
+    task: Prep za'atar vegetables and roast
+    recipe: components/vegetables/zaatar-roasted-vegetables.cook
+    duration: 35
+  - time: "0:50"
+    task: Make mashed potatoes
+    recipe: components/grains/creamy-mashed-potatoes.cook
+    duration: 10
+  - time: "1:00"
+    task: Finish baba ganoush (eggplant should be done)
+    recipe: components/snacks/baba-ganoush.cook
+    duration: 10
+  - time: "1:10"
+    task: Make green tahini sauce
+    recipe: components/sauces/green-tahini-sauce.cook
+    duration: 10
+  - time: "1:20"
+    task: Make garlic sauce (toum)
+    recipe: components/sauces/garlic-sauce-toum.cook
+    duration: 10
+  - time: "1:30"
+    task: Cook BBQ lentils
+    recipe: components/proteins/bbq-lentils.cook
+    duration: 35
+  - time: "1:45"
+    task: Make cashew mac sauce
+    recipe: components/sauces/cashew-mac-sauce.cook
+    duration: 15
+  - time: "1:55"
+    task: Cook couscous
+    recipe: components/grains/fluffy-couscous.cook
+    duration: 10
+  - time: "2:00"
+    task: Roast broccoli
+    recipe: components/vegetables/roasted-broccoli.cook
+    duration: 25
+  - time: "2:10"
+    task: Make shakshuka beans base
+    recipe: components/breakfast/shakshuka-style-beans.cook
+    duration: 20
+  - time: "2:20"
+    task: Make pancake batter
+    recipe: components/breakfast/banana-oat-pancake-batter.cook
+    duration: 5
+  - time: "2:25"
+    task: Make stuffed dates
+    recipe: components/snacks/almond-butter-stuffed-dates.cook
+    duration: 5
+  - time: "2:30"
+    task: Prep smoothie packs
+    recipe: components/breakfast/week3-smoothie-packs.cook
+    duration: 5
+  - time: "2:35"
+    task: Make spiced popcorn (or save for snacking)
+    recipe: components/snacks/spiced-popcorn.cook
+    duration: 5
+  - time: "2:40"
+    task: Clean up and store everything
+    duration: 15
+
+# Grocery list additions (items not fully captured in component recipes)
+grocery_additions:
+  produce:
+    - name: avocados
+      amount: 3-4
+      note: "For chili topping, bowls"
+    - name: romaine or butter lettuce
+      amount: 2
+      unit: heads
+      note: "For wraps, bowls"
+    - name: coleslaw mix
+      amount: 1
+      unit: bag
+      note: "For BBQ bowls and sandwiches"
+    - name: cherry tomatoes
+      amount: 1
+      unit: pint
+      note: "For bowls and salads"
+  pantry:
+    - name: pita bread
+      amount: 2
+      unit: packages
+      note: "For wraps and scooping"
+    - name: sandwich buns
+      amount: 4-6
+      note: "For BBQ sandwiches"
+    - name: cornbread mix (vegan)
+      amount: 1
+      unit: box
+      note: "For chili night"
+    - name: elbow pasta or shells
+      amount: 1
+      unit: lb
+      note: "For mac & cheese"

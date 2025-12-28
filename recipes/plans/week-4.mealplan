@@ -1,0 +1,260 @@
+# Week 4: Thai + Italian
+# Vegan Meal Prep - Veganuary 2026
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-4
+week_number: 4
+year: 2026
+name: "Week 4: Thai + Italian"
+theme: Thai + Italian
+start_date: 2026-01-22
+end_date: 2026-01-28
+
+# Total prep time for batch cooking session
+prep_time_total: 155  # 2.5 hours
+
+# Components prepared during batch cooking session
+components:
+  grains:
+    - components/grains/jasmine-rice.cook
+  proteins:
+    - components/proteins/thai-green-curry.cook
+    - components/proteins/lentil-bolognese.cook
+    - components/proteins/white-beans-with-herbs.cook
+    - components/proteins/crispy-chickpea-larb.cook
+  sauces:
+    - components/sauces/peanut-lime-dressing.cook
+    - components/sauces/creamy-cashew-alfredo.cook
+    - components/sauces/quick-marinara.cook
+  vegetables:
+    - components/vegetables/thai-spiced-sweet-potatoes.cook
+    - components/vegetables/italian-roasted-vegetables.cook
+  breakfast:
+    - components/breakfast/coconut-rice-pudding.cook
+    - components/breakfast/smoothie-packs.cook
+  snacks:
+    - components/snacks/spring-roll-dipping-veggies.cook
+    - components/snacks/marinated-white-beans.cook
+    - components/snacks/rosemary-roasted-nuts.cook
+
+# Daily meal schedule
+days:
+  - day: 1
+    date: 2026-01-22
+    day_name: Thursday
+    is_prep_day: true
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-packs.cook
+        note: "Mango smoothie with spinach and coconut milk"
+      lunch:
+        description: "Use Week 3 Leftovers"
+        note: "Finish remaining components from last week"
+      dinner:
+        recipe: meals/bowls/thai-green-curry-bowl.cook
+        note: "Thai Green Curry + Jasmine Rice"
+      snacks:
+        - recipe: components/snacks/spring-roll-dipping-veggies.cook
+          note: "Serve with peanut lime dressing"
+
+  - day: 2
+    date: 2026-01-23
+    day_name: Friday
+    meals:
+      breakfast:
+        recipe: components/breakfast/coconut-rice-pudding.cook
+        note: "Top with banana and toasted coconut"
+      lunch:
+        recipe: meals/bowls/thai-green-curry-bowl.cook
+        note: "Leftover curry over rice or rice noodles"
+      dinner:
+        recipe: meals/pasta/lentil-bolognese-pasta.cook
+      snacks:
+        - recipe: components/snacks/marinated-white-beans.cook
+
+  - day: 3
+    date: 2026-01-24
+    day_name: Saturday
+    meals:
+      breakfast:
+        recipe: components/proteins/white-beans-with-herbs.cook
+        note: "Savory breakfast: reheat beans, serve on toast with tomatoes and olive oil"
+      lunch:
+        recipe: meals/bowls/bolognese-bowl.cook
+        note: "Bolognese over rice with Italian roasted vegetables"
+      dinner:
+        recipe: meals/salads/thai-peanut-noodle-salad.cook
+      snacks:
+        - recipe: components/snacks/rosemary-roasted-nuts.cook
+
+  - day: 4
+    date: 2026-01-25
+    day_name: Sunday
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-packs.cook
+        note: "Tropical blend"
+      lunch:
+        recipe: meals/bowls/italian-grain-bowl.cook
+      dinner:
+        recipe: meals/bowls/green-curry-fried-rice.cook
+      snacks:
+        - recipe: components/snacks/spring-roll-dipping-veggies.cook
+          note: "Serve with peanut lime dressing"
+
+  - day: 5
+    date: 2026-01-26
+    day_name: Monday
+    meals:
+      breakfast:
+        recipe: components/breakfast/coconut-rice-pudding.cook
+        note: "Second portion with different toppings"
+      lunch:
+        recipe: meals/wraps/thai-larb-lettuce-wraps.cook
+      dinner:
+        recipe: meals/pasta/creamy-alfredo-pasta.cook
+      snacks:
+        - recipe: components/snacks/marinated-white-beans.cook
+
+  - day: 6
+    date: 2026-01-27
+    day_name: Tuesday
+    meals:
+      breakfast:
+        recipe: components/proteins/white-beans-with-herbs.cook
+        note: "On toast with all the fixings"
+      lunch:
+        recipe: meals/pasta/creamy-alfredo-pasta.cook
+        note: "Reheat pasta, add more veggies if desired"
+      dinner:
+        recipe: meals/bowls/larb-inspired-bowl.cook
+      snacks:
+        - recipe: components/snacks/rosemary-roasted-nuts.cook
+
+  - day: 7
+    date: 2026-01-28
+    day_name: Wednesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/coconut-rice-pudding.cook
+        note: "Finish the batch"
+      lunch:
+        description: "Mix & Match"
+        note: "Italian or Thai, whatever sounds good"
+      dinner:
+        description: "Clean-Out Fusion"
+        note: "Get creative - curry over pasta? Larb with white beans? Everything in a bowl!"
+      snacks:
+        - description: "Whatever's left"
+
+# Prep timeline for batch cooking session
+prep_timeline:
+  - time: "0:00"
+    task: Start jasmine rice (make extra for pudding and fried rice)
+    recipe: components/grains/jasmine-rice.cook
+    duration: 20
+  - time: "0:05"
+    task: Start lentil bolognese (long simmer)
+    recipe: components/proteins/lentil-bolognese.cook
+    duration: 50
+  - time: "0:25"
+    task: Make Thai green curry sauce base
+    recipe: components/proteins/thai-green-curry.cook
+    duration: 15
+  - time: "0:40"
+    task: Add vegetables to green curry and simmer
+    recipe: components/proteins/thai-green-curry.cook
+    duration: 15
+  - time: "0:55"
+    task: Make white beans with herbs
+    recipe: components/proteins/white-beans-with-herbs.cook
+    duration: 15
+  - time: "1:10"
+    task: Prep and roast Thai-spiced sweet potatoes
+    recipe: components/vegetables/thai-spiced-sweet-potatoes.cook
+    duration: 30
+  - time: "1:15"
+    task: Prep and roast Italian vegetables
+    recipe: components/vegetables/italian-roasted-vegetables.cook
+    duration: 30
+  - time: "1:25"
+    task: Make peanut lime dressing
+    recipe: components/sauces/peanut-lime-dressing.cook
+    duration: 5
+  - time: "1:30"
+    task: Make cashew alfredo sauce
+    recipe: components/sauces/creamy-cashew-alfredo.cook
+    duration: 10
+  - time: "1:40"
+    task: Make quick marinara
+    recipe: components/sauces/quick-marinara.cook
+    duration: 20
+  - time: "1:50"
+    task: Make chickpea larb mixture
+    recipe: components/proteins/crispy-chickpea-larb.cook
+    duration: 10
+  - time: "2:00"
+    task: Make coconut rice pudding
+    recipe: components/breakfast/coconut-rice-pudding.cook
+    duration: 12
+  - time: "2:10"
+    task: Prep spring roll veggies
+    recipe: components/snacks/spring-roll-dipping-veggies.cook
+    duration: 5
+  - time: "2:15"
+    task: Make marinated white beans
+    recipe: components/snacks/marinated-white-beans.cook
+    duration: 5
+  - time: "2:20"
+    task: Make rosemary roasted nuts
+    recipe: components/snacks/rosemary-roasted-nuts.cook
+    duration: 15
+  - time: "2:30"
+    task: Prep smoothie packs
+    recipe: components/breakfast/smoothie-packs.cook
+    duration: 5
+  - time: "2:35"
+    task: Clean up and store everything
+    duration: 15
+
+# Grocery list additions (items not fully captured in component recipes)
+grocery_additions:
+  produce:
+    - name: limes
+      amount: 8
+      note: "For Thai dishes, dressing"
+    - name: lemons
+      amount: 4
+      note: "For Italian dishes, Alfredo"
+    - name: butter lettuce
+      amount: 2
+      unit: heads
+      note: "For lettuce wraps"
+    - name: bananas
+      amount: 5-6
+      note: "For smoothies, rice pudding"
+    - name: mango
+      amount: 1-2
+      note: "For Thai salad (optional)"
+    - name: frozen mango
+      amount: 1
+      unit: bag
+      note: "For smoothies"
+  pantry:
+    - name: spaghetti or linguine
+      amount: 1
+      unit: lb
+      note: "For bolognese"
+    - name: fettuccine or penne
+      amount: 1
+      unit: lb
+      note: "For alfredo"
+    - name: rice noodles
+      amount: 8
+      unit: oz
+      note: "For peanut noodle salad"
+    - name: vegan parmesan
+      amount: 1
+      unit: container
+      note: "For pasta topping (optional)"

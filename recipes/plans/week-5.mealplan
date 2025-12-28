@@ -1,0 +1,152 @@
+# Week 5: Best Of Veganuary Finale
+# Vegan Meal Prep - Veganuary 2026
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-5
+week_number: 5
+year: 2026
+name: "Week 5: Best Of Veganuary Finale"
+theme: Best Of Favorites
+start_date: 2026-01-29
+end_date: 2026-01-31
+
+# Total prep time for batch cooking session
+prep_time_total: 90  # 1.5 hours (shorter week)
+
+# Components prepared during batch cooking session
+components:
+  grains:
+    - components/grains/cilantro-lime-rice.cook
+    - components/grains/fluffy-couscous.cook
+  proteins:
+    - components/proteins/spiced-mediterranean-chickpeas.cook
+    - components/proteins/quick-coconut-curry.cook
+  sauces:
+    - components/sauces/tahini-dressing.cook
+    - components/sauces/peanut-sauce.cook
+  vegetables:
+    - components/vegetables/sheet-pan-rainbow-vegetables.cook
+  breakfast:
+    - components/breakfast/overnight-oats.cook
+    - components/breakfast/smoothie-base.cook
+  snacks:
+    - components/snacks/classic-hummus.cook
+    - components/snacks/quick-energy-balls.cook
+
+# Daily meal schedule
+days:
+  - day: 1
+    date: 2026-01-29
+    day_name: Thursday
+    is_prep_day: true
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-base.cook
+        note: "Classic berry smoothie"
+      lunch:
+        description: "Week 4 Leftovers"
+        note: "Finish any remaining curry, pasta, or Italian dishes from last week"
+      dinner:
+        recipe: meals/bowls/mediterranean-feast-bowl.cook
+        note: "Couscous base, Mediterranean chickpeas, rainbow vegetables"
+      snacks:
+        - recipe: components/snacks/classic-hummus.cook
+          note: "Serve with raw veggies"
+
+  - day: 2
+    date: 2026-01-30
+    day_name: Friday
+    meals:
+      breakfast:
+        recipe: components/breakfast/overnight-oats.cook
+        note: "Jar 1"
+      lunch:
+        recipe: meals/bowls/mediterranean-feast-bowl.cook
+        note: "Same as last night - still delicious"
+      dinner:
+        recipe: meals/bowls/coconut-curry-bowl.cook
+        note: "Cilantro-lime rice + quick coconut curry"
+      snacks:
+        - recipe: components/snacks/quick-energy-balls.cook
+
+  - day: 3
+    date: 2026-01-31
+    day_name: Saturday
+    note: "VEGANUARY FINALE!"
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-base.cook
+        note: "Tropical mango variation - make it special!"
+      lunch:
+        recipe: meals/bowls/coconut-curry-bowl.cook
+        note: "Last of the curry over rice"
+      dinner:
+        recipe: meals/bowls/veganuary-finale-bowl.cook
+        note: "Build Your Own Bowl Bar - celebrate with all your favorites!"
+      snacks:
+        - description: "Celebrate!"
+          note: "You did it - enjoy your final day of Veganuary!"
+
+# Prep timeline for batch cooking session
+prep_timeline:
+  - time: "0:00"
+    task: Start rice cooking
+    recipe: components/grains/cilantro-lime-rice.cook
+    duration: 20
+  - time: "0:05"
+    task: Make Mediterranean chickpeas
+    recipe: components/proteins/spiced-mediterranean-chickpeas.cook
+    duration: 15
+  - time: "0:20"
+    task: Make quick coconut curry
+    recipe: components/proteins/quick-coconut-curry.cook
+    duration: 20
+  - time: "0:40"
+    task: Prep and roast rainbow vegetables
+    recipe: components/vegetables/sheet-pan-rainbow-vegetables.cook
+    duration: 30
+  - time: "0:45"
+    task: Make tahini dressing
+    recipe: components/sauces/tahini-dressing.cook
+    duration: 5
+  - time: "0:50"
+    task: Make peanut sauce
+    recipe: components/sauces/peanut-sauce.cook
+    duration: 5
+  - time: "0:55"
+    task: Make hummus
+    recipe: components/snacks/classic-hummus.cook
+    duration: 10
+  - time: "1:05"
+    task: Make overnight oats (2 jars)
+    recipe: components/breakfast/overnight-oats.cook
+    duration: 5
+  - time: "1:10"
+    task: Make energy balls
+    recipe: components/snacks/quick-energy-balls.cook
+    duration: 10
+  - time: "1:20"
+    task: Prep smoothie freezer packs (2)
+    recipe: components/breakfast/smoothie-base.cook
+    duration: 5
+  - time: "1:25"
+    task: Clean up and store everything
+    duration: 10
+
+# Grocery list additions (items not fully captured in component recipes)
+grocery_additions:
+  produce:
+    - name: avocados
+      amount: 2
+      note: "For bowls and finale feast"
+    - name: limes
+      amount: 3
+      note: "For rice, curry, bowls"
+    - name: lemons
+      amount: 3
+      note: "For chickpeas, dressing, bowls"
+    - name: baby carrots
+      amount: 1
+      unit: bag
+      note: "Snacking with hummus"

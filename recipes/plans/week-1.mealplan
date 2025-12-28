@@ -1,0 +1,250 @@
+# Week 1: Mediterranean + Mexican
+# Vegan Meal Prep - Veganuary 2026
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-1
+week_number: 1
+year: 2026
+name: "Week 1: Mediterranean + Mexican"
+theme: Mediterranean + Mexican
+start_date: 2026-01-01
+end_date: 2026-01-07
+
+# Total prep time for batch cooking session
+prep_time_total: 150  # 2.5 hours
+
+# Components prepared during batch cooking session
+components:
+  grains:
+    - components/grains/cilantro-lime-rice.cook
+    - components/grains/lemon-herb-quinoa.cook
+  proteins:
+    - components/proteins/spiced-mediterranean-chickpeas.cook
+    - components/proteins/smoky-black-beans.cook
+    - components/proteins/lentil-walnut-taco-meat.cook
+  sauces:
+    - components/sauces/cashew-tzatziki.cook
+    - components/sauces/chipotle-crema.cook
+    - components/sauces/lemon-tahini-dressing.cook
+  vegetables:
+    - components/vegetables/mediterranean-roasted-vegetables.cook
+    - components/vegetables/fajita-vegetables.cook
+  breakfast:
+    - components/breakfast/overnight-oats.cook
+    - components/breakfast/chickpea-scramble-base.cook
+    - components/breakfast/smoothie-packs.cook
+  snacks:
+    - components/snacks/classic-hummus.cook
+    - components/snacks/peanut-butter-energy-balls.cook
+    - components/snacks/spiced-roasted-chickpeas.cook
+
+# Daily meal schedule
+days:
+  - day: 1
+    date: 2026-01-01
+    day_name: Thursday
+    is_prep_day: true
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-packs.cook
+        note: "Blend while prepping"
+      lunch:
+        description: "Prep-Day Avocado Toast"
+        note: "Toast bread, mash avocado with salt, pepper, red pepper flakes, lemon juice. Eat while things are in the oven."
+      dinner:
+        recipe: meals/bowls/mediterranean-grain-bowl.cook
+      snacks:
+        - recipe: components/snacks/classic-hummus.cook
+          note: "Serve with raw veggies"
+
+  - day: 2
+    date: 2026-01-02
+    day_name: Friday
+    meals:
+      breakfast:
+        recipe: components/breakfast/overnight-oats.cook
+        note: "Jar 1: Chocolate Cherry"
+      lunch:
+        recipe: meals/bowls/mediterranean-grain-bowl.cook
+      dinner:
+        recipe: meals/tacos/loaded-black-bean-tacos.cook
+      snacks:
+        - recipe: components/snacks/peanut-butter-energy-balls.cook
+
+  - day: 3
+    date: 2026-01-03
+    day_name: Saturday
+    meals:
+      breakfast:
+        recipe: components/breakfast/chickpea-scramble-base.cook
+        note: "Add spinach when reheating"
+      lunch:
+        recipe: meals/salads/taco-salad-bowl.cook
+      dinner:
+        recipe: meals/wraps/lentil-walnut-lettuce-wraps.cook
+      snacks:
+        - recipe: components/snacks/spiced-roasted-chickpeas.cook
+
+  - day: 4
+    date: 2026-01-04
+    day_name: Sunday
+    meals:
+      breakfast:
+        recipe: components/breakfast/smoothie-packs.cook
+        note: "Tropical mango variation"
+      lunch:
+        recipe: meals/salads/big-greek-salad.cook
+      dinner:
+        recipe: meals/bowls/burrito-bowl.cook
+      snacks:
+        - recipe: components/snacks/classic-hummus.cook
+          note: "Serve with raw veggies"
+
+  - day: 5
+    date: 2026-01-05
+    day_name: Monday
+    meals:
+      breakfast:
+        recipe: components/breakfast/overnight-oats.cook
+        note: "Jar 2: Apple Cinnamon"
+      lunch:
+        recipe: meals/plates/mediterranean-mezze-plate.cook
+      dinner:
+        recipe: meals/bowls/stuffed-sweet-potatoes.cook
+      snacks:
+        - recipe: components/snacks/peanut-butter-energy-balls.cook
+
+  - day: 6
+    date: 2026-01-06
+    day_name: Tuesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/chickpea-scramble-base.cook
+        note: "Add spinach, serve with toast"
+      lunch:
+        recipe: meals/bowls/burrito-bowl.cook
+      dinner:
+        recipe: meals/tacos/fajita-night.cook
+        note: "Quick sauté if fajita veg is low"
+      snacks:
+        - recipe: components/snacks/spiced-roasted-chickpeas.cook
+
+  - day: 7
+    date: 2026-01-07
+    day_name: Wednesday
+    meals:
+      breakfast:
+        recipe: components/breakfast/overnight-oats.cook
+        note: "Jar 3: Tropical"
+      lunch:
+        description: "Use-It-Up Bowl"
+        note: "Whatever grains + whatever protein + whatever veg + whatever sauce"
+      dinner:
+        description: "Clean-Out Bowl"
+        note: "Combine all remaining components. Add extra avocado."
+      snacks:
+        - description: "Whatever's left"
+
+# Prep timeline for batch cooking session
+prep_timeline:
+  - time: "0:00"
+    task: Start quinoa (Instant Pot or stovetop)
+    recipe: components/grains/lemon-herb-quinoa.cook
+    duration: 15
+  - time: "0:05"
+    task: Start lentils cooking
+    recipe: components/proteins/lentil-walnut-taco-meat.cook
+    duration: 25
+  - time: "0:10"
+    task: Soak cashews in boiling water
+    duration: 15
+    note: "For tzatziki and chipotle crema"
+  - time: "0:10"
+    task: Chop all onions, peppers, garlic (mise en place)
+    duration: 15
+  - time: "0:25"
+    task: Start rice cooking
+    recipe: components/grains/cilantro-lime-rice.cook
+    duration: 20
+  - time: "0:30"
+    task: Prep and roast Mediterranean vegetables
+    recipe: components/vegetables/mediterranean-roasted-vegetables.cook
+    duration: 35
+  - time: "0:35"
+    task: Make lentil-walnut meat (lentils should be done)
+    recipe: components/proteins/lentil-walnut-taco-meat.cook
+    duration: 15
+  - time: "0:50"
+    task: Make smoky black beans
+    recipe: components/proteins/smoky-black-beans.cook
+    duration: 20
+  - time: "1:05"
+    task: Make spiced chickpeas
+    recipe: components/proteins/spiced-mediterranean-chickpeas.cook
+    duration: 15
+  - time: "1:15"
+    task: Prep and roast fajita vegetables
+    recipe: components/vegetables/fajita-vegetables.cook
+    duration: 25
+  - time: "1:20"
+    task: Blend cashew tzatziki
+    recipe: components/sauces/cashew-tzatziki.cook
+    duration: 10
+  - time: "1:30"
+    task: Blend chipotle crema
+    recipe: components/sauces/chipotle-crema.cook
+    duration: 5
+  - time: "1:35"
+    task: Blend lemon-tahini dressing
+    recipe: components/sauces/lemon-tahini-dressing.cook
+    duration: 5
+  - time: "1:40"
+    task: Make hummus
+    recipe: components/snacks/classic-hummus.cook
+    duration: 10
+  - time: "1:50"
+    task: Make energy balls
+    recipe: components/snacks/peanut-butter-energy-balls.cook
+    duration: 10
+  - time: "2:00"
+    task: Prep overnight oats (3 jars)
+    recipe: components/breakfast/overnight-oats.cook
+    duration: 10
+  - time: "2:10"
+    task: Make smoothie freezer packs
+    recipe: components/breakfast/smoothie-packs.cook
+    duration: 5
+  - time: "2:15"
+    task: Prep chickpea scramble base
+    recipe: components/breakfast/chickpea-scramble-base.cook
+    duration: 10
+  - time: "2:25"
+    task: Roast snacking chickpeas (if oven still on)
+    recipe: components/snacks/spiced-roasted-chickpeas.cook
+    duration: 40
+  - time: "2:30"
+    task: Clean up and store everything
+    duration: 15
+
+# Grocery list additions (items not fully captured in component recipes)
+grocery_additions:
+  produce:
+    - name: avocados
+      amount: 5-6
+      note: "For tacos, bowls, toast"
+    - name: limes
+      amount: 6
+      note: "For rice, beans, crema, bowls"
+    - name: romaine lettuce
+      amount: 2
+      unit: heads
+      note: "Tacos, salads, wraps"
+    - name: baby carrots
+      amount: 1
+      unit: bag
+      note: "Snacking with hummus"
+    - name: celery
+      amount: 1
+      unit: bunch
+      note: "Snacking with hummus"
