@@ -331,6 +331,8 @@ function transformWeek(seed: SeedWeek, index: number): WeekWithDetails {
     year: 2026,
     name: seed.title,
     theme: seed.theme,
+    startDate: seed.start_date,
+    endDate: seed.end_date,
     prepTimeTotal: seed.prep_steps.reduce((sum, p) => sum + (p.duration ?? 0), 0) || undefined,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),

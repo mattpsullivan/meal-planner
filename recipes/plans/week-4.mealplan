@@ -8,8 +8,8 @@ week_number: 4
 year: 2026
 name: "Week 4: Thai + Italian"
 theme: Thai + Italian
-start_date: 2026-01-22
-end_date: 2026-01-28
+start_date: 2026-01-26
+end_date: 2026-02-01
 
 # Total prep time for batch cooking session
 prep_time_total: 155  # 2.5 hours
@@ -41,8 +41,8 @@ components:
 # Daily meal schedule
 days:
   - day: 1
-    date: 2026-01-22
-    day_name: Thursday
+    date: 2026-01-26
+    day_name: Sunday
     is_prep_day: true
     meals:
       breakfast:
@@ -59,8 +59,8 @@ days:
           note: "Serve with peanut lime dressing"
 
   - day: 2
-    date: 2026-01-23
-    day_name: Friday
+    date: 2026-01-27
+    day_name: Monday
     meals:
       breakfast:
         recipe: components/breakfast/coconut-rice-pudding.cook
@@ -74,8 +74,8 @@ days:
         - recipe: components/snacks/marinated-white-beans.cook
 
   - day: 3
-    date: 2026-01-24
-    day_name: Saturday
+    date: 2026-01-28
+    day_name: Tuesday
     meals:
       breakfast:
         recipe: components/proteins/white-beans-with-herbs.cook
@@ -89,8 +89,8 @@ days:
         - recipe: components/snacks/rosemary-roasted-nuts.cook
 
   - day: 4
-    date: 2026-01-25
-    day_name: Sunday
+    date: 2026-01-29
+    day_name: Wednesday
     meals:
       breakfast:
         recipe: components/breakfast/smoothie-packs.cook
@@ -104,8 +104,8 @@ days:
           note: "Serve with peanut lime dressing"
 
   - day: 5
-    date: 2026-01-26
-    day_name: Monday
+    date: 2026-01-30
+    day_name: Thursday
     meals:
       breakfast:
         recipe: components/breakfast/coconut-rice-pudding.cook
@@ -118,8 +118,8 @@ days:
         - recipe: components/snacks/marinated-white-beans.cook
 
   - day: 6
-    date: 2026-01-27
-    day_name: Tuesday
+    date: 2026-01-31
+    day_name: Friday
     meals:
       breakfast:
         recipe: components/proteins/white-beans-with-herbs.cook
@@ -133,8 +133,8 @@ days:
         - recipe: components/snacks/rosemary-roasted-nuts.cook
 
   - day: 7
-    date: 2026-01-28
-    day_name: Wednesday
+    date: 2026-02-01
+    day_name: Saturday
     meals:
       breakfast:
         recipe: components/breakfast/coconut-rice-pudding.cook

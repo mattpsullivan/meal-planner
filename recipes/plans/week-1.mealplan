@@ -8,8 +8,8 @@ week_number: 1
 year: 2026
 name: "Week 1: Mediterranean + Mexican"
 theme: Mediterranean + Mexican
-start_date: 2026-01-01
-end_date: 2026-01-07
+start_date: 2026-01-05
+end_date: 2026-01-11
 
 # Total prep time for batch cooking session
 prep_time_total: 150  # 2.5 hours
@@ -42,8 +42,8 @@ components:
 # Daily meal schedule
 days:
   - day: 1
-    date: 2026-01-01
-    day_name: Thursday
+    date: 2026-01-05
+    day_name: Sunday
     is_prep_day: true
     meals:
       breakfast:
@@ -59,8 +59,8 @@ days:
           note: "Serve with raw veggies"
 
   - day: 2
-    date: 2026-01-02
-    day_name: Friday
+    date: 2026-01-06
+    day_name: Monday
     meals:
       breakfast:
         recipe: components/breakfast/overnight-oats.cook
@@ -73,8 +73,8 @@ days:
         - recipe: components/snacks/peanut-butter-energy-balls.cook
 
   - day: 3
-    date: 2026-01-03
-    day_name: Saturday
+    date: 2026-01-07
+    day_name: Tuesday
     meals:
       breakfast:
         recipe: components/breakfast/chickpea-scramble-base.cook
@@ -87,8 +87,8 @@ days:
         - recipe: components/snacks/spiced-roasted-chickpeas.cook
 
   - day: 4
-    date: 2026-01-04
-    day_name: Sunday
+    date: 2026-01-08
+    day_name: Wednesday
     meals:
       breakfast:
         recipe: components/breakfast/smoothie-packs.cook
@@ -102,8 +102,8 @@ days:
           note: "Serve with raw veggies"
 
   - day: 5
-    date: 2026-01-05
-    day_name: Monday
+    date: 2026-01-09
+    day_name: Thursday
     meals:
       breakfast:
         recipe: components/breakfast/overnight-oats.cook
@@ -116,8 +116,8 @@ days:
         - recipe: components/snacks/peanut-butter-energy-balls.cook
 
   - day: 6
-    date: 2026-01-06
-    day_name: Tuesday
+    date: 2026-01-10
+    day_name: Friday
     meals:
       breakfast:
         recipe: components/breakfast/chickpea-scramble-base.cook
@@ -131,8 +131,8 @@ days:
         - recipe: components/snacks/spiced-roasted-chickpeas.cook
 
   - day: 7
-    date: 2026-01-07
-    day_name: Wednesday
+    date: 2026-01-11
+    day_name: Saturday
     meals:
       breakfast:
         recipe: components/breakfast/overnight-oats.cook

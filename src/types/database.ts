@@ -92,6 +92,8 @@ export interface Week {
   year: number;
   name?: string | undefined;
   theme?: string | undefined;
+  startDate?: string | undefined;
+  endDate?: string | undefined;
   prepTimeTotal?: number | undefined;
   createdAt: string;
   updatedAt: string;

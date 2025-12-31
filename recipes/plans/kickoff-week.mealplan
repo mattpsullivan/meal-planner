@@ -1,15 +1,15 @@
-# Week 5: Mediterranean + Mexican (Encore)
-# Vegan Meal Prep - Veganuary 2026
+# Kickoff Week: Mediterranean + Mexican
+# Vegan Meal Prep - Veganuary 2026 (Short Week)
 
 $schema: ../schemas/mealplan.v1.json
 
-id: week-5
-week_number: 5
+id: kickoff-week
+week_number: 0
 year: 2026
-name: "Week 5: Mediterranean + Mexican"
+name: "Kickoff: Mediterranean + Mexican"
 theme: Mediterranean + Mexican
-start_date: 2026-02-02
-end_date: 2026-02-08
+start_date: 2026-01-01
+end_date: 2026-01-04
 
 # Total prep time for batch cooking session
 prep_time_total: 150  # 2.5 hours
@@ -39,19 +39,19 @@ components:
     - components/snacks/peanut-butter-energy-balls.cook
     - components/snacks/spiced-roasted-chickpeas.cook
 
-# Daily meal schedule
+# Daily meal schedule (4-day short week)
 days:
   - day: 1
-    date: 2026-02-02
-    day_name: Sunday
+    date: 2026-01-01
+    day_name: Wednesday
     is_prep_day: true
     meals:
       breakfast:
         recipe: components/breakfast/smoothie-packs.cook
         note: "Blend while prepping"
       lunch:
-        description: "Use Week 4 Leftovers"
-        note: "Finish anything remaining from last week"
+        description: "Prep-Day Avocado Toast"
+        note: "Toast bread, mash avocado with salt, pepper, red pepper flakes, lemon juice. Eat while things are in the oven."
       dinner:
         recipe: meals/bowls/mediterranean-grain-bowl.cook
       snacks:
@@ -59,8 +59,8 @@ days:
           note: "Serve with raw veggies"
 
   - day: 2
-    date: 2026-02-03
-    day_name: Monday
+    date: 2026-01-02
+    day_name: Thursday
     meals:
       breakfast:
         recipe: components/breakfast/overnight-oats.cook
@@ -73,8 +73,8 @@ days:
         - recipe: components/snacks/peanut-butter-energy-balls.cook
 
   - day: 3
-    date: 2026-02-04
-    day_name: Tuesday
+    date: 2026-01-03
+    day_name: Friday
     meals:
       breakfast:
         recipe: components/breakfast/chickpea-scramble-base.cook
@@ -87,8 +87,8 @@ days:
         - recipe: components/snacks/spiced-roasted-chickpeas.cook
 
   - day: 4
-    date: 2026-02-05
-    day_name: Wednesday
+    date: 2026-01-04
+    day_name: Saturday
     meals:
       breakfast:
         recipe: components/breakfast/smoothie-packs.cook
@@ -100,51 +100,6 @@ days:
       snacks:
         - recipe: components/snacks/classic-hummus.cook
           note: "Serve with raw veggies"
-
-  - day: 5
-    date: 2026-02-06
-    day_name: Thursday
-    meals:
-      breakfast:
-        recipe: components/breakfast/overnight-oats.cook
-        note: "Jar 2: Apple Cinnamon"
-      lunch:
-        recipe: meals/plates/mediterranean-mezze-plate.cook
-      dinner:
-        recipe: meals/bowls/stuffed-sweet-potatoes.cook
-      snacks:
-        - recipe: components/snacks/peanut-butter-energy-balls.cook
-
-  - day: 6
-    date: 2026-02-07
-    day_name: Friday
-    meals:
-      breakfast:
-        recipe: components/breakfast/chickpea-scramble-base.cook
-        note: "Add spinach, serve with toast"
-      lunch:
-        recipe: meals/bowls/burrito-bowl.cook
-      dinner:
-        recipe: meals/tacos/fajita-night.cook
-        note: "Quick sauté if fajita veg is low"
-      snacks:
-        - recipe: components/snacks/spiced-roasted-chickpeas.cook
-
-  - day: 7
-    date: 2026-02-08
-    day_name: Saturday
-    meals:
-      breakfast:
-        recipe: components/breakfast/overnight-oats.cook
-        note: "Jar 3: Tropical"
-      lunch:
-        description: "Use-It-Up Bowl"
-        note: "Whatever grains + whatever protein + whatever veg + whatever sauce"
-      dinner:
-        description: "Clean-Out Bowl"
-        note: "Combine all remaining components. Add extra avocado."
-      snacks:
-        - description: "Whatever's left"
 
 # Prep timeline for batch cooking session
 prep_timeline:
@@ -208,7 +163,7 @@ prep_timeline:
     recipe: components/snacks/peanut-butter-energy-balls.cook
     duration: 10
   - time: "2:00"
-    task: Prep overnight oats (3 jars)
+    task: Prep overnight oats (2 jars)
     recipe: components/breakfast/overnight-oats.cook
     duration: 10
   - time: "2:10"
@@ -231,15 +186,15 @@ prep_timeline:
 grocery_additions:
   produce:
     - name: avocados
-      amount: 5-6
+      amount: 3-4
       note: "For tacos, bowls, toast"
     - name: limes
-      amount: 6
+      amount: 4
       note: "For rice, beans, crema, bowls"
     - name: romaine lettuce
-      amount: 2
-      unit: heads
-      note: "Tacos, salads, wraps"
+      amount: 1
+      unit: head
+      note: "Tacos, salads"
     - name: baby carrots
       amount: 1
       unit: bag

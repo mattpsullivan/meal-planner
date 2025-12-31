@@ -8,8 +8,8 @@ week_number: 3
 year: 2026
 name: "Week 3: Middle Eastern + American Comfort"
 theme: Middle Eastern + American Comfort
-start_date: 2026-01-15
-end_date: 2026-01-21
+start_date: 2026-01-19
+end_date: 2026-01-25
 
 # Total prep time for batch cooking session
 prep_time_total: 160  # 2.5-3 hours
@@ -43,8 +43,8 @@ components:
 # Daily meal schedule
 days:
   - day: 1
-    date: 2026-01-15
-    day_name: Thursday
+    date: 2026-01-19
+    day_name: Sunday
     is_prep_day: true
     meals:
       breakfast:
@@ -61,8 +61,8 @@ days:
           note: "With pita bread"
 
   - day: 2
-    date: 2026-01-16
-    day_name: Friday
+    date: 2026-01-20
+    day_name: Monday
     meals:
       breakfast:
         recipe: components/breakfast/banana-oat-pancake-batter.cook
@@ -76,8 +76,8 @@ days:
         - recipe: components/snacks/almond-butter-stuffed-dates.cook
 
   - day: 3
-    date: 2026-01-17
-    day_name: Saturday
+    date: 2026-01-21
+    day_name: Tuesday
     meals:
       breakfast:
         recipe: components/breakfast/shakshuka-style-beans.cook
@@ -92,8 +92,8 @@ days:
         - recipe: components/snacks/spiced-popcorn.cook
 
   - day: 4
-    date: 2026-01-18
-    day_name: Sunday
+    date: 2026-01-22
+    day_name: Wednesday
     meals:
       breakfast:
         recipe: components/breakfast/banana-oat-pancake-batter.cook
@@ -107,8 +107,8 @@ days:
         - recipe: components/snacks/baba-ganoush.cook
 
   - day: 5
-    date: 2026-01-19
-    day_name: Monday
+    date: 2026-01-23
+    day_name: Thursday
     meals:
       breakfast:
         recipe: components/breakfast/week3-smoothie-packs.cook
@@ -122,8 +122,8 @@ days:
         - recipe: components/snacks/almond-butter-stuffed-dates.cook
 
   - day: 6
-    date: 2026-01-20
-    day_name: Tuesday
+    date: 2026-01-24
+    day_name: Friday
     meals:
       breakfast:
         recipe: components/breakfast/shakshuka-style-beans.cook
@@ -137,8 +137,8 @@ days:
         - recipe: components/snacks/spiced-popcorn.cook
 
   - day: 7
-    date: 2026-01-21
-    day_name: Wednesday
+    date: 2026-01-25
+    day_name: Saturday
     meals:
       breakfast:
         recipe: components/breakfast/banana-oat-pancake-batter.cook

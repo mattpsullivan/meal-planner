@@ -159,7 +159,7 @@
       "yield_unit": null,
       "storage_days": 4,
       "storage_instructions": "refrigerated. Skillet (add fresh spinach when reheating).",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "chickpeas",
@@ -615,7 +615,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Eat cold or microwave 1-2 minutes.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "rolled oats",
@@ -1126,7 +1126,7 @@
       "yield_unit": null,
       "storage_days": 0,
       "storage_instructions": "fresh. Blend and serve immediately.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "frozen berries",
@@ -1408,7 +1408,7 @@
       "yield_unit": null,
       "storage_days": 30,
       "storage_instructions": "frozen. Blend with liquid.",
-      "source_week": 4,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "frozen mixed berries",
@@ -1662,7 +1662,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave with splash of water, covered, 1-2 minutes.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "long-grain white rice",
@@ -1960,7 +1960,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave with splash of water or serve at room temperature.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "couscous",
@@ -2252,7 +2252,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave with splash of water, covered, 1-2 minutes.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "quinoa",
@@ -4106,7 +4106,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Skillet with splash of water.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "brown or green lentils",
@@ -4394,7 +4394,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave or stovetop until heated through. Freezes well.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "coconut oil",
@@ -4566,7 +4566,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave or saucepan with splash of water.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "olive oil",
@@ -4775,7 +4775,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave or skillet until heated through.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "olive oil",
@@ -5483,7 +5483,7 @@
       "yield_unit": null,
       "storage_days": 7,
       "storage_instructions": "refrigerated. Serve cold, stir before using.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "raw cashews",
@@ -5621,7 +5621,7 @@
       "yield_unit": null,
       "storage_days": 7,
       "storage_instructions": "refrigerated. Serve cold.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "raw cashews",
@@ -6242,7 +6242,7 @@
       "yield_unit": null,
       "storage_days": 10,
       "storage_instructions": "refrigerated. Serve cold, shake before using.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "tahini",
@@ -6492,7 +6492,7 @@
       "yield_unit": null,
       "storage_days": 10,
       "storage_instructions": "refrigerated. Serve at room temperature. Shake before using.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "natural peanut butter",
@@ -6781,7 +6781,7 @@
       "yield_unit": null,
       "storage_days": 10,
       "storage_instructions": "refrigerated. Serve cold. Shake before using.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "tahini",
@@ -7323,7 +7323,7 @@
       "yield_unit": null,
       "storage_days": 7,
       "storage_instructions": "refrigerated. Serve cold.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "tahini",
@@ -7962,7 +7962,7 @@
       "yield_unit": null,
       "storage_days": 14,
       "storage_instructions": "refrigerated. Serve cold.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "rolled oats",
@@ -8083,7 +8083,7 @@
       "yield_unit": null,
       "storage_days": 14,
       "storage_instructions": "refrigerated. Serve cold.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "rolled oats",
@@ -8451,7 +8451,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "room-temp. Serve at room temperature.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "chickpeas",
@@ -8780,7 +8780,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Skillet or microwave.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "bell peppers",
@@ -9093,7 +9093,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave or eat at room temperature.",
-      "source_week": 1,
+      "source_week": 5,
       "ingredients": [
         {
           "name": "zucchini",
@@ -9321,7 +9321,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave or eat at room temperature.",
-      "source_week": 5,
+      "source_week": 6,
       "ingredients": [
         {
           "name": "sweet potato",
@@ -13995,12 +13995,334 @@
   ],
   "weeks": [
     {
+      "id": "kickoff-week",
+      "week_number": 0,
+      "title": "Kickoff: Mediterranean + Mexican",
+      "theme": "Mediterranean + Mexican",
+      "start_date": "2026-01-01",
+      "end_date": "2026-01-04",
+      "components": [
+        {
+          "recipe_id": "cilantro-lime-rice",
+          "component_type": "grains"
+        },
+        {
+          "recipe_id": "lemon-herb-quinoa",
+          "component_type": "grains"
+        },
+        {
+          "recipe_id": "spiced-mediterranean-chickpeas",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "smoky-black-beans",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "lentil-walnut-taco-meat",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "cashew-tzatziki",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "chipotle-crema",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "lemon-tahini-dressing",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "mediterranean-roasted-vegetables",
+          "component_type": "vegetables"
+        },
+        {
+          "recipe_id": "fajita-vegetables",
+          "component_type": "vegetables"
+        },
+        {
+          "recipe_id": "overnight-oats",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "chickpea-scramble-base",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "smoothie-packs",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "classic-hummus",
+          "component_type": "snacks"
+        },
+        {
+          "recipe_id": "peanut-butter-energy-balls",
+          "component_type": "snacks"
+        },
+        {
+          "recipe_id": "spiced-roasted-chickpeas",
+          "component_type": "snacks"
+        }
+      ],
+      "prep_steps": [
+        {
+          "step_number": 0,
+          "time_minutes": 0,
+          "description": "Start quinoa (Instant Pot or stovetop)",
+          "recipe_id": "lemon-herb-quinoa"
+        },
+        {
+          "step_number": 1,
+          "time_minutes": 5,
+          "description": "Start lentils cooking",
+          "recipe_id": "lentil-walnut-taco-meat"
+        },
+        {
+          "step_number": 2,
+          "time_minutes": 10,
+          "description": "Soak cashews in boiling water",
+          "recipe_id": null
+        },
+        {
+          "step_number": 3,
+          "time_minutes": 10,
+          "description": "Chop all onions, peppers, garlic (mise en place)",
+          "recipe_id": null
+        },
+        {
+          "step_number": 4,
+          "time_minutes": 25,
+          "description": "Start rice cooking",
+          "recipe_id": "cilantro-lime-rice"
+        },
+        {
+          "step_number": 5,
+          "time_minutes": 30,
+          "description": "Prep and roast Mediterranean vegetables",
+          "recipe_id": "mediterranean-roasted-vegetables"
+        },
+        {
+          "step_number": 6,
+          "time_minutes": 35,
+          "description": "Make lentil-walnut meat (lentils should be done)",
+          "recipe_id": "lentil-walnut-taco-meat"
+        },
+        {
+          "step_number": 7,
+          "time_minutes": 50,
+          "description": "Make smoky black beans",
+          "recipe_id": "smoky-black-beans"
+        },
+        {
+          "step_number": 8,
+          "time_minutes": 65,
+          "description": "Make spiced chickpeas",
+          "recipe_id": "spiced-mediterranean-chickpeas"
+        },
+        {
+          "step_number": 9,
+          "time_minutes": 75,
+          "description": "Prep and roast fajita vegetables",
+          "recipe_id": "fajita-vegetables"
+        },
+        {
+          "step_number": 10,
+          "time_minutes": 80,
+          "description": "Blend cashew tzatziki",
+          "recipe_id": "cashew-tzatziki"
+        },
+        {
+          "step_number": 11,
+          "time_minutes": 90,
+          "description": "Blend chipotle crema",
+          "recipe_id": "chipotle-crema"
+        },
+        {
+          "step_number": 12,
+          "time_minutes": 95,
+          "description": "Blend lemon-tahini dressing",
+          "recipe_id": "lemon-tahini-dressing"
+        },
+        {
+          "step_number": 13,
+          "time_minutes": 100,
+          "description": "Make hummus",
+          "recipe_id": "classic-hummus"
+        },
+        {
+          "step_number": 14,
+          "time_minutes": 110,
+          "description": "Make energy balls",
+          "recipe_id": "peanut-butter-energy-balls"
+        },
+        {
+          "step_number": 15,
+          "time_minutes": 120,
+          "description": "Prep overnight oats (2 jars)",
+          "recipe_id": "overnight-oats"
+        },
+        {
+          "step_number": 16,
+          "time_minutes": 130,
+          "description": "Make smoothie freezer packs",
+          "recipe_id": "smoothie-packs"
+        },
+        {
+          "step_number": 17,
+          "time_minutes": 135,
+          "description": "Prep chickpea scramble base",
+          "recipe_id": "chickpea-scramble-base"
+        },
+        {
+          "step_number": 18,
+          "time_minutes": 145,
+          "description": "Roast snacking chickpeas (if oven still on)",
+          "recipe_id": "spiced-roasted-chickpeas"
+        },
+        {
+          "step_number": 19,
+          "time_minutes": 150,
+          "description": "Clean up and store everything",
+          "recipe_id": null
+        }
+      ],
+      "days": [
+        {
+          "day_number": 1,
+          "date": "2026-01-01",
+          "day_of_week": "Wednesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "smoothie-packs",
+              "recipe_name": "smoothie packs",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Prep-Day Avocado Toast",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "mediterranean-grain-bowl",
+              "recipe_name": "mediterranean grain bowl",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "classic-hummus",
+              "recipe_name": "classic hummus",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "date": "2026-01-02",
+          "day_of_week": "Thursday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "overnight-oats",
+              "recipe_name": "overnight oats",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "mediterranean-grain-bowl",
+              "recipe_name": "mediterranean grain bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "loaded-black-bean-tacos",
+              "recipe_name": "loaded black bean tacos",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "peanut-butter-energy-balls",
+              "recipe_name": "peanut butter energy balls",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "date": "2026-01-03",
+          "day_of_week": "Friday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "chickpea-scramble-base",
+              "recipe_name": "chickpea scramble base",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "taco-salad-bowl",
+              "recipe_name": "taco salad bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "lentil-walnut-lettuce-wraps",
+              "recipe_name": "lentil walnut lettuce wraps",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "spiced-roasted-chickpeas",
+              "recipe_name": "spiced roasted chickpeas",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "date": "2026-01-04",
+          "day_of_week": "Saturday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "smoothie-packs",
+              "recipe_name": "smoothie packs",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "big-greek-salad",
+              "recipe_name": "big greek salad",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "burrito-bowl",
+              "recipe_name": "burrito bowl",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "classic-hummus",
+              "recipe_name": "classic hummus",
+              "display_order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "week-1",
       "week_number": 1,
       "title": "Week 1: Mediterranean + Mexican",
       "theme": "Mediterranean + Mexican",
-      "start_date": "2026-01-01",
-      "end_date": "2026-01-07",
+      "start_date": "2026-01-05",
+      "end_date": "2026-01-11",
       "components": [
         {
           "recipe_id": "cilantro-lime-rice",
@@ -14192,8 +14514,8 @@
       "days": [
         {
           "day_number": 1,
-          "date": "2026-01-01",
-          "day_of_week": "Thursday",
+          "date": "2026-01-05",
+          "day_of_week": "Sunday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14223,8 +14545,8 @@
         },
         {
           "day_number": 2,
-          "date": "2026-01-02",
-          "day_of_week": "Friday",
+          "date": "2026-01-06",
+          "day_of_week": "Monday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14254,8 +14576,8 @@
         },
         {
           "day_number": 3,
-          "date": "2026-01-03",
-          "day_of_week": "Saturday",
+          "date": "2026-01-07",
+          "day_of_week": "Tuesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14285,8 +14607,8 @@
         },
         {
           "day_number": 4,
-          "date": "2026-01-04",
-          "day_of_week": "Sunday",
+          "date": "2026-01-08",
+          "day_of_week": "Wednesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14316,8 +14638,8 @@
         },
         {
           "day_number": 5,
-          "date": "2026-01-05",
-          "day_of_week": "Monday",
+          "date": "2026-01-09",
+          "day_of_week": "Thursday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14347,8 +14669,8 @@
         },
         {
           "day_number": 6,
-          "date": "2026-01-06",
-          "day_of_week": "Tuesday",
+          "date": "2026-01-10",
+          "day_of_week": "Friday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14378,8 +14700,8 @@
         },
         {
           "day_number": 7,
-          "date": "2026-01-07",
-          "day_of_week": "Wednesday",
+          "date": "2026-01-11",
+          "day_of_week": "Saturday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14414,8 +14736,8 @@
       "week_number": 2,
       "title": "Week 2: Indian + Asian",
       "theme": "Indian + Asian",
-      "start_date": "2026-01-08",
-      "end_date": "2026-01-14",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
       "components": [
         {
           "recipe_id": "coconut-basmati-rice",
@@ -14601,8 +14923,8 @@
       "days": [
         {
           "day_number": 1,
-          "date": "2026-01-08",
-          "day_of_week": "Thursday",
+          "date": "2026-01-12",
+          "day_of_week": "Sunday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14632,8 +14954,8 @@
         },
         {
           "day_number": 2,
-          "date": "2026-01-09",
-          "day_of_week": "Friday",
+          "date": "2026-01-13",
+          "day_of_week": "Monday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14663,8 +14985,8 @@
         },
         {
           "day_number": 3,
-          "date": "2026-01-10",
-          "day_of_week": "Saturday",
+          "date": "2026-01-14",
+          "day_of_week": "Tuesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14694,8 +15016,8 @@
         },
         {
           "day_number": 4,
-          "date": "2026-01-11",
-          "day_of_week": "Sunday",
+          "date": "2026-01-15",
+          "day_of_week": "Wednesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14725,8 +15047,8 @@
         },
         {
           "day_number": 5,
-          "date": "2026-01-12",
-          "day_of_week": "Monday",
+          "date": "2026-01-16",
+          "day_of_week": "Thursday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14756,8 +15078,8 @@
         },
         {
           "day_number": 6,
-          "date": "2026-01-13",
-          "day_of_week": "Tuesday",
+          "date": "2026-01-17",
+          "day_of_week": "Friday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14787,8 +15109,8 @@
         },
         {
           "day_number": 7,
-          "date": "2026-01-14",
-          "day_of_week": "Wednesday",
+          "date": "2026-01-18",
+          "day_of_week": "Saturday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -14823,8 +15145,8 @@
       "week_number": 3,
       "title": "Week 3: Middle Eastern + American Comfort",
       "theme": "Middle Eastern + American Comfort",
-      "start_date": "2026-01-15",
-      "end_date": "2026-01-21",
+      "start_date": "2026-01-19",
+      "end_date": "2026-01-25",
       "components": [
         {
           "recipe_id": "mujadara",
@@ -15032,8 +15354,8 @@
       "days": [
         {
           "day_number": 1,
-          "date": "2026-01-15",
-          "day_of_week": "Thursday",
+          "date": "2026-01-19",
+          "day_of_week": "Sunday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15063,8 +15385,8 @@
         },
         {
           "day_number": 2,
-          "date": "2026-01-16",
-          "day_of_week": "Friday",
+          "date": "2026-01-20",
+          "day_of_week": "Monday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15094,8 +15416,8 @@
         },
         {
           "day_number": 3,
-          "date": "2026-01-17",
-          "day_of_week": "Saturday",
+          "date": "2026-01-21",
+          "day_of_week": "Tuesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15125,8 +15447,8 @@
         },
         {
           "day_number": 4,
-          "date": "2026-01-18",
-          "day_of_week": "Sunday",
+          "date": "2026-01-22",
+          "day_of_week": "Wednesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15156,8 +15478,8 @@
         },
         {
           "day_number": 5,
-          "date": "2026-01-19",
-          "day_of_week": "Monday",
+          "date": "2026-01-23",
+          "day_of_week": "Thursday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15187,8 +15509,8 @@
         },
         {
           "day_number": 6,
-          "date": "2026-01-20",
-          "day_of_week": "Tuesday",
+          "date": "2026-01-24",
+          "day_of_week": "Friday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15218,8 +15540,8 @@
         },
         {
           "day_number": 7,
-          "date": "2026-01-21",
-          "day_of_week": "Wednesday",
+          "date": "2026-01-25",
+          "day_of_week": "Saturday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15254,8 +15576,8 @@
       "week_number": 4,
       "title": "Week 4: Thai + Italian",
       "theme": "Thai + Italian",
-      "start_date": "2026-01-22",
-      "end_date": "2026-01-28",
+      "start_date": "2026-01-26",
+      "end_date": "2026-02-01",
       "components": [
         {
           "recipe_id": "jasmine-rice",
@@ -15425,8 +15747,8 @@
       "days": [
         {
           "day_number": 1,
-          "date": "2026-01-22",
-          "day_of_week": "Thursday",
+          "date": "2026-01-26",
+          "day_of_week": "Sunday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15456,8 +15778,8 @@
         },
         {
           "day_number": 2,
-          "date": "2026-01-23",
-          "day_of_week": "Friday",
+          "date": "2026-01-27",
+          "day_of_week": "Monday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15487,8 +15809,8 @@
         },
         {
           "day_number": 3,
-          "date": "2026-01-24",
-          "day_of_week": "Saturday",
+          "date": "2026-01-28",
+          "day_of_week": "Tuesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15518,8 +15840,8 @@
         },
         {
           "day_number": 4,
-          "date": "2026-01-25",
-          "day_of_week": "Sunday",
+          "date": "2026-01-29",
+          "day_of_week": "Wednesday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15549,8 +15871,8 @@
         },
         {
           "day_number": 5,
-          "date": "2026-01-26",
-          "day_of_week": "Monday",
+          "date": "2026-01-30",
+          "day_of_week": "Thursday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15580,8 +15902,8 @@
         },
         {
           "day_number": 6,
-          "date": "2026-01-27",
-          "day_of_week": "Tuesday",
+          "date": "2026-01-31",
+          "day_of_week": "Friday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15611,8 +15933,8 @@
         },
         {
           "day_number": 7,
-          "date": "2026-01-28",
-          "day_of_week": "Wednesday",
+          "date": "2026-02-01",
+          "day_of_week": "Saturday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15645,10 +15967,425 @@
     {
       "id": "week-5",
       "week_number": 5,
-      "title": "Week 5: Best Of Veganuary Finale",
+      "title": "Week 5: Mediterranean + Mexican",
+      "theme": "Mediterranean + Mexican",
+      "start_date": "2026-02-02",
+      "end_date": "2026-02-08",
+      "components": [
+        {
+          "recipe_id": "cilantro-lime-rice",
+          "component_type": "grains"
+        },
+        {
+          "recipe_id": "lemon-herb-quinoa",
+          "component_type": "grains"
+        },
+        {
+          "recipe_id": "spiced-mediterranean-chickpeas",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "smoky-black-beans",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "lentil-walnut-taco-meat",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "cashew-tzatziki",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "chipotle-crema",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "lemon-tahini-dressing",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "mediterranean-roasted-vegetables",
+          "component_type": "vegetables"
+        },
+        {
+          "recipe_id": "fajita-vegetables",
+          "component_type": "vegetables"
+        },
+        {
+          "recipe_id": "overnight-oats",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "chickpea-scramble-base",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "smoothie-packs",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "classic-hummus",
+          "component_type": "snacks"
+        },
+        {
+          "recipe_id": "peanut-butter-energy-balls",
+          "component_type": "snacks"
+        },
+        {
+          "recipe_id": "spiced-roasted-chickpeas",
+          "component_type": "snacks"
+        }
+      ],
+      "prep_steps": [
+        {
+          "step_number": 0,
+          "time_minutes": 0,
+          "description": "Start quinoa (Instant Pot or stovetop)",
+          "recipe_id": "lemon-herb-quinoa"
+        },
+        {
+          "step_number": 1,
+          "time_minutes": 5,
+          "description": "Start lentils cooking",
+          "recipe_id": "lentil-walnut-taco-meat"
+        },
+        {
+          "step_number": 2,
+          "time_minutes": 10,
+          "description": "Soak cashews in boiling water",
+          "recipe_id": null
+        },
+        {
+          "step_number": 3,
+          "time_minutes": 10,
+          "description": "Chop all onions, peppers, garlic (mise en place)",
+          "recipe_id": null
+        },
+        {
+          "step_number": 4,
+          "time_minutes": 25,
+          "description": "Start rice cooking",
+          "recipe_id": "cilantro-lime-rice"
+        },
+        {
+          "step_number": 5,
+          "time_minutes": 30,
+          "description": "Prep and roast Mediterranean vegetables",
+          "recipe_id": "mediterranean-roasted-vegetables"
+        },
+        {
+          "step_number": 6,
+          "time_minutes": 35,
+          "description": "Make lentil-walnut meat (lentils should be done)",
+          "recipe_id": "lentil-walnut-taco-meat"
+        },
+        {
+          "step_number": 7,
+          "time_minutes": 50,
+          "description": "Make smoky black beans",
+          "recipe_id": "smoky-black-beans"
+        },
+        {
+          "step_number": 8,
+          "time_minutes": 65,
+          "description": "Make spiced chickpeas",
+          "recipe_id": "spiced-mediterranean-chickpeas"
+        },
+        {
+          "step_number": 9,
+          "time_minutes": 75,
+          "description": "Prep and roast fajita vegetables",
+          "recipe_id": "fajita-vegetables"
+        },
+        {
+          "step_number": 10,
+          "time_minutes": 80,
+          "description": "Blend cashew tzatziki",
+          "recipe_id": "cashew-tzatziki"
+        },
+        {
+          "step_number": 11,
+          "time_minutes": 90,
+          "description": "Blend chipotle crema",
+          "recipe_id": "chipotle-crema"
+        },
+        {
+          "step_number": 12,
+          "time_minutes": 95,
+          "description": "Blend lemon-tahini dressing",
+          "recipe_id": "lemon-tahini-dressing"
+        },
+        {
+          "step_number": 13,
+          "time_minutes": 100,
+          "description": "Make hummus",
+          "recipe_id": "classic-hummus"
+        },
+        {
+          "step_number": 14,
+          "time_minutes": 110,
+          "description": "Make energy balls",
+          "recipe_id": "peanut-butter-energy-balls"
+        },
+        {
+          "step_number": 15,
+          "time_minutes": 120,
+          "description": "Prep overnight oats (3 jars)",
+          "recipe_id": "overnight-oats"
+        },
+        {
+          "step_number": 16,
+          "time_minutes": 130,
+          "description": "Make smoothie freezer packs",
+          "recipe_id": "smoothie-packs"
+        },
+        {
+          "step_number": 17,
+          "time_minutes": 135,
+          "description": "Prep chickpea scramble base",
+          "recipe_id": "chickpea-scramble-base"
+        },
+        {
+          "step_number": 18,
+          "time_minutes": 145,
+          "description": "Roast snacking chickpeas (if oven still on)",
+          "recipe_id": "spiced-roasted-chickpeas"
+        },
+        {
+          "step_number": 19,
+          "time_minutes": 150,
+          "description": "Clean up and store everything",
+          "recipe_id": null
+        }
+      ],
+      "days": [
+        {
+          "day_number": 1,
+          "date": "2026-02-02",
+          "day_of_week": "Sunday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "smoothie-packs",
+              "recipe_name": "smoothie packs",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Use Week 4 Leftovers",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "mediterranean-grain-bowl",
+              "recipe_name": "mediterranean grain bowl",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "classic-hummus",
+              "recipe_name": "classic hummus",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "date": "2026-02-03",
+          "day_of_week": "Monday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "overnight-oats",
+              "recipe_name": "overnight oats",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "mediterranean-grain-bowl",
+              "recipe_name": "mediterranean grain bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "loaded-black-bean-tacos",
+              "recipe_name": "loaded black bean tacos",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "peanut-butter-energy-balls",
+              "recipe_name": "peanut butter energy balls",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "date": "2026-02-04",
+          "day_of_week": "Tuesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "chickpea-scramble-base",
+              "recipe_name": "chickpea scramble base",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "taco-salad-bowl",
+              "recipe_name": "taco salad bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "lentil-walnut-lettuce-wraps",
+              "recipe_name": "lentil walnut lettuce wraps",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "spiced-roasted-chickpeas",
+              "recipe_name": "spiced roasted chickpeas",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "date": "2026-02-05",
+          "day_of_week": "Wednesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "smoothie-packs",
+              "recipe_name": "smoothie packs",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "big-greek-salad",
+              "recipe_name": "big greek salad",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "burrito-bowl",
+              "recipe_name": "burrito bowl",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "classic-hummus",
+              "recipe_name": "classic hummus",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "date": "2026-02-06",
+          "day_of_week": "Thursday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "overnight-oats",
+              "recipe_name": "overnight oats",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "mediterranean-mezze-plate",
+              "recipe_name": "mediterranean mezze plate",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "stuffed-sweet-potatoes",
+              "recipe_name": "stuffed sweet potatoes",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "peanut-butter-energy-balls",
+              "recipe_name": "peanut butter energy balls",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 6,
+          "date": "2026-02-07",
+          "day_of_week": "Friday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "chickpea-scramble-base",
+              "recipe_name": "chickpea scramble base",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": "burrito-bowl",
+              "recipe_name": "burrito bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "fajita-night",
+              "recipe_name": "fajita night",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": "spiced-roasted-chickpeas",
+              "recipe_name": "spiced roasted chickpeas",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 7,
+          "date": "2026-02-08",
+          "day_of_week": "Saturday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": "overnight-oats",
+              "recipe_name": "overnight oats",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Use-It-Up Bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": null,
+              "recipe_name": "Clean-Out Bowl",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": null,
+              "recipe_name": "Whatever's left",
+              "display_order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-6",
+      "week_number": 6,
+      "title": "Week 6: Best Of Veganuary Finale",
       "theme": "Best Of Favorites",
-      "start_date": "2026-01-29",
-      "end_date": "2026-01-31",
+      "start_date": "2026-02-09",
+      "end_date": "2026-02-11",
       "components": [
         {
           "recipe_id": "cilantro-lime-rice",
@@ -15766,8 +16503,8 @@
       "days": [
         {
           "day_number": 1,
-          "date": "2026-01-29",
-          "day_of_week": "Thursday",
+          "date": "2026-02-09",
+          "day_of_week": "Sunday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15778,7 +16515,7 @@
             {
               "meal_type": "lunch",
               "recipe_id": null,
-              "recipe_name": "Week 4 Leftovers",
+              "recipe_name": "Week 5 Leftovers",
               "display_order": 1
             },
             {
@@ -15797,8 +16534,8 @@
         },
         {
           "day_number": 2,
-          "date": "2026-01-30",
-          "day_of_week": "Friday",
+          "date": "2026-02-10",
+          "day_of_week": "Monday",
           "meals": [
             {
               "meal_type": "breakfast",
@@ -15828,8 +16565,8 @@
         },
         {
           "day_number": 3,
-          "date": "2026-01-31",
-          "day_of_week": "Saturday",
+          "date": "2026-02-11",
+          "day_of_week": "Tuesday",
           "meals": [
             {
               "meal_type": "breakfast",
