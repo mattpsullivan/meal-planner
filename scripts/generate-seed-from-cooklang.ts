@@ -139,6 +139,9 @@ interface Mealplan {
 
 // =========== Category Detection ===========
 
+// Keep in sync with CATEGORY_KEYWORDS in src/utils/ingredient-parser.ts.
+// Matching is first-hit substring in insertion order, so ordering encodes
+// precedence — see the note in that file for the meat/seafood/dairy rules.
 const CATEGORY_KEYWORDS: Record<string, string[]> = {
   produce: [
     'onion',
@@ -168,6 +171,8 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
     'romaine',
     'cherry tomatoes',
     'bell',
+    'eggplant',
+    'butternut',
   ],
   pantry: [
     'flour',
@@ -178,6 +183,8 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
     'dried',
     'broth',
     'stock',
+    'fish sauce',
+    'oyster sauce',
     'tortilla',
     'syrup',
     'cocoa',
@@ -185,7 +192,38 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
     'chipotle',
     'adobo',
   ],
-  refrigerated: ['milk', 'yogurt', 'cream', 'tofu', 'tempeh', 'feta', 'cheese', 'salsa'],
+  'meat-poultry': [
+    'chicken',
+    'turkey',
+    'beef',
+    'pork',
+    'bacon',
+    'sausage',
+    'steak',
+    'lamb',
+    'chorizo',
+    'prosciutto',
+    'pancetta',
+    'meatball',
+  ],
+  seafood: [
+    'salmon',
+    'shrimp',
+    'tuna',
+    'fish',
+    'cod',
+    'crab',
+    'scallop',
+    'shellfish',
+    'tilapia',
+    'anchovy',
+    'sardine',
+    'halibut',
+    'mussel',
+    'clam',
+    'lobster',
+  ],
+  refrigerated: ['tofu', 'tempeh', 'salsa', 'hummus'],
   frozen: ['frozen'],
   spices: [
     'cumin',
@@ -213,6 +251,20 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
     'tahini',
     'chia',
     'hemp',
+  ],
+  'dairy-eggs': [
+    'milk',
+    'yogurt',
+    'cream',
+    'feta',
+    'cheese',
+    'egg',
+    'butter',
+    'parmesan',
+    'mozzarella',
+    'ricotta',
+    'ghee',
+    'buttermilk',
   ],
   grains: ['rice', 'quinoa', 'oat', 'barley', 'farro', 'bulgur'],
   legumes: ['bean', 'lentil', 'chickpea', 'pea'],

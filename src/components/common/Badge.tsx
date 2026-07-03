@@ -2,6 +2,8 @@
 // For tags, labels, and status indicators
 
 import type { ReactNode } from 'react';
+import type { Diet } from '@/types';
+import { DIET_LABELS } from '@/lib/diet';
 
 type BadgeVariant = 'default' | 'green' | 'yellow' | 'red' | 'blue' | 'purple';
 type BadgeSize = 'sm' | 'md';
@@ -56,6 +58,18 @@ export function MealTypeBadge({ type }: { type: string }) {
   return <Badge variant={variants[type.toLowerCase()] ?? 'default'}>{type}</Badge>;
 }
 
+// Diet badge (vegan / vegetarian / pescatarian / omnivore)
+const dietVariants: Record<Diet, BadgeVariant> = {
+  vegan: 'green',
+  vegetarian: 'yellow',
+  pescatarian: 'blue',
+  omnivore: 'red',
+};
+
+export function DietBadge({ diet }: { diet: Diet }) {
+  return <Badge variant={dietVariants[diet]}>{DIET_LABELS[diet]}</Badge>;
+}
+
 // Category badges for grocery items
 export function CategoryBadge({ category }: { category: string }) {
   // Defensive: ensure category is a string before rendering
@@ -66,12 +80,17 @@ export function CategoryBadge({ category }: { category: string }) {
 
   const variants: Record<string, BadgeVariant> = {
     produce: 'green',
-    protein: 'red',
+    'meat-poultry': 'red',
+    seafood: 'blue',
+    'dairy-eggs': 'blue',
     grains: 'yellow',
-    dairy: 'blue',
+    legumes: 'green',
+    'nuts-seeds': 'yellow',
     pantry: 'default',
+    refrigerated: 'blue',
     frozen: 'purple',
-    condiments: 'yellow',
+    'oils-vinegars': 'default',
+    spices: 'yellow',
   };
 
   return (

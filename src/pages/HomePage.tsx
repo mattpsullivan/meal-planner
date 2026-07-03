@@ -29,6 +29,12 @@ export function HomePage() {
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900">Vegan Meal Prep</h1>
           <p className="mt-2 text-lg text-gray-600">Your 5-week plant-based meal planning guide</p>
+          <Link
+            to={routes.recipes()}
+            className="mt-3 inline-block text-sm font-medium text-green-700 hover:text-green-800"
+          >
+            Browse all recipes →
+          </Link>
         </div>
 
         {/* Week cards grid */}

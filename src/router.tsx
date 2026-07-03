@@ -73,6 +73,9 @@ const PrepPage = lazy(() => import('./pages/PrepPage').then((m) => ({ default: m
 const RecipePage = lazy(() =>
   import('./pages/RecipePage').then((m) => ({ default: m.RecipePage }))
 );
+const RecipesPage = lazy(() =>
+  import('./pages/RecipesPage').then((m) => ({ default: m.RecipesPage }))
+);
 const NotFoundPage = lazy(() =>
   import('./pages/NotFoundPage').then((m) => ({ default: m.NotFoundPage }))
 );
@@ -136,6 +139,14 @@ export const router = createHashRouter([
         ],
       },
       {
+        path: 'recipes',
+        element: (
+          <LazyPage>
+            <RecipesPage />
+          </LazyPage>
+        ),
+      },
+      {
         path: 'recipe/:recipeId',
         element: (
           <LazyPage>
@@ -168,4 +179,5 @@ export const routes = {
   shop: (weekId: number | string) => `/week/${String(weekId)}/shop`,
   prep: (weekId: number | string) => `/week/${String(weekId)}/prep`,
   recipe: (recipeId: number | string) => `/recipe/${String(recipeId)}`,
+  recipes: () => '/recipes',
 } as const;

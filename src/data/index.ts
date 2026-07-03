@@ -4,7 +4,9 @@
  */
 
 import seedData from './seed.json';
+import { combineDiets, dietFromCategory, isDiet } from '@/lib/diet';
 import type {
+  Diet,
   Recipe,
   RecipeWithDetails,
   Ingredient,
@@ -119,6 +121,9 @@ function formatTimeMarker(minutes: number): string {
 function mapCategory(cat: string): IngredientCategory {
   const mapping: Record<string, IngredientCategory> = {
     produce: 'produce',
+    'meat-poultry': 'meat-poultry',
+    seafood: 'seafood',
+    'dairy-eggs': 'dairy-eggs',
     pantry: 'pantry',
     refrigerated: 'refrigerated',
     frozen: 'frozen',
@@ -146,6 +151,7 @@ function transformRecipe(seed: SeedRecipe, index: number): Recipe {
     notes: seed.storage_instructions ?? undefined,
     sourceType: 'import',
     recipeType: (seed.recipe_type || 'component') as Recipe['recipeType'],
+    diet: deriveDiet(seed),
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
@@ -228,6 +234,40 @@ function transformRecipeWithDetails(
 const seedRecipes = (seedData as unknown as { recipes: SeedRecipe[]; weeks: SeedWeek[] }).recipes;
 const seedWeeks = (seedData as unknown as { recipes: SeedRecipe[]; weeks: SeedWeek[] }).weeks;
 
+// Derive each recipe's diet (hybrid: an explicit diet-named tag wins, otherwise
+// infer from ingredient categories, rolling up referenced component recipes so a
+// meal inherits the broadest diet of anything it assembles). Memoized; the stack
+// set guards against cyclic component references.
+const seedRecipesById = new Map(seedRecipes.map((r) => [r.id, r]));
+const dietCache = new Map<string, Diet>();
+
+function deriveDiet(seed: SeedRecipe, stack: Set<string> = new Set()): Diet {
+  const cached = dietCache.get(seed.id);
+  if (cached) return cached;
+
+  const explicit = seed.tags.find(isDiet);
+  if (explicit) {
+    dietCache.set(seed.id, explicit);
+    return explicit;
+  }
+
+  if (stack.has(seed.id)) return 'vegan'; // cycle guard; don't cache partial result
+  stack.add(seed.id);
+
+  const ingredientDiets: Diet[] = seed.ingredients.map((ing) => {
+    if (ing.source_recipe_id) {
+      const component = seedRecipesById.get(ing.source_recipe_id);
+      return component ? deriveDiet(component, stack) : 'vegan';
+    }
+    return dietFromCategory(ing.category);
+  });
+
+  stack.delete(seed.id);
+  const diet = combineDiets(ingredientDiets);
+  dietCache.set(seed.id, diet);
+  return diet;
+}
+
 // Pre-compute all recipes
 const recipesWithDetails: RecipeWithDetails[] = seedRecipes.map((r, i) =>
   transformRecipeWithDetails(r, i, seedRecipes)
@@ -248,6 +288,7 @@ const recipes: Recipe[] = recipesWithDetails.map((r) => ({
   sourceUrl: r.sourceUrl,
   sourceImportedAt: r.sourceImportedAt,
   recipeType: r.recipeType,
+  diet: r.diet,
   createdAt: r.createdAt,
   updatedAt: r.updatedAt,
 }));
@@ -308,6 +349,7 @@ function transformWeek(seed: SeedWeek, index: number): WeekWithDetails {
               notes: recipe.notes,
               sourceType: recipe.sourceType,
               recipeType: recipe.recipeType,
+              diet: recipe.diet,
               createdAt: recipe.createdAt,
               updatedAt: recipe.updatedAt,
             }

@@ -20,6 +20,7 @@ export interface Recipe {
   sourceUrl?: string | undefined;
   sourceImportedAt?: string | undefined;
   recipeType: RecipeType;
+  diet?: Diet | undefined;
   createdAt: string;
   updatedAt: string;
 }
@@ -31,6 +32,13 @@ export type SourceType = 'manual' | 'import' | 'url' | 'ai';
 // - meal: Assembly recipes that combine components (e.g., "Mediterranean Grain Bowl")
 // - standalone: Traditional recipes with full ingredients (e.g., "Smoothie")
 export type RecipeType = 'component' | 'meal' | 'standalone';
+
+// Diet classification, from most to least plant-based. A recipe's diet is the
+// broadest category its ingredients require: any meat/poultry -> omnivore,
+// otherwise any seafood -> pescatarian, otherwise any dairy/eggs -> vegetarian,
+// otherwise vegan. Derived from ingredient categories, overridable via an
+// explicit diet-named tag authored in Cooklang. See src/lib/diet.ts.
+export type Diet = 'vegan' | 'vegetarian' | 'pescatarian' | 'omnivore';
 
 export interface Ingredient {
   id: number;
@@ -47,6 +55,9 @@ export interface Ingredient {
 
 export type IngredientCategory =
   | 'produce'
+  | 'meat-poultry'
+  | 'seafood'
+  | 'dairy-eggs'
   | 'pantry'
   | 'refrigerated'
   | 'frozen'
