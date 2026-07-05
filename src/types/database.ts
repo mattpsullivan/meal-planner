@@ -1,6 +1,10 @@
 // Database type definitions
 // See docs/DATA-ARCHITECTURE.md for complete schema documentation
 
+import type { NutritionSummary } from '@/lib/nutrition/types';
+
+export type { NutritionSummary };
+
 // ============================================
 // RECIPES
 // ============================================
@@ -21,6 +25,7 @@ export interface Recipe {
   sourceImportedAt?: string | undefined;
   recipeType: RecipeType;
   diet?: Diet | undefined;
+  nutrition?: NutritionSummary | undefined;
   createdAt: string;
   updatedAt: string;
 }

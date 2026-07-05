@@ -20,6 +20,7 @@ import type {
   DayMealWithRecipe,
   PrepStep,
   WeekComponent,
+  NutritionSummary,
 } from '@/types';
 
 // Type for raw seed data
@@ -40,6 +41,7 @@ interface SeedRecipe {
   instructions: SeedInstruction[];
   tags: string[];
   meal_types: string[];
+  nutrition?: NutritionSummary;
 }
 
 interface SeedIngredient {
@@ -152,6 +154,7 @@ function transformRecipe(seed: SeedRecipe, index: number): Recipe {
     sourceType: 'import',
     recipeType: (seed.recipe_type || 'component') as Recipe['recipeType'],
     diet: deriveDiet(seed),
+    nutrition: seed.nutrition,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };

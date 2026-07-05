@@ -42,3 +42,13 @@ export interface NutritionData {
   ingredients: Record<string, IngredientNutritionEntry>;
   components: Record<string, ComponentDensityEntry>;
 }
+
+// The nutrition block stored per recipe in seed.json and surfaced in the app
+// (a RecipeNutrition without the build-only unmapped_ingredients list).
+export interface NutritionSummary {
+  per_serving: Macros;
+  total: Macros;
+  total_grams: number;
+  servings: number;
+  coverage: number;
+}
