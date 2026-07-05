@@ -292,6 +292,7 @@ const recipes: Recipe[] = recipesWithDetails.map((r) => ({
   sourceImportedAt: r.sourceImportedAt,
   recipeType: r.recipeType,
   diet: r.diet,
+  nutrition: r.nutrition,
   createdAt: r.createdAt,
   updatedAt: r.updatedAt,
 }));
