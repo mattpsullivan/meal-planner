@@ -1,7 +1,7 @@
 {
   "name": "vegan-meal-prep",
   "version": "0.1.0",
-  "description": "A web application for planning, shopping, prep and cooking vegan meal-prep meals",
+  "description": "A web application for planning, shopping, prepping, and cooking weekly meals",
   "type": "module",
   "bin": {
     "vmp": "./packages/cli/bin/vmp.js"
@@ -28,11 +28,11 @@
     "prepare": "husky"
   },
   "keywords": [
-    "vegan",
+    "meal-planning",
     "meal-prep",
     "recipes",
     "cooking",
-    "plant-based"
+    "vegan"
   ],
   "author": "Matt Sullivan",
   "license": "MIT",

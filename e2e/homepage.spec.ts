@@ -5,7 +5,7 @@ test.describe('Homepage', () => {
     await page.goto('/');
 
     // Wait for the app to initialize and render
-    await expect(page.getByRole('heading', { name: 'Vegan Meal Prep' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Meal Planner' })).toBeVisible();
   });
 
   test('should display week cards after database initialization', async ({ page }) => {
@@ -48,7 +48,7 @@ test.describe('Homepage', () => {
     await page.goto('/');
 
     // Wait for content to load
-    await expect(page.getByRole('heading', { name: 'Vegan Meal Prep' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Meal Planner' })).toBeVisible();
 
     // Error message should not be present
     await expect(page.getByText('Failed to load weeks')).not.toBeVisible();
