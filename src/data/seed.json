@@ -42,7 +42,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -367,7 +367,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -538,7 +538,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -645,7 +645,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -661,7 +661,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -1168,7 +1168,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 3,
           "source_recipe_id": null
         },
@@ -1212,7 +1212,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 7,
           "source_recipe_id": null
         },
@@ -1278,7 +1278,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 13,
           "source_recipe_id": null
         }
@@ -1379,7 +1379,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 4,
           "source_recipe_id": null
         }
@@ -1466,7 +1466,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 4,
           "source_recipe_id": null
         },
@@ -1569,7 +1569,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 3,
           "source_recipe_id": null
         },
@@ -1634,7 +1634,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 8,
           "source_recipe_id": null
         }
@@ -1788,7 +1788,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -1873,7 +1873,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "other",
+          "category": "dairy-eggs",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -1889,7 +1889,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -2193,7 +2193,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave with splash of water, covered.",
-      "source_week": 4,
+      "source_week": 7,
       "ingredients": [
         {
           "name": "jasmine rice",
@@ -3108,7 +3108,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 10,
           "source_recipe_id": null
         },
@@ -3591,6 +3591,311 @@
         "When cauliflower is done, immediately toss with glaze and sesame seeds."
       ],
       "tags": ["protein", "vegan", "soy-free", "proteins"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component"
+    },
+    {
+      "id": "garlic-lime-shrimp",
+      "name": "Garlic-Lime Shrimp",
+      "description": "Mexican recipe",
+      "servings": 4,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 2,
+      "storage_instructions": "refrigerated. Best fresh. If you must, warm gently 30-45 seconds",
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "large shrimp",
+          "quantity": 1.5,
+          "unit": "lbs",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "seafood",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "chili powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "olive oil",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic",
+          "quantity": 3,
+          "unit": "cloves",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime juice",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "fresh cilantro",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 7,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Pat large shrimp dry with a paper towel, then toss with kosher salt, chili powder, and garlic powder.",
+        "Heat olive oil in a [cookware] over medium-high until it shimmers.",
+        "Add the shrimp in a single layer",
+        "Flip each shrimp, add garlic, and cook [timer] more, just until opaque throughout.",
+        "Kill the heat. Squeeze in lime juice and toss with fresh cilantro."
+      ],
+      "tags": [
+        "protein",
+        "seafood",
+        "high-protein",
+        "quick-cook",
+        "gluten-free",
+        "soy-free",
+        "proteins"
+      ],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component"
+    },
+    {
+      "id": "ground-turkey-chili",
+      "name": "Ground Turkey Chili",
+      "description": "American recipe",
+      "servings": 6,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 5,
+      "storage_instructions": "refrigerated. Saucepan over medium or microwave; add a splash of water if it thickened.",
+      "source_week": 7,
+      "ingredients": [
+        {
+          "name": "olive oil",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground turkey",
+          "quantity": 1,
+          "unit": "lb",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "yellow onion",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "bell pepper",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic",
+          "quantity": 3,
+          "unit": "cloves",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "chili powder",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground cumin",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "diced tomatoes",
+          "quantity": 1,
+          "unit": "can",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kidney beans",
+          "quantity": 1,
+          "unit": "can",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "legumes",
+          "display_order": 9,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black beans",
+          "quantity": 1,
+          "unit": "can",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "legumes",
+          "display_order": 10,
+          "source_recipe_id": null
+        },
+        {
+          "name": "chicken broth",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 11,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 12,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Heat olive oil in a [cookware] over medium-high.",
+        "Add ground turkey and cook, breaking it up with a [cookware], [timer] until no longer pink. Let it sit still for a moment between stirs",
+        "Push the turkey to one side, add yellow onion and bell pepper, and cook [timer] until soft.",
+        "Stir in garlic, chili powder, ground cumin, and smoked paprika; cook [timer] until fragrant.",
+        "Add diced tomatoes, kidney beans, black beans, and chicken broth. Stir well.",
+        "Bring to a simmer, then lower the heat and cook uncovered [timer], stirring now and then, until thickened.",
+        "Season with kosher salt, then taste and adjust."
+      ],
+      "tags": [
+        "protein",
+        "poultry",
+        "high-protein",
+        "one-pot",
+        "gluten-free",
+        "soy-free",
+        "batch-prep",
+        "proteins"
+      ],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "component"
     },
@@ -4458,7 +4763,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 5,
           "source_recipe_id": null
         },
@@ -4552,6 +4857,266 @@
         "Garnish with fresh cilantro and fresh basil when serving."
       ],
       "tags": ["protein", "vegan", "gluten-free", "soy-free", "proteins"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component"
+    },
+    {
+      "id": "roast-chicken-thighs",
+      "name": "Shawarma-Spiced Roast Chicken Thighs",
+      "description": "Middle Eastern recipe",
+      "servings": 6,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 4,
+      "storage_instructions": "refrigerated. Skillet over medium until sizzling, or microwave covered 90 seconds.",
+      "source_week": 7,
+      "ingredients": [
+        {
+          "name": "olive oil",
+          "quantity": 3,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lemon juice",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic",
+          "quantity": 4,
+          "unit": "cloves",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground cumin",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground coriander",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground turmeric",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground cinnamon",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black pepper",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 9,
+          "source_recipe_id": null
+        },
+        {
+          "name": "boneless skinless chicken thighs",
+          "quantity": 2.5,
+          "unit": "lbs",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 10,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "In a [cookware], whisk olive oil, lemon juice, garlic, ground cumin, ground coriander, smoked paprika, ground turmeric, ground cinnamon, kosher salt, and black pepper into a loose paste.",
+        "Add boneless skinless chicken thighs and turn until every piece is coated. Marinate at least [timer], or up to a day in the fridge.",
+        "Heat [cookware] to  (220C). Spread the thighs on a [cookware] in a single layer with space between them",
+        "Roast [timer], until a [cookware] reads  (80C). Thighs are actually best cooked past the  minimum, to around 175F, where the connective tissue softens and they turn tender rather than rubbery.",
+        "Rest [timer], then chop into bite-size pieces."
+      ],
+      "tags": [
+        "protein",
+        "poultry",
+        "high-protein",
+        "gluten-free",
+        "soy-free",
+        "batch-prep",
+        "proteins"
+      ],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component"
+    },
+    {
+      "id": "sheet-pan-chicken-breast",
+      "name": "Sheet-Pan Chicken Breast",
+      "description": "American recipe",
+      "servings": 5,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 4,
+      "storage_instructions": "refrigerated. Gently in a covered skillet with a splash of water, or microwave 60-90 seconds. Don't overheat or it dries out.",
+      "source_week": 7,
+      "ingredients": [
+        {
+          "name": "chicken breasts",
+          "quantity": 2,
+          "unit": "lbs",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "olive oil",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black pepper",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 5,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Heat [cookware] to  (220C). Line a [cookware] with parchment.",
+        "Pat chicken breasts completely dry with a paper towel",
+        "If a breast is much thicker on one end, lay it under plastic wrap and gently pound the thick part until the whole piece is an even thickness. Even thickness cooks evenly.",
+        "Rub all over with olive oil, then season both sides with kosher salt, black pepper, garlic powder, and smoked paprika.",
+        "Roast [timer], until an instant-read [cookware] pushed into the thickest part reads  (71C). Start checking at",
+        "Rest the chicken [timer] before slicing. This is not optional: cutting early spills the juices, resting keeps them in, and the temperature carries up to a safe  during the rest.",
+        "Slice across the grain (perpendicular to the visible muscle lines) for the most tender bite."
+      ],
+      "tags": [
+        "protein",
+        "poultry",
+        "high-protein",
+        "gluten-free",
+        "soy-free",
+        "batch-prep",
+        "proteins"
+      ],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "component"
     },
@@ -4973,7 +5538,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -4984,7 +5549,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 3,
           "source_recipe_id": null
         },
@@ -5006,7 +5571,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "other",
+          "category": "produce",
           "display_order": 5,
           "source_recipe_id": null
         },
@@ -5331,7 +5896,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -5768,7 +6333,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 1,
           "source_recipe_id": null
         },
@@ -6242,7 +6807,7 @@
       "yield_unit": null,
       "storage_days": 10,
       "storage_instructions": "refrigerated. Serve cold, shake before using.",
-      "source_week": 5,
+      "source_week": 7,
       "ingredients": [
         {
           "name": "tahini",
@@ -6350,6 +6915,126 @@
         "Store in [cookware]. Shake before using. If it thickens, add a splash of water."
       ],
       "tags": ["sauce", "vegan", "gluten-free", "soy-free", "sauces"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component"
+    },
+    {
+      "id": "lime-crema",
+      "name": "Lime Crema",
+      "description": "Mexican recipe",
+      "servings": 8,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 7,
+      "storage_instructions": "refrigerated. Serve cold.",
+      "source_week": 7,
+      "ingredients": [
+        {
+          "name": "sour cream",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "mayonnaise",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "fresh lime juice",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "water",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 6,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "In a [cookware], whisk sour cream, mayonnaise, fresh lime juice, zest of lime, garlic powder, and kosher salt until smooth.",
+        "Thin with water at a time until it drizzles off a spoon.",
+        "Taste and add more lime for brightness."
+      ],
+      "tags": ["sauce", "gluten-free", "soy-free", "sauces"],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "component"
     },
@@ -7032,7 +7717,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 10,
           "source_recipe_id": null
         },
@@ -7085,6 +7770,73 @@
         "Stir in lemon and kosher salt."
       ],
       "tags": ["sauce", "vegan", "gluten-free", "soy-free", "sauces"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component"
+    },
+    {
+      "id": "yogurt-herb-sauce",
+      "name": "Yogurt-Herb Sauce",
+      "description": "Middle Eastern recipe",
+      "servings": 8,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 5,
+      "storage_instructions": "refrigerated. Serve cold.",
+      "source_week": 7,
+      "ingredients": [
+        {
+          "name": "plain greek yogurt",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "fresh lemon juice",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic",
+          "quantity": 1,
+          "unit": "clove",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "water",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 3,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "In a [cookware], stir together plain greek yogurt, fresh lemon juice, garlic(grated",
+        "Thin with water at a time until it's spoonable but not runny.",
+        "Let it rest [timer] so the garlic and herbs bloom, then taste and adjust salt and lemon."
+      ],
+      "tags": ["sauce", "gluten-free", "soy-free", "sauces"],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "component"
     },
@@ -7199,7 +7951,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "other",
+          "category": "produce",
           "display_order": 0,
           "source_recipe_id": null
         },
@@ -9321,7 +10073,7 @@
       "yield_unit": null,
       "storage_days": 5,
       "storage_instructions": "refrigerated. Microwave or eat at room temperature.",
-      "source_week": 6,
+      "source_week": 7,
       "ingredients": [
         {
           "name": "sweet potato",
@@ -9849,7 +10601,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 0,
           "source_recipe_id": "creamy-mashed-potatoes"
         },
@@ -10250,6 +11002,157 @@
       "recipe_type": "meal"
     },
     {
+      "id": "chicken-shawarma-bowl",
+      "name": "Chicken Shawarma Bowl",
+      "description": "Middle Eastern recipe",
+      "servings": 1,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "jasmine-rice",
+          "quantity": {
+            "whole": 0,
+            "num": 3,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "grains",
+          "display_order": 0,
+          "source_recipe_id": "jasmine-rice"
+        },
+        {
+          "name": "roast-chicken-thighs",
+          "quantity": 4,
+          "unit": "oz",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 1,
+          "source_recipe_id": "roast-chicken-thighs"
+        },
+        {
+          "name": "romaine lettuce",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "cucumber",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "cherry tomatoes",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "red onion",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "yogurt-herb-sauce",
+          "quantity": 3,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 6,
+          "source_recipe_id": "yogurt-herb-sauce"
+        },
+        {
+          "name": "pita bread",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kalamata olives",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "sumac",
+          "quantity": null,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 9,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Scoop jasmine-rice into a [cookware].",
+        "Add roast-chicken-thighs.",
+        "Pile on romaine lettuce, cucumber, cherry tomatoes, and red onion.",
+        "Dollop yogurt-herb-sauce over the top.",
+        "Tuck pita bread around the edge for scooping.",
+        "Finish with kalamata olives and a pinch of sumac."
+      ],
+      "tags": ["bowl", "quick-assembly", "high-protein", "bowls"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal"
+    },
+    {
       "id": "coconut-curry-bowl",
       "name": "Coconut Curry Bowl",
       "description": "Thai recipe",
@@ -10522,7 +11425,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 4,
           "source_recipe_id": null
         },
@@ -10547,6 +11450,148 @@
         "Garnish with fresh cilantro."
       ],
       "tags": ["bowl", "quick-assembly", "vegan", "gluten-free", "soy-free", "bowls"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal"
+    },
+    {
+      "id": "egg-fried-rice",
+      "name": "Egg Fried Rice",
+      "description": "Asian recipe",
+      "servings": 1,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "toasted sesame oil",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "eggs",
+          "quantity": 3,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "scallions",
+          "quantity": 4,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic",
+          "quantity": 2,
+          "unit": "cloves",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "jasmine-rice",
+          "quantity": 3,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "grains",
+          "display_order": 4,
+          "source_recipe_id": "jasmine-rice"
+        },
+        {
+          "name": "frozen peas",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "frozen",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "frozen shelled edamame",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "frozen",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "soy sauce",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "rice vinegar",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "toasted sesame oil",
+          "quantity": null,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 9,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Heat toasted sesame oil in a [cookware] over medium-high.",
+        "Crack eggs into the pan, let them set [timer], then scramble just until barely done. Scoop them onto a plate",
+        "Add a little more oil, then scallions and garlic; stir [timer].",
+        "Add jasmine-rice and press it flat into the hot pan. Let it sit [timer] to catch a little color, then toss. Repeat once or twice.",
+        "Add frozen peas and frozen shelled edamame; toss [timer] until hot.",
+        "Push the rice to one side, return the eggs, and add soy sauce and rice vinegar; toss everything together.",
+        "Finish with the reserved scallion greens and a last drizzle of toasted sesame oil."
+      ],
+      "tags": ["bowl", "quick-cook", "uses-leftovers", "bowls"],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "meal"
     },
@@ -11138,7 +12183,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -11505,7 +12550,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -11710,6 +12755,113 @@
       "recipe_type": "meal"
     },
     {
+      "id": "sheet-pan-chicken-bowl",
+      "name": "Sheet-Pan Chicken Bowl",
+      "description": "American recipe",
+      "servings": 1,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "jasmine-rice",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "grains",
+          "display_order": 0,
+          "source_recipe_id": "jasmine-rice"
+        },
+        {
+          "name": "sheet-pan-rainbow-vegetables",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 1,
+          "source_recipe_id": "sheet-pan-rainbow-vegetables"
+        },
+        {
+          "name": "sheet-pan-chicken-breast",
+          "quantity": 4,
+          "unit": "oz",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 2,
+          "source_recipe_id": "sheet-pan-chicken-breast"
+        },
+        {
+          "name": "lemon-tahini-dressing",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": "lemon-tahini-dressing"
+        },
+        {
+          "name": "lemon",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "fresh parsley",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black pepper",
+          "quantity": null,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 6,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Scoop jasmine-rice into a [cookware].",
+        "Add sheet-pan-rainbow-vegetables alongside.",
+        "Fan sheet-pan-chicken-breast over the top.",
+        "Drizzle with lemon-tahini-dressing.",
+        "Finish with a squeeze of lemon, fresh parsley, and black pepper."
+      ],
+      "tags": ["bowl", "quick-assembly", "high-protein", "gluten-free", "bowls"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal"
+    },
+    {
       "id": "stuffed-sweet-potatoes",
       "name": "Stuffed Sweet Potatoes",
       "description": "Mexican recipe",
@@ -11858,6 +13010,122 @@
       "recipe_type": "meal"
     },
     {
+      "id": "turkey-chili-bowl",
+      "name": "Turkey Chili Bowl",
+      "description": "American recipe",
+      "servings": 1,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "jasmine-rice",
+          "quantity": {
+            "whole": 0,
+            "num": 3,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "grains",
+          "display_order": 0,
+          "source_recipe_id": "jasmine-rice"
+        },
+        {
+          "name": "ground-turkey-chili",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 1,
+          "source_recipe_id": "ground-turkey-chili"
+        },
+        {
+          "name": "sharp cheddar cheese",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "avocado",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "red onion",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "fresh cilantro",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 6,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Scoop jasmine-rice into a [cookware], or skip the rice and go straight chili.",
+        "Ladle ground-turkey-chili over the top.",
+        "Add sharp cheddar cheese, avocado, and red onion.",
+        "Finish with fresh cilantro and a squeeze of lime."
+      ],
+      "tags": ["bowl", "quick-assembly", "high-protein", "gluten-free", "bowls"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal"
+    },
+    {
       "id": "vegan-chili-bowl",
       "name": "Vegan Chili Bowl",
       "description": "American recipe",
@@ -11904,7 +13172,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -12329,7 +13597,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 1,
           "source_recipe_id": "creamy-cashew-alfredo"
         },
@@ -12340,7 +13608,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "nuts-seeds",
           "display_order": 2,
           "source_recipe_id": null
         },
@@ -12362,7 +13630,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "other",
+          "category": "dairy-eggs",
           "display_order": 4,
           "source_recipe_id": null
         },
@@ -12453,7 +13721,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "other",
+          "category": "dairy-eggs",
           "display_order": 3,
           "source_recipe_id": null
         }
@@ -12465,6 +13733,152 @@
         "Top with fresh basil and vegan parmesan."
       ],
       "tags": ["pasta", "vegan", "soy-free"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal"
+    },
+    {
+      "id": "white-bean-parmesan-pasta",
+      "name": "White Bean & Greens Pasta",
+      "description": "Italian recipe",
+      "servings": 1,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "short pasta",
+          "quantity": 8,
+          "unit": "oz",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "reserved pasta water",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "olive oil",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic",
+          "quantity": 3,
+          "unit": "cloves",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "red pepper flakes",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "cannellini beans",
+          "quantity": 1,
+          "unit": "can",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "legumes",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "baby spinach",
+          "quantity": 4,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "parmesan",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": null,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black pepper",
+          "quantity": null,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 9,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Bring a [cookware] of well-salted water to a boil and cook short pasta to al dente per the package.",
+        "Before draining, scoop out reserved pasta water and set it aside",
+        "Meanwhile, heat olive oil in a [cookware] over medium. Add garlic and red pepper flakes; cook [timer] until fragrant but not browned.",
+        "Add cannellini beans and baby spinach; toss until the greens wilt, [timer].",
+        "Add the drained pasta and about half the reserved pasta water. Toss hard over medium heat [timer]",
+        "Off the heat, stir in parmesan, loosening with more pasta water as needed. Season with kosher salt and black pepper."
+      ],
+      "tags": ["pasta", "quick-cook", "high-protein"],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "meal"
     },
@@ -12493,7 +13907,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "other",
+          "category": "refrigerated",
           "display_order": 0,
           "source_recipe_id": "classic-hummus"
         },
@@ -12853,7 +14267,7 @@
           "preparation": null,
           "optional": false,
           "note": null,
-          "category": "refrigerated",
+          "category": "dairy-eggs",
           "display_order": 6,
           "source_recipe_id": null
         },
@@ -13526,6 +14940,152 @@
         "Serve with salsa on the side."
       ],
       "tags": ["tacos", "quick-assembly", "vegan", "gluten-free", "soy-free"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal"
+    },
+    {
+      "id": "shrimp-tacos",
+      "name": "Shrimp Tacos with Quick Slaw",
+      "description": "Mexican recipe",
+      "servings": 2,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "green cabbage",
+          "quantity": 2,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime juice",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "olive oil",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "fresh cilantro",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic-lime-shrimp",
+          "quantity": 8,
+          "unit": "oz",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 5,
+          "source_recipe_id": "garlic-lime-shrimp"
+        },
+        {
+          "name": "corn tortillas",
+          "quantity": 6,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime-crema",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 7,
+          "source_recipe_id": "lime-crema"
+        },
+        {
+          "name": "avocado",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 9,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Make the slaw first so it can sit: in a [cookware], toss green cabbage, lime juice, olive oil, fresh cilantro, and kosher salt. Set aside.",
+        "Cook garlic-lime-shrimp, or make it fresh now if you didn't prep it.",
+        "Warm corn tortillas by charring them over a gas flame or in a dry [cookware] until pliable.",
+        "Build each taco: a handful of slaw, then 3-4 shrimp.",
+        "Drizzle with lime-crema and add avocado.",
+        "Serve with lime."
+      ],
+      "tags": ["tacos", "quick-cook", "high-protein"],
       "meal_types": ["lunch", "dinner"],
       "recipe_type": "meal"
     },
@@ -16591,6 +18151,256 @@
               "recipe_id": null,
               "recipe_name": "Celebrate!",
               "display_order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-7",
+      "week_number": 7,
+      "title": "Week 7: Omnivore Weeknights",
+      "theme": "American + Middle Eastern + Mexican + Italian",
+      "start_date": "2026-07-05",
+      "end_date": "2026-07-10",
+      "components": [
+        {
+          "recipe_id": "jasmine-rice",
+          "component_type": "grains"
+        },
+        {
+          "recipe_id": "sheet-pan-chicken-breast",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "roast-chicken-thighs",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "ground-turkey-chili",
+          "component_type": "proteins"
+        },
+        {
+          "recipe_id": "yogurt-herb-sauce",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "lime-crema",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "lemon-tahini-dressing",
+          "component_type": "sauces"
+        },
+        {
+          "recipe_id": "sheet-pan-rainbow-vegetables",
+          "component_type": "vegetables"
+        }
+      ],
+      "prep_steps": [
+        {
+          "step_number": 0,
+          "time_minutes": 0,
+          "description": "Start a big batch of jasmine rice (for bowls all week + Thursday's fried rice)",
+          "recipe_id": "jasmine-rice"
+        },
+        {
+          "step_number": 1,
+          "time_minutes": 5,
+          "description": "Mix the shawarma marinade and coat the chicken thighs; let them sit",
+          "recipe_id": "roast-chicken-thighs"
+        },
+        {
+          "step_number": 2,
+          "time_minutes": 10,
+          "description": "Season chicken breasts and chop vegetables for roasting (mise en place)",
+          "recipe_id": null
+        },
+        {
+          "step_number": 3,
+          "time_minutes": 25,
+          "description": "Roast chicken breasts and the sheet-pan vegetables together at 425F",
+          "recipe_id": "sheet-pan-chicken-breast"
+        },
+        {
+          "step_number": 4,
+          "time_minutes": 30,
+          "description": "Start the turkey chili on the stovetop; let it simmer while the oven runs",
+          "recipe_id": "ground-turkey-chili"
+        },
+        {
+          "step_number": 5,
+          "time_minutes": 55,
+          "description": "Roast the marinated chicken thighs at 425F",
+          "recipe_id": "roast-chicken-thighs"
+        },
+        {
+          "step_number": 6,
+          "time_minutes": 60,
+          "description": "Whisk the yogurt-herb sauce and the lime crema; refrigerate",
+          "recipe_id": null
+        },
+        {
+          "step_number": 7,
+          "time_minutes": 105,
+          "description": "Cool everything and pack into airtight containers; label with dates",
+          "recipe_id": null
+        }
+      ],
+      "days": [
+        {
+          "day_number": 1,
+          "date": "2026-07-05",
+          "day_of_week": "Sunday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Prep-day sandwiches",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "sheet-pan-chicken-bowl",
+              "recipe_name": "sheet pan chicken bowl",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": null,
+              "recipe_name": "Raw veg + hummus while prepping",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "date": "2026-07-06",
+          "day_of_week": "Monday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Leftover chicken bowl",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "chicken-shawarma-bowl",
+              "recipe_name": "chicken shawarma bowl",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "date": "2026-07-07",
+          "day_of_week": "Tuesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Leftover shawarma bowl or wrap",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "shrimp-tacos",
+              "recipe_name": "shrimp tacos",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "date": "2026-07-08",
+          "day_of_week": "Wednesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Big salad + leftover protein",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "white-bean-parmesan-pasta",
+              "recipe_name": "white bean parmesan pasta",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "date": "2026-07-09",
+          "day_of_week": "Thursday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Leftover pasta",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "egg-fried-rice",
+              "recipe_name": "egg fried rice",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 6,
+          "date": "2026-07-10",
+          "day_of_week": "Friday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Leftovers, cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "turkey-chili-bowl",
+              "recipe_name": "turkey chili bowl",
+              "display_order": 2
             }
           ]
         }

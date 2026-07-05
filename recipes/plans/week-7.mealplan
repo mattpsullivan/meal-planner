@@ -1,0 +1,203 @@
+# Week 7: Omnivore Weeknights
+# First omnivore plan - Sunday batch prep, quick weeknight dinners.
+# Each dinner teaches one fundamental technique for novice cooks.
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-7
+week_number: 7
+year: 2026
+name: "Week 7: Omnivore Weeknights"
+theme: American + Middle Eastern + Mexican + Italian
+start_date: 2026-07-05
+end_date: 2026-07-10
+
+prep_time_total: 120  # 2 hours of Sunday batch cooking
+
+components:
+  grains:
+    - components/grains/jasmine-rice.cook
+  proteins:
+    - components/proteins/sheet-pan-chicken-breast.cook
+    - components/proteins/roast-chicken-thighs.cook
+    - components/proteins/ground-turkey-chili.cook
+  sauces:
+    - components/sauces/yogurt-herb-sauce.cook
+    - components/sauces/lime-crema.cook
+    - components/sauces/lemon-tahini-dressing.cook
+  vegetables:
+    - components/vegetables/sheet-pan-rainbow-vegetables.cook
+
+days:
+  - day: 1
+    date: 2026-07-05
+    day_name: Sunday
+    is_prep_day: true
+    meals:
+      breakfast:
+        description: "Cook's choice"
+        note: "Eat something easy while the oven does the work"
+      lunch:
+        description: "Prep-day sandwiches"
+      dinner:
+        recipe: meals/bowls/sheet-pan-chicken-bowl.cook
+        note: "Teaches: chicken to temp without drying (thermometer + rest). Uses tonight's fresh sheet-pan chicken."
+      snacks:
+        - description: "Raw veg + hummus while prepping"
+
+  - day: 2
+    date: 2026-07-06
+    day_name: Monday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Leftover chicken bowl"
+      dinner:
+        recipe: meals/bowls/chicken-shawarma-bowl.cook
+        note: "Teaches: assembly + building a sauce (yogurt-herb). Warm the prepped thighs."
+
+  - day: 3
+    date: 2026-07-07
+    day_name: Tuesday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Leftover shawarma bowl or wrap"
+      dinner:
+        recipe: meals/tacos/shrimp-tacos.cook
+        note: "Teaches: fast sauté, not overcooking shellfish. Shrimp cooks fresh tonight (~4 min)."
+
+  - day: 4
+    date: 2026-07-08
+    day_name: Wednesday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Big salad + leftover protein"
+      dinner:
+        recipe: meals/pasta/white-bean-parmesan-pasta.cook
+        note: "Teaches: pasta timing + a pan sauce emulsified with pasta water. Cooked start-to-finish tonight."
+
+  - day: 5
+    date: 2026-07-09
+    day_name: Thursday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Leftover pasta"
+      dinner:
+        recipe: meals/bowls/egg-fried-rice.cook
+        note: "Teaches: egg technique + high-heat skillet, using the day-old batch rice."
+
+  - day: 6
+    date: 2026-07-10
+    day_name: Friday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Leftovers, cook's choice"
+      dinner:
+        recipe: meals/bowls/turkey-chili-bowl.cook
+        note: "Optional / one-pot night. Teaches: brown-build-simmer. Chili is batch-prepped Sunday."
+
+prep_timeline:
+  - time: "0:00"
+    task: Start a big batch of jasmine rice (for bowls all week + Thursday's fried rice)
+    recipe: components/grains/jasmine-rice.cook
+    duration: 20
+  - time: "0:05"
+    task: Mix the shawarma marinade and coat the chicken thighs; let them sit
+    recipe: components/proteins/roast-chicken-thighs.cook
+    duration: 10
+  - time: "0:10"
+    task: Season chicken breasts and chop vegetables for roasting (mise en place)
+    duration: 15
+  - time: "0:25"
+    task: Roast chicken breasts and the sheet-pan vegetables together at 425F
+    recipe: components/proteins/sheet-pan-chicken-breast.cook
+    duration: 25
+  - time: "0:30"
+    task: Start the turkey chili on the stovetop; let it simmer while the oven runs
+    recipe: components/proteins/ground-turkey-chili.cook
+    duration: 40
+  - time: "0:55"
+    task: Roast the marinated chicken thighs at 425F
+    recipe: components/proteins/roast-chicken-thighs.cook
+    duration: 28
+  - time: "1:00"
+    task: Whisk the yogurt-herb sauce and the lime crema; refrigerate
+    duration: 10
+  - time: "1:45"
+    task: Cool everything and pack into airtight containers; label with dates
+    duration: 15
+
+grocery_additions:
+  refrigerated:
+    - name: large shrimp
+      amount: 1
+      unit: lb
+      note: "Peeled/deveined, for Tuesday's tacos. Frozen is fine - thaw in cold water."
+    - name: plain greek yogurt
+      amount: 1
+      unit: cup
+      note: "Yogurt-herb sauce"
+    - name: sour cream
+      amount: 1
+      unit: small tub
+      note: "Lime crema"
+    - name: parmesan
+      amount: 1
+      unit: wedge
+      note: "White bean pasta"
+    - name: sharp cheddar
+      amount: 1
+      unit: small block
+      note: "Turkey chili bowl"
+    - name: eggs
+      amount: 6
+      note: "Egg fried rice (uses 3)"
+  produce:
+    - name: green cabbage
+      amount: 1
+      unit: small head
+      note: "Taco slaw"
+    - name: avocados
+      amount: 4
+      note: "Tacos + chili bowl"
+    - name: limes
+      amount: 6
+      note: "Shrimp, crema, slaw, chili"
+    - name: baby spinach
+      amount: 1
+      unit: bag
+      note: "White bean pasta"
+    - name: cucumber
+      amount: 2
+      note: "Shawarma bowls"
+    - name: fresh herbs (dill, mint, cilantro, parsley)
+      amount: 1
+      unit: bunch each
+  pantry:
+    - name: corn tortillas
+      amount: 12
+      unit: small
+    - name: pita bread
+      amount: 4
+    - name: short pasta (rigatoni)
+      amount: 1
+      unit: lb
+    - name: cannellini beans
+      amount: 1
+      unit: can
+  frozen:
+    - name: peas
+      amount: 1
+      unit: bag
+    - name: shelled edamame
+      amount: 1
+      unit: bag
