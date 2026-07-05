@@ -15,6 +15,8 @@ import * as path from 'path';
 import { fileURLToPath } from 'url';
 import { Parser as CooklangParser } from '@cooklang/cooklang';
 import { parse as parseYaml } from 'yaml';
+import { computeNutrition, roundMacros, type RecipeNutrition } from '../src/lib/nutrition/compute';
+import type { NutritionData } from '../src/lib/nutrition/types';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -50,6 +52,13 @@ interface SeedRecipe {
   tags: string[];
   meal_types: string[];
   recipe_type: 'component' | 'meal' | 'standalone';
+  nutrition?: {
+    per_serving: { kcal: number; protein_g: number; carb_g: number; fat_g: number };
+    total: { kcal: number; protein_g: number; carb_g: number; fat_g: number };
+    total_grams: number;
+    servings: number;
+    coverage: number;
+  };
 }
 
 interface SeedComponent {
@@ -674,6 +683,48 @@ function main(): void {
 
   // Sort weeks by week number
   weeks.sort((a, b) => a.week_number - b.week_number);
+
+  // ---- Nutrition (see docs/NUTRITION.md) ----
+  // Compute calories + macros per recipe, rolling up component references, and
+  // report coverage as a build-time check.
+  const nutritionDataPath = path.join(recipesDir, 'ingredient-nutrition.json');
+  const nutritionData = JSON.parse(fs.readFileSync(nutritionDataPath, 'utf-8')) as NutritionData;
+  const recipeById = new Map(recipes.map((r) => [r.id, r]));
+  const nutritionCache = new Map<string, RecipeNutrition>();
+  const getRecipeById = (id: string): SeedRecipe | undefined => recipeById.get(id);
+
+  const unmappedCounts = new Map<string, number>();
+  let fullyCovered = 0;
+  for (const recipe of recipes) {
+    const n = computeNutrition(recipe, {
+      data: nutritionData,
+      getRecipeById,
+      cache: nutritionCache,
+    });
+    recipe.nutrition = {
+      per_serving: roundMacros(n.per_serving),
+      total: roundMacros(n.total),
+      total_grams: Math.round(n.total_grams),
+      servings: n.servings,
+      coverage: Math.round(n.coverage * 100) / 100,
+    };
+    if (n.coverage >= 1) fullyCovered++;
+    for (const name of n.unmapped_ingredients) {
+      unmappedCounts.set(name, (unmappedCounts.get(name) ?? 0) + 1);
+    }
+  }
+
+  console.log(`\nNutrition coverage: ${fullyCovered}/${recipes.length} recipes fully mapped`);
+  if (unmappedCounts.size > 0) {
+    const top = [...unmappedCounts.entries()].sort((a, b) => b[1] - a[1]);
+    console.log(
+      `  ${unmappedCounts.size} distinct unmapped ingredients (add to recipes/ingredient-nutrition.json):`
+    );
+    for (const [name, count] of top.slice(0, 20)) {
+      console.log(`    ${count}x ${name}`);
+    }
+    if (top.length > 20) console.log(`    ...and ${top.length - 20} more`);
+  }
 
   // Build seed data
   const seedData: SeedData = {
