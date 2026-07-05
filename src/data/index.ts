@@ -241,7 +241,7 @@ const seedWeeks = (seedData as unknown as { recipes: SeedRecipe[]; weeks: SeedWe
 const seedRecipesById = new Map(seedRecipes.map((r) => [r.id, r]));
 const dietCache = new Map<string, Diet>();
 
-function deriveDiet(seed: SeedRecipe, stack: Set<string> = new Set()): Diet {
+function deriveDiet(seed: SeedRecipe, stack = new Set<string>()): Diet {
   const cached = dietCache.get(seed.id);
   if (cached) return cached;
 

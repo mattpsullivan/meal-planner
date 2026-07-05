@@ -42,7 +42,10 @@ export function dietFromCategory(category: string): Diet {
 // Combine ingredient-level diets into the recipe's diet: the broadest
 // (most animal-inclusive) one wins. Empty -> vegan.
 export function combineDiets(diets: readonly Diet[]): Diet {
-  return diets.reduce<Diet>((broadest, d) => (DIET_RANK[d] > DIET_RANK[broadest] ? d : broadest), 'vegan');
+  return diets.reduce<Diet>(
+    (broadest, d) => (DIET_RANK[d] > DIET_RANK[broadest] ? d : broadest),
+    'vegan'
+  );
 }
 
 export function isDiet(value: string): value is Diet {
