@@ -122,7 +122,7 @@ Following the Rainbow Plant Life format, each week will include:
 ## File Organization
 
 ```
-vegan-meal-prep/
+meal-planner/
 ├── PROJECT.md              # This file - project overview
 ├── examples/
 │   └── February 1 Meal Plan.pdf  # Reference format

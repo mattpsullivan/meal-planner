@@ -1,6 +1,6 @@
-# Vegan Meal Prep
+# Meal Planner
 
-A web application for planning, shopping, prep and cooking vegan meal-prep meals.
+A web application for planning, shopping, prepping and cooking household meals - plant-forward omnivore, with vegan recipes as a filterable subset.
 
 ## Features
 
@@ -85,7 +85,7 @@ Or in VS Code: `Ctrl+Shift+P` → "Dev Containers: Rebuild Container"
 ## Project Structure
 
 ```
-vegan-meal-prep/
+meal-planner/
 ├── src/                    # Application source code
 ├── packages/cli/           # CLI tool for exporting meal plans
 │   ├── bin/                # CLI entry point
@@ -147,30 +147,30 @@ This app deploys to GitHub Pages automatically via GitHub Actions when you push 
 2. Under "Build and deployment", select "GitHub Actions"
 3. Push to `main` to trigger deployment
 
-The app will be available at `https://[username].github.io/vegan-meal-prep/`
+The app will be available at `https://[username].github.io/meal-planner/`
 
 ### Manual Deployment
 
 ```bash
 # Build for GitHub Pages
-VITE_BASE_PATH=/vegan-meal-prep/ pnpm build
+VITE_BASE_PATH=/meal-planner/ pnpm build
 
 # Output is in dist/
 ```
 
 ## CLI Tool
 
-The `vmp` CLI exports Cooklang meal plans to shareable JSON format.
+The `mp` CLI exports Cooklang meal plans to shareable JSON format.
 
 **Install from GitHub:**
 
 ```bash
 # Run directly (no install needed)
-npx github:[your-username]/vegan-meal-prep export recipes/plans/week-1.mealplan -o week-1.json
+npx github:[your-username]/meal-planner export recipes/plans/week-1.mealplan -o week-1.json
 
 # Or install globally
-npm install -g github:[your-username]/vegan-meal-prep
-vmp export recipes/plans/week-1.mealplan -o week-1.json
+npm install -g github:[your-username]/meal-planner
+mp export recipes/plans/week-1.mealplan -o week-1.json
 ```
 
 **Commands:**

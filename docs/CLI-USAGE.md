@@ -1,4 +1,4 @@
-# Vegan Meal Prep CLI
+# Meal Planner CLI
 
 A command-line tool for converting Cooklang recipes and meal plans to importable JSON format.
 
@@ -14,7 +14,7 @@ A command-line tool for converting Cooklang recipes and meal plans to importable
 No installation required. Run directly from GitHub:
 
 ```bash
-npx github:username/vegan-meal-prep <command> [options]
+npx github:username/meal-planner <command> [options]
 ```
 
 Replace `username` with the actual GitHub username or organization.
@@ -24,13 +24,13 @@ Replace `username` with the actual GitHub username or organization.
 For frequent use, install globally:
 
 ```bash
-npm install -g github:username/vegan-meal-prep
+npm install -g github:username/meal-planner
 ```
 
 Then run commands with:
 
 ```bash
-vmp <command> [options]
+mp <command> [options]
 ```
 
 ### Local Development
@@ -38,7 +38,7 @@ vmp <command> [options]
 If you've cloned the repository:
 
 ```bash
-cd vegan-meal-prep
+cd meal-planner
 pnpm install
 pnpm cli <command> [options]
 ```
@@ -62,7 +62,7 @@ Convert a `.mealplan` file and its referenced `.cook` recipes to a self-containe
 **Syntax:**
 
 ```bash
-vmp export <mealplan-file> [options]
+mp export <mealplan-file> [options]
 ```
 
 **Arguments:**
@@ -84,13 +84,13 @@ vmp export <mealplan-file> [options]
 
 ```bash
 # Export Week 6 to a JSON file
-vmp export recipes/plans/week-6.mealplan -o week-6.json
+mp export recipes/plans/week-6.mealplan -o week-6.json
 
 # Export with pretty-printed output
-vmp export recipes/plans/week-6.mealplan --pretty -o week-6.json
+mp export recipes/plans/week-6.mealplan --pretty -o week-6.json
 
 # Export to stdout (pipe to another command)
-vmp export recipes/plans/week-6.mealplan | jq '.recipes | length'
+mp export recipes/plans/week-6.mealplan | jq '.recipes | length'
 ```
 
 ### `validate` - Validate Export Files
@@ -100,7 +100,7 @@ Validate a JSON export file against the schema before importing.
 **Syntax:**
 
 ```bash
-vmp validate <json-file> [options]
+mp validate <json-file> [options]
 ```
 
 **Arguments:**
@@ -120,10 +120,10 @@ vmp validate <json-file> [options]
 
 ```bash
 # Validate an export file
-vmp validate week-6.json
+mp validate week-6.json
 
 # Strict validation (treat warnings as errors)
-vmp validate week-6.json --strict
+mp validate week-6.json --strict
 ```
 
 **Exit Codes:**
@@ -137,15 +137,15 @@ vmp validate week-6.json --strict
 ### `--help` - Show Help
 
 ```bash
-vmp --help
-vmp export --help
-vmp validate --help
+mp --help
+mp export --help
+mp validate --help
 ```
 
 ### `--version` - Show Version
 
 ```bash
-vmp --version
+mp --version
 ```
 
 ## Workflow: Creating Shareable Meal Plans
@@ -217,7 +217,7 @@ prep_timeline:
 Convert your meal plan to the importable JSON format:
 
 ```bash
-vmp export plans/my-week.mealplan -o my-week.json --pretty
+mp export plans/my-week.mealplan -o my-week.json --pretty
 ```
 
 ### 3. Validate the Export
@@ -225,7 +225,7 @@ vmp export plans/my-week.mealplan -o my-week.json --pretty
 Ensure the export file is valid:
 
 ```bash
-vmp validate my-week.json
+mp validate my-week.json
 ```
 
 Expected output:
@@ -243,7 +243,7 @@ The generated JSON file is self-contained and can be:
 
 - Shared via email, file transfer, or cloud storage
 - Hosted on GitHub or a personal website
-- Imported directly into the Vegan Meal Prep app
+- Imported directly into the Meal Planner app
 
 ## JSON Export Format
 
@@ -317,7 +317,7 @@ Warning: Recipe 'tofu-bowl' missing required field 'servings'
 If you're getting an old version after updates:
 
 ```bash
-npx --yes github:username/vegan-meal-prep@latest <command>
+npx --yes github:username/meal-planner@latest <command>
 ```
 
 Or clear the npx cache:

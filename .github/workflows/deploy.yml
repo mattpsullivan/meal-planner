@@ -42,7 +42,7 @@ jobs:
         run: pnpm build
         env:
           # Base path for GitHub Pages - use repository name
-          VITE_BASE_PATH: /vegan-meal-prep/
+          VITE_BASE_PATH: /meal-planner/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

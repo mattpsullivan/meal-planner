@@ -132,14 +132,14 @@ and never render a deficit goal for them.
 1. Supabase dashboard → **Authentication → Providers → Google** → enable it → paste the **Client
    ID** and **Client secret** from Part 3 → save.
 2. **Authentication → URL Configuration:**
-   - **Site URL:** `https://mattpsullivan.github.io/vegan-meal-prep/`
+   - **Site URL:** `https://mattpsullivan.github.io/meal-planner/`
    - **Redirect URLs** (allow-list — `redirectTo` must match one of these, wildcards allowed):
-     - `https://mattpsullivan.github.io/vegan-meal-prep/**`
+     - `https://mattpsullivan.github.io/meal-planner/**`
      - `http://localhost:5173/**`
 
 > The OAuth round-trip is: app calls `signInWithOAuth` → Google → **Supabase**
 > `/auth/v1/callback` → Supabase redirects back to your `redirectTo` (must be allow-listed above).
-> Because the app is served under the base path `/vegan-meal-prep/`, `redirectTo` must include it.
+> Because the app is served under the base path `/meal-planner/`, `redirectTo` must include it.
 
 ---
 
@@ -176,10 +176,11 @@ and never render a deficit goal for them.
 ## Gotchas
 
 - **Redirect base path** is the #1 cause of an auth loop — `redirectTo`, the Site URL, and the
-  allow-list must all include `/vegan-meal-prep/`.
+  allow-list must all include `/meal-planner/`.
 - **anon key is public** — that's expected. RLS is the security boundary; the `service_role` key
   must never reach the client or the repo.
 - **RLS recursion** — the `profile` select policy queries `profile`; the `security definer`
   `auth_household_ids()` function is what prevents infinite recursion. Don't inline that subquery.
-- **Repo rename is deferred**, so the Pages URL stays `/vegan-meal-prep/`. If the repo is ever
-  renamed, every URL above (origins, Site URL, allow-list) must be updated.
+- **Repo renamed 2026-07-11** (`vegan-meal-prep` -> `meal-planner`); the Pages URL is
+  `/meal-planner/`. If the repo is ever renamed again, every URL above (origins, Site URL,
+  allow-list) must be updated.

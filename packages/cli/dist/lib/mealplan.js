@@ -36,8 +36,7 @@ function extractMealsFromDay(day, recipeSlugMap) {
         if (!entry)
             return;
         const recipeId = entry.recipe
-            ? (recipeSlugMap.get(recipePathToId(entry.recipe)) ??
-                recipePathToSlug(entry.recipe))
+            ? (recipeSlugMap.get(recipePathToId(entry.recipe)) ?? recipePathToSlug(entry.recipe))
             : null;
         const recipeName = entry.recipe
             ? recipePathToSlug(entry.recipe).replace(/-/g, ' ')
@@ -65,8 +64,7 @@ export function mealplanToExportWeek(mealplan, recipeSlugMap) {
     if (mealplan.components) {
         for (const [category, recipes] of Object.entries(mealplan.components)) {
             for (const recipePath of recipes) {
-                const recipeId = recipeSlugMap.get(recipePathToId(recipePath)) ??
-                    recipePathToSlug(recipePath);
+                const recipeId = recipeSlugMap.get(recipePathToId(recipePath)) ?? recipePathToSlug(recipePath);
                 components.push({
                     recipe_id: recipeId,
                     component_type: category,
@@ -79,9 +77,7 @@ export function mealplanToExportWeek(mealplan, recipeSlugMap) {
         // Look up recipe ID if a recipe is referenced
         let recipeId = null;
         if (step.recipe) {
-            recipeId =
-                recipeSlugMap.get(recipePathToId(step.recipe)) ??
-                    recipePathToSlug(step.recipe);
+            recipeId = recipeSlugMap.get(recipePathToId(step.recipe)) ?? recipePathToSlug(step.recipe);
         }
         return {
             step_number: idx,

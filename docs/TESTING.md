@@ -1,6 +1,6 @@
 # Testing Architecture
 
-This document describes the testing framework setup and best practices for the Vegan Meal Prep application.
+This document describes the testing framework setup and best practices for the Meal Planner application.
 
 ## Overview
 
@@ -95,7 +95,7 @@ import { test, expect } from '@playwright/test';
 
 test('displays homepage content', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: 'Vegan Meal Prep' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Meal Planner' })).toBeVisible();
 });
 ```
 

@@ -163,7 +163,7 @@ interface ExportMeal {
 
 ---
 
-## CLI Tool: `@vegan-meal-prep/cli`
+## CLI Tool: `@meal-planner/cli`
 
 The export tool is published as a standalone npm package, allowing anyone to convert Cooklang meal plans to the import format without cloning the main app repository.
 
@@ -171,7 +171,7 @@ The export tool is published as a standalone npm package, allowing anyone to con
 
 ```
 packages/cli/
-├── package.json          # @vegan-meal-prep/cli
+├── package.json          # @meal-planner/cli
 ├── src/
 │   ├── index.ts          # CLI entry point
 │   ├── commands/
@@ -184,7 +184,7 @@ packages/cli/
 │   └── types/
 │       └── export.ts     # MealplanExport types
 ├── bin/
-│   └── vmp.js            # Executable entry
+│   └── mp.js            # Executable entry
 └── tsconfig.json
 ```
 
@@ -192,18 +192,18 @@ packages/cli/
 
 ```bash
 # Install directly from GitHub (no npm publish required)
-npx github:yourusername/vegan-meal-prep export recipes/plans/week-6.mealplan -o week-6.json
+npx github:yourusername/meal-planner export recipes/plans/week-6.mealplan -o week-6.json
 
 # Or with a specific branch/tag
-npx github:yourusername/vegan-meal-prep#main export ...
-npx github:yourusername/vegan-meal-prep#v1.0.0 export ...
+npx github:yourusername/meal-planner#main export ...
+npx github:yourusername/meal-planner#v1.0.0 export ...
 
 # Install globally from GitHub
-npm install -g github:yourusername/vegan-meal-prep
-vmp export recipes/plans/week-6.mealplan -o week-6.json
+npm install -g github:yourusername/meal-planner
+mp export recipes/plans/week-6.mealplan -o week-6.json
 
 # If published to npm (future)
-npx @vegan-meal-prep/cli export recipes/plans/week-6.mealplan -o week-6.json
+npx @meal-planner/cli export recipes/plans/week-6.mealplan -o week-6.json
 ```
 
 ### GitHub Installation Options
@@ -216,16 +216,16 @@ Keep CLI entry point at repo root. The main `package.json` includes the `bin` fi
 
 ```json
 {
-  "name": "vegan-meal-prep",
+  "name": "meal-planner",
   "bin": {
-    "vmp": "./packages/cli/bin/vmp.js"
+    "mp": "./packages/cli/bin/mp.js"
   }
 }
 ```
 
 This allows direct GitHub install:
 ```bash
-npx github:yourusername/vegan-meal-prep export ...
+npx github:yourusername/meal-planner export ...
 ```
 
 #### Option B: Subdirectory Install (npm 8.5+)
@@ -233,7 +233,7 @@ npx github:yourusername/vegan-meal-prep export ...
 Install from a subdirectory using the `#path:` syntax:
 
 ```bash
-npx github:yourusername/vegan-meal-prep#path:packages/cli export ...
+npx github:yourusername/meal-planner#path:packages/cli export ...
 ```
 
 Note: Requires npm 8.5+ and may have caching quirks.
@@ -242,54 +242,54 @@ Note: Requires npm 8.5+ and may have caching quirks.
 
 Extract CLI to its own repo for cleaner separation:
 ```bash
-npx github:yourusername/vegan-meal-prep-cli export ...
+npx github:yourusername/meal-planner-cli export ...
 ```
 
 **Recommendation:** Start with Option A (root-level bin), migrate to separate repo if the CLI grows significantly.
 
 ### Commands
 
-#### `vmp export` - Export meal plan to JSON
+#### `mp export` - Export meal plan to JSON
 
 ```bash
 # Export a single week
-vmp export recipes/plans/week-6.mealplan -o week-6-export.json
+mp export recipes/plans/week-6.mealplan -o week-6-export.json
 
 # Export multiple weeks into one file
-vmp export recipes/plans/week-6.mealplan recipes/plans/week-7.mealplan -o weeks-6-7.json
+mp export recipes/plans/week-6.mealplan recipes/plans/week-7.mealplan -o weeks-6-7.json
 
 # Specify recipes directory (defaults to relative paths in .mealplan)
-vmp export --recipes ./my-recipes plans/week-6.mealplan -o export.json
+mp export --recipes ./my-recipes plans/week-6.mealplan -o export.json
 
 # Output to stdout (for piping)
-vmp export recipes/plans/week-6.mealplan
+mp export recipes/plans/week-6.mealplan
 
 # Pretty print with indentation
-vmp export recipes/plans/week-6.mealplan --pretty -o export.json
+mp export recipes/plans/week-6.mealplan --pretty -o export.json
 ```
 
-#### `vmp validate` - Validate files without exporting
+#### `mp validate` - Validate files without exporting
 
 ```bash
 # Validate a .mealplan file and all referenced recipes
-vmp validate recipes/plans/week-6.mealplan
+mp validate recipes/plans/week-6.mealplan
 
 # Validate a single .cook file
-vmp validate recipes/components/grains/rice.cook
+mp validate recipes/components/grains/rice.cook
 
 # Validate all files in a directory
-vmp validate recipes/
+mp validate recipes/
 ```
 
 ### package.json
 
 ```json
 {
-  "name": "@vegan-meal-prep/cli",
+  "name": "@meal-planner/cli",
   "version": "1.0.0",
   "description": "CLI tool for exporting Cooklang meal plans",
   "bin": {
-    "vmp": "./bin/vmp.js"
+    "mp": "./bin/mp.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -329,10 +329,10 @@ vmp validate recipes/
 The CLI package lives alongside the main app in a monorepo:
 
 ```
-vegan-meal-prep/
+meal-planner/
 ├── package.json          # Root workspace config
 ├── packages/
-│   ├── cli/              # @vegan-meal-prep/cli
+│   ├── cli/              # @meal-planner/cli
 │   │   └── package.json
 │   └── app/              # Main web app (future refactor)
 │       └── package.json
@@ -617,14 +617,14 @@ export async function exportWeeksAsJson(weekIds: number[]): Promise<MealplanExpo
 
 ### Phase 1: CLI Package Setup
 - [ ] Create `packages/cli/` directory structure
-- [ ] Set up package.json with `@vegan-meal-prep/cli` name
+- [ ] Set up package.json with `@meal-planner/cli` name
 - [ ] Configure TypeScript and build tooling
 - [ ] Add `commander` for CLI argument parsing
-- [ ] Set up bin entry point (`vmp` command)
+- [ ] Set up bin entry point (`mp` command)
 
 ### Phase 2: Export Command
 - [ ] Extract/refactor Cooklang parsing from `generate-seed-from-cooklang.ts`
-- [ ] Implement `vmp export` command
+- [ ] Implement `mp export` command
 - [ ] Add `.mealplan` file parsing
 - [ ] Add recipe dependency resolution
 - [ ] Generate `MealplanExport` JSON output
@@ -632,7 +632,7 @@ export async function exportWeeksAsJson(weekIds: number[]): Promise<MealplanExpo
 - [ ] Test with existing weeks 1-5
 
 ### Phase 3: Validate Command
-- [ ] Implement `vmp validate` command
+- [ ] Implement `mp validate` command
 - [ ] Validate `.cook` file syntax
 - [ ] Validate `.mealplan` structure against JSON Schema
 - [ ] Check recipe references exist
@@ -641,7 +641,7 @@ export async function exportWeeksAsJson(weekIds: number[]): Promise<MealplanExpo
 ### Phase 4: Publish Package
 - [ ] Add README with usage examples
 - [ ] Configure npm publishing
-- [ ] Test `npx @vegan-meal-prep/cli` invocation
+- [ ] Test `npx @meal-planner/cli` invocation
 - [ ] Publish to npm registry
 
 ### Phase 5: Import API

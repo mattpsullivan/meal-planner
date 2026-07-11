@@ -1,6 +1,6 @@
-# Vegan Meal Prep App - Design Overview
+# Meal Planner App - Design Overview
 
-A high-level architecture overview of the Vegan Meal Prep application.
+A high-level architecture overview of the Meal Planner application.
 
 ## System Architecture
 

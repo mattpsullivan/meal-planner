@@ -1,6 +1,6 @@
 # Data Architecture Design
 
-This document describes the data architecture for the Vegan Meal Prep application, including the database schema, import/export mechanisms, and future extensibility.
+This document describes the data architecture for the Meal Planner application, including the database schema, import/export mechanisms, and future extensibility.
 
 ---
 

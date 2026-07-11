@@ -117,5 +117,5 @@ the cycle guard. Run: `pnpm test:run src/lib/nutrition/nutrition.test.ts`.
   remaining work.
 - **Full-catalog coverage**: map the ~170 remaining ingredients from Weeks 1–6 (the
   generator's unmapped list is the worklist).
-- A dedicated `vmp nutrition:check` CLI subcommand (today the generator prints the
+- A dedicated `mp nutrition:check` CLI subcommand (today the generator prints the
   same report at build time).

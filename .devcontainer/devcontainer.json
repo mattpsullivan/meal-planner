@@ -1,5 +1,5 @@
 {
-  "name": "Vegan Meal Prep",
+  "name": "Meal Planner",
   "dockerComposeFile": "docker-compose.yml",
   "service": "dev",
   "workspaceFolder": "/workspace",
