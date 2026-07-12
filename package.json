@@ -1,6 +1,6 @@
 {
   "name": "meal-planner",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A web application for planning, shopping, prepping, and cooking weekly meals",
   "type": "module",
   "bin": {
@@ -25,7 +25,8 @@
     "cli": "node packages/cli/bin/mp.js",
     "check": "pnpm typecheck && pnpm lint && pnpm test:run",
     "check:all": "pnpm cli:build && pnpm check",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:app": "VITE_BASE_PATH=./ pnpm build"
   },
   "keywords": [
     "meal-planning",
@@ -37,6 +38,8 @@
   "author": "Matt Sullivan",
   "license": "MIT",
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.4.1",
     "@commitlint/cli": "^20.2.0",
     "@commitlint/config-conventional": "^20.2.0",
     "@eslint/js": "^9.0.0",
@@ -79,6 +82,8 @@
     "packages/cli/package.json"
   ],
   "dependencies": {
+    "@capacitor/android": "^8.4.1",
+    "@capacitor/core": "^8.4.1",
     "@cooklang/cooklang": "^0.17.2",
     "@tanstack/react-query": "^5.90.14",
     "@tanstack/react-query-devtools": "^5.91.2",
@@ -90,5 +95,10 @@
     "react-router-dom": "^7.11.0",
     "yaml": "^2.8.2",
     "zustand": "^5.0.9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
   }
 }
