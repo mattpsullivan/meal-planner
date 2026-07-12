@@ -316,34 +316,34 @@ Title: "Easy Queso Sauce"
 
 ---
 
-## CLI Tool Design: `vmp convert`
+## CLI Tool Design: `mp convert`
 
 ### Commands
 
 ```bash
 # Convert a PDF to Cooklang recipes and mealplan
-vmp convert input.pdf --output ./recipes/
+mp convert input.pdf --output ./recipes/
 
 # Interactive mode with review steps
-vmp convert input.pdf --interactive
+mp convert input.pdf --interactive
 
 # Use vision model for better extraction
-vmp convert input.pdf --use-vision
+mp convert input.pdf --use-vision
 
 # Specify the AI model to use
-vmp convert input.pdf --model claude-3-opus
+mp convert input.pdf --model claude-3-opus
 
 # Preview without writing files
-vmp convert input.pdf --dry-run
+mp convert input.pdf --dry-run
 
 # Validate existing conversion
-vmp convert input.pdf --validate-only
+mp convert input.pdf --validate-only
 ```
 
 ### Interactive Flow
 
 ```
-$ vmp convert "February 1 Meal Plan.pdf" --interactive
+$ mp convert "February 1 Meal Plan.pdf" --interactive
 
 📄 Analyzing PDF structure...
 Found 22 pages with 4 main recipes and 4 prep components.

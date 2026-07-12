@@ -30,8 +30,8 @@ export function Header({ weekNumber, year, onWeekChange, onPrevWeek, onNextWeek 
               </svg>
             </div>
             <div className="hidden min-w-0 sm:block">
-              <h1 className="text-lg font-semibold text-gray-900">Vegan Meal Prep</h1>
-              <p className="hidden text-sm text-gray-500 md:block">5-Week Plant-Based Menu</p>
+              <h1 className="text-lg font-semibold text-gray-900">Meal Planner</h1>
+              <p className="hidden text-sm text-gray-500 md:block">Weekly meal planning</p>
             </div>
           </Link>
 

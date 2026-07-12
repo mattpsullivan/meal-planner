@@ -59,9 +59,12 @@ interface GroceryListProps {
   showRecipeSources?: boolean | undefined;
 }
 
-// Category display order
+// Category display order (roughly grocery-aisle order)
 const CATEGORY_ORDER: IngredientCategory[] = [
   'produce',
+  'meat-poultry',
+  'seafood',
+  'dairy-eggs',
   'refrigerated',
   'frozen',
   'pantry',
@@ -75,6 +78,9 @@ const CATEGORY_ORDER: IngredientCategory[] = [
 
 const CATEGORY_LABELS: Record<IngredientCategory, string> = {
   produce: 'Produce',
+  'meat-poultry': 'Meat & Poultry',
+  seafood: 'Seafood',
+  'dairy-eggs': 'Dairy & Eggs',
   refrigerated: 'Refrigerated',
   frozen: 'Frozen',
   pantry: 'Pantry',

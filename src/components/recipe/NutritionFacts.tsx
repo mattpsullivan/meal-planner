@@ -1,0 +1,138 @@
+// NutritionFacts components
+// Display for the per-recipe calories + macros computed at build time
+// (see docs/NUTRITION.md). Renders nothing when a recipe has no usable
+// nutrition data, so it degrades gracefully for not-yet-mapped recipes.
+
+import type { Macros, NutritionSummary } from '@/lib/nutrition/types';
+
+function round(n: number): string {
+  return Math.round(n).toString();
+}
+
+// Compact, inline summary for recipe cards. Sits in the card's meta row.
+export function NutritionInline({ nutrition }: { nutrition?: NutritionSummary | undefined }) {
+  if (nutrition == null || nutrition.per_serving.kcal <= 0) return null;
+  const m = nutrition.per_serving;
+  return (
+    <span className="flex items-center gap-1" title="Estimated, per serving">
+      <FlameIcon className="h-3.5 w-3.5" />
+      {round(m.kcal)} kcal
+      <span className="text-gray-400">·</span>
+      {round(m.protein_g)}P/{round(m.carb_g)}C/{round(m.fat_g)}F
+      {nutrition.coverage < 1 && <span className="text-gray-400">*</span>}
+    </span>
+  );
+}
+
+// Full nutrition panel for the recipe detail view.
+export function NutritionFacts({
+  nutrition,
+  label = 'Per serving',
+}: {
+  nutrition?: NutritionSummary | undefined;
+  label?: string;
+}) {
+  if (nutrition == null || nutrition.per_serving.kcal <= 0) return null;
+  return (
+    <NutritionPanel macros={nutrition.per_serving} label={label} coverage={nutrition.coverage} />
+  );
+}
+
+// Summed nutrition across a set of recipes (e.g. a day's meals). Only counts
+// recipes that have data, and says so.
+export function NutritionTotals({
+  items,
+  label,
+}: {
+  items: (NutritionSummary | undefined)[];
+  label: string;
+}) {
+  const known = items.filter((n): n is NutritionSummary => n != null && n.per_serving.kcal > 0);
+  if (known.length === 0) return null;
+
+  const macros = known.reduce<Macros>(
+    (acc, n) => ({
+      kcal: acc.kcal + n.per_serving.kcal,
+      protein_g: acc.protein_g + n.per_serving.protein_g,
+      carb_g: acc.carb_g + n.per_serving.carb_g,
+      fat_g: acc.fat_g + n.per_serving.fat_g,
+    }),
+    { kcal: 0, protein_g: 0, carb_g: 0, fat_g: 0 }
+  );
+  const minCoverage = Math.min(...known.map((n) => n.coverage));
+  const partial = known.length < items.length;
+
+  return (
+    <NutritionPanel
+      macros={macros}
+      label={label}
+      coverage={minCoverage}
+      note={partial ? `Counts the ${String(known.length)} meal(s) with nutrition data.` : undefined}
+    />
+  );
+}
+
+// Shared visual panel.
+function NutritionPanel({
+  macros,
+  label,
+  coverage,
+  note,
+}: {
+  macros: Macros;
+  label: string;
+  coverage: number;
+  note?: string | undefined;
+}) {
+  const estimated = coverage < 1;
+  return (
+    <div className="rounded-lg border border-gray-200 bg-white p-4">
+      <div className="flex items-baseline justify-between">
+        <h3 className="text-sm font-medium text-gray-500">
+          Nutrition <span className="font-normal text-gray-400">({label})</span>
+        </h3>
+        <div className="text-2xl font-bold text-gray-900">
+          {round(macros.kcal)} <span className="text-sm font-normal text-gray-500">kcal</span>
+        </div>
+      </div>
+      <div className="mt-3 grid grid-cols-3 gap-2">
+        <MacroCell label="Protein" grams={macros.protein_g} />
+        <MacroCell label="Carbs" grams={macros.carb_g} />
+        <MacroCell label="Fat" grams={macros.fat_g} />
+      </div>
+      {(estimated || note != null) && (
+        <p className="mt-3 text-xs text-gray-400">
+          {estimated &&
+            `Estimated — ${String(Math.round(coverage * 100))}% of ingredients mapped. Approximate; not for medical use. `}
+          {note}
+        </p>
+      )}
+    </div>
+  );
+}
+
+function MacroCell({ label, grams }: { label: string; grams: number }) {
+  return (
+    <div className="rounded-md bg-gray-50 py-2 text-center">
+      <div className="text-lg font-semibold text-gray-900">{Math.round(grams * 10) / 10}g</div>
+      <div className="text-xs text-gray-500">{label}</div>
+    </div>
+  );
+}
+
+function FlameIcon({ className }: { className?: string | undefined }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      className={className}
+    >
+      <path
+        fillRule="evenodd"
+        d="M10 2a.75.75 0 01.652.379c.317.55.75 1.44.75 2.371 0 .518-.128 1.02-.31 1.46.24-.19.47-.41.674-.66a.75.75 0 011.16-.05c.85.95 1.424 2.243 1.424 3.65a5.25 5.25 0 11-9.626-2.92.75.75 0 011.198.06c.147.207.32.394.513.556-.05-.28-.077-.57-.077-.866 0-1.99 1.147-3.66 2.31-4.66A.75.75 0 0110 2zm.31 12.5a2 2 0 00.94-3.766c.02.13.03.264.03.4a2 2 0 01-2 2 .75.75 0 000 .09c.28.79.53 1.276 1.03 1.276z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}

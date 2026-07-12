@@ -89,7 +89,7 @@ export function Layout() {
       ) : (
         <header className="border-b border-gray-200 bg-white">
           <div className="mx-auto max-w-7xl px-4 py-4">
-            <h1 className="text-xl font-bold text-green-700">Vegan Meal Prep</h1>
+            <h1 className="text-xl font-bold text-green-700">Meal Planner</h1>
           </div>
         </header>
       )}

@@ -3,7 +3,8 @@
 
 import type { Recipe } from '@/types';
 import { Card } from '../common/Card';
-import { Badge, MealTypeBadge } from '../common/Badge';
+import { Badge, DietBadge, MealTypeBadge } from '../common/Badge';
+import { NutritionInline } from './NutritionFacts';
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -47,6 +48,8 @@ export function RecipeCard({
             <UsersIcon className="h-3.5 w-3.5" />
             {recipe.servings} servings
           </span>
+          {recipe.diet != null && <DietBadge diet={recipe.diet} />}
+          <NutritionInline nutrition={recipe.nutrition} />
         </div>
 
         {showMealTypes && mealTypes.length > 0 && (

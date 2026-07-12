@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/vegan-meal-prep/schemas/mealplan.v1.json",
+  "$id": "https://github.com/mattpsullivan/meal-planner/schemas/mealplan.v1.json",
   "title": "Meal Plan",
   "description": "Schema for weekly meal planning files (.mealplan) that reference Cooklang recipes",
   "type": "object",

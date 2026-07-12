@@ -39,7 +39,16 @@ const mealplanExportSchema = {
     definitions: {
         recipe: {
             type: 'object',
-            required: ['id', 'name', 'servings', 'ingredients', 'instructions', 'tags', 'meal_types', 'recipe_type'],
+            required: [
+                'id',
+                'name',
+                'servings',
+                'ingredients',
+                'instructions',
+                'tags',
+                'meal_types',
+                'recipe_type',
+            ],
             properties: {
                 id: { type: 'string' },
                 name: { type: 'string' },

@@ -51,16 +51,7 @@ const CATEGORY_KEYWORDS = {
         'chipotle',
         'adobo',
     ],
-    refrigerated: [
-        'milk',
-        'yogurt',
-        'cream',
-        'tofu',
-        'tempeh',
-        'feta',
-        'cheese',
-        'salsa',
-    ],
+    refrigerated: ['milk', 'yogurt', 'cream', 'tofu', 'tempeh', 'feta', 'cheese', 'salsa'],
     frozen: ['frozen'],
     spices: [
         'cumin',
@@ -76,13 +67,7 @@ const CATEGORY_KEYWORDS = {
         'red pepper flakes',
         'smoked paprika',
     ],
-    'oils-vinegars': [
-        'oil',
-        'olive',
-        'vegetable oil',
-        'coconut oil',
-        'vinegar',
-    ],
+    'oils-vinegars': ['oil', 'olive', 'vegetable oil', 'coconut oil', 'vinegar'],
     'nuts-seeds': [
         'cashew',
         'walnut',
@@ -192,15 +177,11 @@ export function parseRecipeFile(filePath, parser, recipesDir, recipeMap) {
     }
     // Custom metadata
     const custom = result.metadata.custom ?? {};
-    const storageDays = custom.storage_days
-        ? parseInt(custom.storage_days, 10)
-        : null;
+    const storageDays = custom.storage_days ? parseInt(custom.storage_days, 10) : null;
     const storageMethod = custom.storage_method;
     const reheat = custom.reheat;
     const yieldAmount = custom.yield;
-    const storageInstructions = [storageMethod, reheat]
-        .filter(Boolean)
-        .join('. ');
+    const storageInstructions = [storageMethod, reheat].filter(Boolean).join('. ');
     // Parse ingredients
     const ingredients = result.recipe.ingredients.map((ing, idx) => {
         // Check if this is a reference to another recipe

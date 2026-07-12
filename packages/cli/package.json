@@ -1,11 +1,11 @@
 {
-  "name": "@vegan-meal-prep/cli",
+  "name": "@meal-planner/cli",
   "version": "0.1.0",
   "description": "CLI tool for exporting Cooklang meal plans to JSON format",
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "vmp": "./bin/vmp.js"
+    "mp": "./bin/mp.js"
   },
   "scripts": {
     "build": "tsc",

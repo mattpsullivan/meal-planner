@@ -298,7 +298,7 @@ Custom categories are allowed.
 
 ```yaml
 # Week 1: Mediterranean + Mexican
-# Vegan Meal Prep - Veganuary 2026
+# Meal Planner - Veganuary 2026
 
 $schema: ../schemas/mealplan.v1.json
 
@@ -494,10 +494,10 @@ schemas/mealplan.schema.json
 
 ```bash
 # Validate a mealplan file
-vmp validate recipes/plans/week-1.mealplan
+mp validate recipes/plans/week-1.mealplan
 
 # Validate all mealplan files
-vmp validate recipes/plans/
+mp validate recipes/plans/
 ```
 
 ### Programmatic Validation

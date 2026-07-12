@@ -187,7 +187,16 @@ export function parseIngredient(line: string): ParsedIngredient {
   };
 }
 
-// Categorization keywords
+// Categorization keywords.
+//
+// IMPORTANT: matching is first-hit substring, in object insertion order, so
+// ordering encodes precedence. Deliberate choices below:
+//   - `pantry` precedes `meat-poultry`/`seafood` so "chicken broth" / "fish
+//     sauce" land in pantry, while "chicken breast" / "salmon" fall through.
+//   - `dairy-eggs` follows `nuts-seeds` so "peanut butter" stays nuts, then
+//     plain "butter" / "milk" reach dairy.
+//   - `produce` carries `eggplant` / `butternut` as guards against the `egg`
+//     and `butter` substrings.
 const CATEGORY_KEYWORDS: Record<IngredientCategory, string[]> = {
   produce: [
     'onion',
@@ -213,6 +222,8 @@ const CATEGORY_KEYWORDS: Record<IngredientCategory, string[]> = {
     'mango',
     'jalapeño',
     'sweet potato',
+    'eggplant',
+    'butternut',
   ],
   pantry: [
     'flour',
@@ -224,12 +235,45 @@ const CATEGORY_KEYWORDS: Record<IngredientCategory, string[]> = {
     'dried',
     'broth',
     'stock',
+    'fish sauce',
+    'oyster sauce',
     'tortilla',
     'syrup',
     'cocoa',
     'tomato paste',
   ],
-  refrigerated: ['milk', 'yogurt', 'cream', 'tofu', 'tempeh', 'feta', 'cheese', 'salsa'],
+  'meat-poultry': [
+    'chicken',
+    'turkey',
+    'beef',
+    'pork',
+    'bacon',
+    'sausage',
+    'steak',
+    'lamb',
+    'chorizo',
+    'prosciutto',
+    'pancetta',
+    'meatball',
+  ],
+  seafood: [
+    'salmon',
+    'shrimp',
+    'tuna',
+    'fish',
+    'cod',
+    'crab',
+    'scallop',
+    'shellfish',
+    'tilapia',
+    'anchovy',
+    'sardine',
+    'halibut',
+    'mussel',
+    'clam',
+    'lobster',
+  ],
+  refrigerated: ['tofu', 'tempeh', 'salsa', 'hummus'],
   frozen: ['frozen'],
   spices: [
     'cumin',
@@ -257,6 +301,20 @@ const CATEGORY_KEYWORDS: Record<IngredientCategory, string[]> = {
     'tahini',
     'chia',
     'hemp',
+  ],
+  'dairy-eggs': [
+    'milk',
+    'yogurt',
+    'cream',
+    'feta',
+    'cheese',
+    'egg',
+    'butter',
+    'parmesan',
+    'mozzarella',
+    'ricotta',
+    'ghee',
+    'buttermilk',
   ],
   grains: ['rice', 'quinoa', 'oat', 'barley', 'farro', 'bulgur'],
   legumes: ['bean', 'lentil', 'chickpea', 'pea'],

@@ -1,6 +1,6 @@
 # Cooklang Recipe Format Guide
 
-This guide explains how to write recipes in Cooklang format for the Vegan Meal Prep app.
+This guide explains how to write recipes in Cooklang format for the Meal Planner app.
 
 We use **standard Cooklang** with no custom extensions. Our app layers additional semantics on top through directory structure and `.mealplan` files.
 

@@ -8,6 +8,7 @@ import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
 import { IngredientList } from './IngredientList';
 import { ServingScaler } from './ServingScaler';
+import { NutritionFacts } from './NutritionFacts';
 
 interface RecipeDetailProps {
   recipe: RecipeWithDetails;
@@ -65,6 +66,9 @@ export function RecipeDetail({ recipe, onBack }: RecipeDetailProps) {
           onChange={setServings}
         />
       </Card>
+
+      {/* Nutrition (per serving; independent of the scaler) */}
+      <NutritionFacts nutrition={recipe.nutrition} />
 
       {/* Ingredients */}
       <Card>

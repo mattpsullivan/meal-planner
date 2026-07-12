@@ -4,7 +4,7 @@
 import { Command } from 'commander';
 import * as fs from 'fs';
 import * as path from 'path';
-import { createParser, findCookFiles, parseRecipeFile, } from '../lib/cooklang.js';
+import { createParser, findCookFiles, parseRecipeFile } from '../lib/cooklang.js';
 import { parseMealplanFile, mealplanToExportWeek, getReferencedRecipePaths, } from '../lib/mealplan.js';
 export const exportCommand = new Command('export')
     .description('Convert a .mealplan file to JSON export format')
@@ -80,8 +80,7 @@ function runExport(mealplanFile, options) {
         const relativePath = path.relative(recipesDir, cookFile);
         const relativePathWithoutExt = relativePath.replace(/\.cook$/, '');
         // Check if this recipe is referenced
-        if (referencedPaths.has(relativePath) ||
-            referencedPaths.has(relativePathWithoutExt)) {
+        if (referencedPaths.has(relativePath) || referencedPaths.has(relativePathWithoutExt)) {
             const recipe = parseRecipeFile(cookFile, parser, recipesDir, recipeSlugMap);
             if (recipe) {
                 recipes.push(recipe);

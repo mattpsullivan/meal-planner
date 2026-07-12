@@ -6,6 +6,7 @@ import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/common/Button';
 import { Skeleton } from '@/components/common/Skeleton';
 import { DaySchedule } from '@/components/meal/DaySchedule';
+import { NutritionTotals } from '@/components/recipe';
 import { useWeek } from '@/hooks/useWeeks';
 import { routes } from '@/router';
 
@@ -109,6 +110,12 @@ export function DayPage() {
               void navigate(routes.recipe(meal.recipe.id));
             }
           }}
+        />
+
+        {/* Day nutrition total (one serving of each planned meal) */}
+        <NutritionTotals
+          items={day.meals.map((m) => m.recipe?.nutrition)}
+          label={`${dayName} total`}
         />
       </div>
     </Container>

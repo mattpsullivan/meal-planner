@@ -282,7 +282,7 @@ export const useUserState = create<UserState>()(
       resetAll: () => set(initialState),
     }),
     {
-      name: 'vegan-meal-prep-user-state',
+      name: 'meal-planner-user-state',
       storage: createJSONStorage(() => localStorage),
       version: 2, // Bumped to clear potentially corrupted data from pre-static era
       // Only persist user data, not actions
