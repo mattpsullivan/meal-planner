@@ -5,7 +5,7 @@ test.describe('Full User Flow', () => {
     test('should navigate through the main user journey', async ({ page }) => {
       // 1. Start at homepage
       await page.goto('/');
-      await expect(page.getByRole('heading', { name: 'Meal Planner' })).toBeVisible();
+      await expect(page.getByRole('heading', { name: "Dad's Meals" })).toBeVisible();
 
       // 2. Wait for weeks to load and click Week 1
       await expect(page.getByRole('heading', { name: /Week 1/ })).toBeVisible({
@@ -192,7 +192,7 @@ test.describe('Full User Flow', () => {
       await page.goto('/week/1/shop');
 
       // Click on app title/logo to go home
-      await page.getByRole('link', { name: /Meal Planner/i }).click();
+      await page.getByRole('link', { name: /Dad's Meals/i }).click();
       await expect(page).toHaveURL('/');
     });
   });
