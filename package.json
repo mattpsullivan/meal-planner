@@ -1,7 +1,7 @@
 {
   "name": "meal-planner",
-  "version": "1.0.0",
-  "description": "A web application for planning, shopping, prepping, and cooking weekly meals",
+  "version": "1.0.1",
+  "description": "Dad's Meals - the Sullivan family meal planner: plan, shop, prep, cook",
   "type": "module",
   "bin": {
     "mp": "./packages/cli/bin/mp.js"

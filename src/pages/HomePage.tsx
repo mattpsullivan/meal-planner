@@ -27,7 +27,7 @@ export function HomePage() {
       <div className="space-y-6">
         {/* Hero section */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Meal Planner</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Dad's Meals</h1>
           <p className="mt-2 text-lg text-gray-600">Plan, shop, prep, and cook your weekly meals</p>
           <Link
             to={routes.recipes()}

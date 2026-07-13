@@ -20,10 +20,6 @@ export default defineConfig(({ mode }) => {
     // Base path for GitHub Pages deployment
     // Set VITE_BASE_PATH=/repo-name/ in CI or .env.production
     base: basePath,
-    // TEMP: Force development mode to see full React error messages
-    define: {
-      'process.env.NODE_ENV': JSON.stringify('development'),
-    },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -41,8 +37,6 @@ export default defineConfig(({ mode }) => {
     build: {
       // Enable sourcemaps for debugging production issues
       sourcemap: true,
-      // TEMP: Disable minification to see full error messages
-      minify: false,
       rollupOptions: {
         output: {
           manualChunks: {
