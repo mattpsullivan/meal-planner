@@ -1,0 +1,220 @@
+# Week 8: Dad & Owen Week
+# Two-person week: kid favorites + breakfast school (Owen's request).
+# Brinner twice - Monday guided, Thursday Owen drives.
+
+$schema: ../schemas/mealplan.v1.json
+
+id: week-8
+week_number: 8
+year: 2026
+name: "Week 8: Dad & Owen Week"
+theme: Kid favorites + breakfast school
+start_date: 2026-07-12
+end_date: 2026-07-18
+
+prep_time_total: 20  # light week - two pantry mixes, that's it
+
+components:
+  breakfast:
+    - components/breakfast/pancake-dry-mix.cook
+  sauces:
+    - components/sauces/taco-seasoning.cook
+
+days:
+  - day: 1
+    date: 2026-07-12
+    day_name: Sunday
+    is_prep_day: true
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Cook's choice"
+      dinner:
+        description: "Easy night - leftovers or out. Prep is 20 minutes of jar-shaking."
+      snacks:
+        - description: "Whatever's around"
+
+  - day: 2
+    date: 2026-07-13
+    day_name: Monday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Cook's choice"
+      dinner:
+        recipe: meals/plates/brinner-pancakes-eggs-bacon.cook
+        note: "Breakfast school #1 (guided). The lesson is sequence: bacon in the oven first, batter rests, eggs dead last. Three kinds of heat control in one dinner."
+
+  - day: 3
+    date: 2026-07-14
+    day_name: Tuesday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Leftover pancakes reheat great in the toaster"
+      dinner:
+        recipe: meals/tacos/ground-beef-tacos.cook
+        note: "Teaches: real browning - press it flat and leave it alone. Cook the whole pound; half is Wednesday's quesadilla filling."
+
+  - day: 4
+    date: 2026-07-15
+    day_name: Wednesday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Cook's choice"
+      dinner:
+        recipe: meals/tacos/cheese-quesadillas.cook
+        note: "Leftover night: taco beef becomes quesadillas. Teaches: patience for the golden crust - medium heat, one flip."
+
+  - day: 5
+    date: 2026-07-16
+    day_name: Thursday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Cook's choice"
+      dinner:
+        recipe: meals/plates/brinner-pancakes-eggs-bacon.cook
+        note: "Breakfast school #2: Owen drives, Dad sous-chefs. Same menu, his show. TONIGHT: start the hot-chicken buttermilk brine for Friday."
+
+  - day: 6
+    date: 2026-07-17
+    day_name: Friday
+    meals:
+      breakfast:
+        description: "Cook's choice"
+      lunch:
+        description: "Cook's choice"
+      dinner:
+        recipe: meals/sandwiches/hot-chicken-tenders.cook
+        note: "Dave's-style hot chicken night. Teaches: dredging, fry safety (Dad on oil duty), cooking to temp. Owen picks his heat level - mix each level's hot oil separately."
+
+  - day: 7
+    date: 2026-07-18
+    day_name: Saturday
+    meals:
+      breakfast:
+        description: "Leftover pancakes if any survived"
+      lunch:
+        description: "Cook's choice"
+      dinner:
+        recipe: meals/pasta/white-bean-parmesan-pasta.cook
+        note: "Wind-down vegetarian night. Reprise of the pan-sauce lesson: starchy pasta water + parmesan = sauce."
+
+prep_timeline:
+  - time: "0:00"
+    task: Whisk and jar the pancake dry mix - two labeled batches, one per brinner
+    recipe: components/breakfast/pancake-dry-mix.cook
+    duration: 10
+  - time: "0:10"
+    task: Shake together the taco seasoning
+    recipe: components/sauces/taco-seasoning.cook
+    duration: 5
+  - time: "0:15"
+    task: Check the freezer/fridge against the grocery list below
+    duration: 5
+
+grocery_additions:
+  refrigerated:
+    - name: bacon
+      amount: 1
+      unit: lb
+      note: "Two brinners (8 slices each)"
+    - name: buttermilk
+      amount: 1
+      unit: quart
+      note: "Pancakes x2 + the chicken brine"
+    - name: eggs
+      amount: 1
+      unit: dozen
+      note: "Brinner x2 (5 each) + 1 spare"
+    - name: butter
+      amount: 1
+      unit: stick
+    - name: ground beef
+      amount: 1
+      unit: lb
+      note: "Tacos Tuesday; half rolls into Wednesday quesadillas"
+    - name: chicken tenders
+      amount: 1.25
+      unit: lb
+      note: "Friday hot chicken"
+    - name: cheddar cheese
+      amount: 1
+      unit: block
+      note: "Tacos"
+    - name: monterey jack cheese
+      amount: 1
+      unit: block
+      note: "Quesadillas"
+    - name: sour cream
+      amount: 1
+      unit: small tub
+    - name: parmesan
+      amount: 1
+      unit: wedge
+      note: "Saturday pasta"
+  produce:
+    - name: iceberg lettuce
+      amount: 1
+      unit: head
+      note: "Taco topping"
+    - name: tomato
+      amount: 2
+    - name: lime
+      amount: 3
+    - name: baby spinach
+      amount: 1
+      unit: bag
+      note: "Saturday pasta"
+  pantry:
+    - name: maple syrup
+      amount: 1
+      unit: bottle
+    - name: corn tortillas
+      amount: 6
+      unit: small
+    - name: flour tortillas
+      amount: 4
+      unit: large
+      note: "Burrito size, for quesadillas"
+    - name: salsa
+      amount: 1
+      unit: jar
+    - name: white bread
+      amount: 1
+      unit: loaf
+      note: "Hot chicken landing pad"
+    - name: dill pickles
+      amount: 1
+      unit: jar
+      note: "Hot chicken + the brine borrows the juice"
+    - name: hot sauce
+      amount: 1
+      unit: bottle
+    - name: cayenne pepper
+      amount: 1
+      unit: jar
+      note: "The heat ladder"
+    - name: cornstarch
+      amount: 1
+      unit: small box
+      note: "Extra-crunchy dredge"
+    - name: vegetable oil
+      amount: 1
+      unit: quart
+      note: "Shallow-frying Friday"
+    - name: short pasta (rigatoni)
+      amount: 1
+      unit: lb
+      note: "Saturday pasta"
+    - name: cannellini beans
+      amount: 1
+      unit: can
+      note: "Saturday pasta"

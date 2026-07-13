@@ -227,6 +227,7 @@ const CATEGORY_KEYWORDS: Record<IngredientCategory, string[]> = {
   ],
   pantry: [
     'flour',
+    'maple syrup',
     'sugar',
     'salt',
     'pasta',
