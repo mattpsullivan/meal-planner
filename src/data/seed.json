@@ -917,6 +917,100 @@
       }
     },
     {
+      "id": "pancake-dry-mix",
+      "name": "Pancake Dry Mix",
+      "description": "American recipe",
+      "servings": 4,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 30,
+      "storage_instructions": "pantry, airtight. Not applicable - this is a dry mix.",
+      "source_week": 8,
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "quantity": 3,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "sugar",
+          "quantity": 3,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "baking powder",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "baking soda",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 4,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "In a large [cookware], whisk together all-purpose flour, sugar, baking powder, baking soda, and kosher salt until evenly blended.",
+        "Divide into two jars or zip bags (about 1 3/4 cups each). Label each \"PANCAKES - 1 batch\"."
+      ],
+      "tags": ["breakfast", "make-ahead", "kid-friendly"],
+      "meal_types": ["breakfast"],
+      "recipe_type": "component",
+      "nutrition": {
+        "per_serving": {
+          "kcal": 0,
+          "protein_g": 0,
+          "carb_g": 0,
+          "fat_g": 0
+        },
+        "total": {
+          "kcal": 0,
+          "protein_g": 0,
+          "carb_g": 0,
+          "fat_g": 0
+        },
+        "total_grams": 6,
+        "servings": 4,
+        "coverage": 0.2
+      }
+    },
+    {
       "id": "savory-spiced-oatmeal",
       "name": "Savory Spiced Oatmeal",
       "description": "Indian recipe",
@@ -8289,6 +8383,138 @@
       }
     },
     {
+      "id": "taco-seasoning",
+      "name": "Taco Seasoning",
+      "description": "Mexican recipe",
+      "servings": 8,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": 90,
+      "storage_instructions": "pantry, airtight. Not applicable - spice blend.",
+      "source_week": 8,
+      "ingredients": [
+        {
+          "name": "chili powder",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "ground cumin",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "onion powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "dried oregano",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 7,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "In a small [cookware], combine chili powder, ground cumin, smoked paprika, garlic powder, onion powder, dried oregano, kosher salt, and black pepper.",
+        "Shake to blend. Done."
+      ],
+      "tags": ["spice-blend", "make-ahead", "gluten-free", "sauces"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "component",
+      "nutrition": {
+        "per_serving": {
+          "kcal": 12,
+          "protein_g": 0.6,
+          "carb_g": 2,
+          "fat_g": 0.5
+        },
+        "total": {
+          "kcal": 93,
+          "protein_g": 4.4,
+          "carb_g": 16.1,
+          "fat_g": 4.2
+        },
+        "total_grams": 37,
+        "servings": 8,
+        "coverage": 0.75
+      }
+    },
+    {
       "id": "tahini-dressing",
       "name": "Tahini Dressing",
       "description": "Mediterranean recipe",
@@ -15634,6 +15860,173 @@
       }
     },
     {
+      "id": "brinner-pancakes-eggs-bacon",
+      "name": "Brinner: Pancakes, Eggs & Sheet-Pan Bacon",
+      "description": "American recipe",
+      "servings": 2,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "bacon",
+          "quantity": 8,
+          "unit": "slices",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "pancake-dry-mix",
+          "quantity": 1.75,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 1,
+          "source_recipe_id": "pancake-dry-mix"
+        },
+        {
+          "name": "buttermilk",
+          "quantity": {
+            "whole": 1,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "egg",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "butter",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "butter",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "eggs",
+          "quantity": 4,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "butter",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "maple syrup",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 9,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Lay bacon on a foil-lined [cookware] in a single layer. Put it in a COLD oven, then set the oven to 400F. Set a [cookware] for  - sheet-pan bacon needs no flipping and no splatter. Check at 15; pull when it's your kind of crispy (usually 17-20 minutes). Drain on paper towels.",
+        "While the bacon works, make the batter: empty one batch of pancake-dry-mix into a [cookware]. In a second bowl, whisk buttermilk, egg, and butter. Pour wet into dry and stir until JUST combined - lumps are fine. Overmixing makes tough pancakes. Let the batter rest 10 minutes; this is when it thickens and gets fluffy.",
+        "Heat a [cookware] or big [cookware] over medium. Grease lightly with butter. Pour 1/4-cup pancakes. Flip when the top is covered in popped bubbles and the edges look set (about 2-3 minutes) - one flip only. Another 1-2 minutes on side two. Hold finished pancakes in the turned-off (still warm) oven with the bacon.",
+        "Eggs last: crack eggs into a bowl with kosher salt and beat well. Melt butter in a nonstick [cookware] over LOW heat. Add eggs and push them around slowly with a spatula. Pull the pan OFF the heat while they still look slightly wet and glossy - they finish cooking on the plate.",
+        "Serve everything together with maple syrup and the bacon."
+      ],
+      "tags": ["breakfast", "kid-friendly", "teaching", "plates"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal",
+      "nutrition": {
+        "per_serving": {
+          "kcal": 143,
+          "protein_g": 12.6,
+          "carb_g": 0.7,
+          "fat_g": 9.5
+        },
+        "total": {
+          "kcal": 286,
+          "protein_g": 25.2,
+          "carb_g": 1.4,
+          "fat_g": 19
+        },
+        "total_grams": 202,
+        "servings": 2,
+        "coverage": 0.22
+      }
+    },
+    {
       "id": "mediterranean-mezze-plate",
       "name": "Mediterranean Mezze Plate",
       "description": "Mediterranean recipe",
@@ -16510,6 +16903,423 @@
       }
     },
     {
+      "id": "hot-chicken-tenders",
+      "name": "Hot Chicken Tenders (Dave's Style)",
+      "description": "American recipe",
+      "servings": 2,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "buttermilk",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "pickle juice",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "hot sauce",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "chicken tenders",
+          "quantity": {
+            "whole": 1,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "lb",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "all-purpose flour",
+          "quantity": {
+            "whole": 1,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "cornstarch",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic powder",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 8,
+          "source_recipe_id": null
+        },
+        {
+          "name": "kosher salt",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 9,
+          "source_recipe_id": null
+        },
+        {
+          "name": "black pepper",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 10,
+          "source_recipe_id": null
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": 3,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 11,
+          "source_recipe_id": null
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "oils-vinegars",
+          "display_order": 12,
+          "source_recipe_id": null
+        },
+        {
+          "name": "brown sugar",
+          "quantity": 1,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 13,
+          "source_recipe_id": null
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 1,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "spices",
+          "display_order": 14,
+          "source_recipe_id": null
+        },
+        {
+          "name": "garlic powder",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 15,
+          "source_recipe_id": null
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": 2,
+          "unit": "tsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 16,
+          "source_recipe_id": null
+        },
+        {
+          "name": "white bread",
+          "quantity": 4,
+          "unit": "slices",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 17,
+          "source_recipe_id": null
+        },
+        {
+          "name": "dill pickles",
+          "quantity": 8,
+          "unit": "slices",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 18,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "The night before (or morning of): in a [cookware], stir buttermilk, pickle juice, hot sauce, and kosher salt. Add chicken tenders, cover, and refrigerate at least 4 hours.",
+        "Set up the dredge: in a shallow [cookware], whisk all-purpose flour, cornstarch, smoked paprika, garlic powder, kosher salt, and black pepper. Drizzle in  of the brine and toss with a fork - those little clumps become the shaggy, crunchy bits.",
+        "Dredge each tender: out of the brine, into the flour, PRESS the flour on hard, back in the brine for a quick dip, then into the flour again. Double-dredged = extra crust. Set on a rack for  so the coating sets.",
+        "Heat vegetable oil (about 1/2 inch deep) in a heavy [cookware] to  on a [cookware]. Fry safety: tenders go in AWAY from you, no crowding (two batches), and the adult handles the pan.",
+        "Fry 3-4 minutes per side until deep golden and  inside - temp it, don't guess. Rest on a clean rack.",
+        "Make the hot oil: CAREFULLY ladle vegetable oil of the hot frying oil into a metal [cookware]. Whisk in brown sugar, smoked paprika, garlic powder, and cayenne pepper to taste. Heat ladder, Dave's style - No Spice: skip the cayenne. Lite:  Medium:  Hot:  Mix a separate small bowl per heat level and brush each person's tenders with their own.",
+        "Serve on white bread with dill pickles on top."
+      ],
+      "tags": ["kid-friendly", "teaching", "fried", "sandwiches"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal",
+      "nutrition": {
+        "per_serving": {
+          "kcal": 15,
+          "protein_g": 0.8,
+          "carb_g": 3.3,
+          "fat_g": 0.3
+        },
+        "total": {
+          "kcal": 31,
+          "protein_g": 1.5,
+          "carb_g": 6.5,
+          "fat_g": 0.7
+        },
+        "total_grams": 22,
+        "servings": 2,
+        "coverage": 0.37
+      }
+    },
+    {
+      "id": "cheese-quesadillas",
+      "name": "Cheese Quesadillas with Leftover Taco Beef",
+      "description": "Mexican recipe",
+      "servings": 2,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "flour tortilla",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "monterey jack cheese",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 1,
+          "source_recipe_id": null
+        },
+        {
+          "name": "flour tortillas",
+          "quantity": 3,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "monterey jack cheese",
+          "quantity": {
+            "whole": 1,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "salsa",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "refrigerated",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "sour cream",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 4,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 5,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Warm the leftover taco beef (about 1 1/2 cups from taco night) in the [cookware] or a small pan.",
+        "Heat a large dry [cookware] over medium. Lay in a flour tortilla. Scatter monterey jack cheese over the whole tortilla, spoon a quarter of the beef over ONE half, and top the beef with a little more cheese.",
+        "When the cheese starts melting and the underside is golden-brown spotted (2-3 minutes - peek with a spatula), fold the empty half over the beef half and press gently.",
+        "Flip once and cook 1-2 more minutes until both sides are crisp. Rest it  on a cutting board - resting keeps the cheese in - then cut into wedges with a [cookware].",
+        "Repeat with flour tortillas and monterey jack cheese for the rest.",
+        "Serve with salsa and sour cream."
+      ],
+      "tags": ["quick-cook", "kid-friendly", "leftovers", "tacos"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal",
+      "nutrition": {
+        "per_serving": {
+          "kcal": 57,
+          "protein_g": 0.7,
+          "carb_g": 1.3,
+          "fat_g": 5.5
+        },
+        "total": {
+          "kcal": 114,
+          "protein_g": 1.4,
+          "carb_g": 2.6,
+          "fat_g": 10.9
+        },
+        "total_grams": 58,
+        "servings": 2,
+        "coverage": 0.17
+      }
+    },
+    {
       "id": "fajita-night",
       "name": "Quick Fajita Night",
       "description": "Mexican recipe",
@@ -16682,6 +17492,156 @@
         "total_grams": 508,
         "servings": 2,
         "coverage": 0.75
+      }
+    },
+    {
+      "id": "ground-beef-tacos",
+      "name": "Ground Beef Tacos",
+      "description": "Mexican recipe",
+      "servings": 2,
+      "prep_time_minutes": null,
+      "cook_time_minutes": null,
+      "yield_amount": null,
+      "yield_unit": null,
+      "storage_days": null,
+      "storage_instructions": null,
+      "source_week": null,
+      "ingredients": [
+        {
+          "name": "ground beef",
+          "quantity": 1,
+          "unit": "lb",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "meat-poultry",
+          "display_order": 0,
+          "source_recipe_id": null
+        },
+        {
+          "name": "taco-seasoning",
+          "quantity": 2,
+          "unit": "tbsp",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 1,
+          "source_recipe_id": "taco-seasoning"
+        },
+        {
+          "name": "water",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 3,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "other",
+          "display_order": 2,
+          "source_recipe_id": null
+        },
+        {
+          "name": "corn tortillas",
+          "quantity": 6,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "pantry",
+          "display_order": 3,
+          "source_recipe_id": null
+        },
+        {
+          "name": "cheddar cheese",
+          "quantity": 1,
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "dairy-eggs",
+          "display_order": 4,
+          "source_recipe_id": null
+        },
+        {
+          "name": "iceberg lettuce",
+          "quantity": 2,
+          "unit": "cups",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 5,
+          "source_recipe_id": null
+        },
+        {
+          "name": "tomato",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 6,
+          "source_recipe_id": null
+        },
+        {
+          "name": "salsa",
+          "quantity": {
+            "whole": 0,
+            "num": 1,
+            "den": 2,
+            "err": 0
+          },
+          "unit": "cup",
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "refrigerated",
+          "display_order": 7,
+          "source_recipe_id": null
+        },
+        {
+          "name": "lime",
+          "quantity": 1,
+          "unit": null,
+          "preparation": null,
+          "optional": false,
+          "note": null,
+          "category": "produce",
+          "display_order": 8,
+          "source_recipe_id": null
+        }
+      ],
+      "instructions": [
+        "Heat a large [cookware] over medium-high until a drop of water sizzles. Add ground beef and press it flat. LEAVE IT ALONE for  so it browns - stirring too early steams it gray. Then break it up and cook until no pink remains.",
+        "Tilt the pan and spoon off most of the fat. Add taco-seasoning and water. Simmer 3-4 minutes until saucy.",
+        "Warm corn tortillas in a dry skillet or right over a gas flame until pliable.",
+        "Set out toppings and build your own: cheddar cheese, iceberg lettuce, tomato, salsa, and lime."
+      ],
+      "tags": ["tacos", "kid-friendly", "quick-cook"],
+      "meal_types": ["lunch", "dinner"],
+      "recipe_type": "meal",
+      "nutrition": {
+        "per_serving": {
+          "kcal": 167,
+          "protein_g": 4.3,
+          "carb_g": 36.1,
+          "fat_g": 2.2
+        },
+        "total": {
+          "kcal": 334,
+          "protein_g": 8.7,
+          "carb_g": 72.2,
+          "fat_g": 4.3
+        },
+        "total_grams": 291,
+        "servings": 2,
+        "coverage": 0.38
       }
     },
     {
@@ -20372,6 +21332,227 @@
               "meal_type": "dinner",
               "recipe_id": "turkey-chili-bowl",
               "recipe_name": "turkey chili bowl",
+              "display_order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-8",
+      "week_number": 8,
+      "title": "Week 8: Dad & Owen Week",
+      "theme": "Kid favorites + breakfast school",
+      "start_date": "2026-07-12",
+      "end_date": "2026-07-18",
+      "components": [
+        {
+          "recipe_id": "pancake-dry-mix",
+          "component_type": "breakfast"
+        },
+        {
+          "recipe_id": "taco-seasoning",
+          "component_type": "sauces"
+        }
+      ],
+      "prep_steps": [
+        {
+          "step_number": 0,
+          "time_minutes": 0,
+          "description": "Whisk and jar the pancake dry mix - two labeled batches, one per brinner",
+          "recipe_id": "pancake-dry-mix"
+        },
+        {
+          "step_number": 1,
+          "time_minutes": 10,
+          "description": "Shake together the taco seasoning",
+          "recipe_id": "taco-seasoning"
+        },
+        {
+          "step_number": 2,
+          "time_minutes": 15,
+          "description": "Check the freezer/fridge against the grocery list below",
+          "recipe_id": null
+        }
+      ],
+      "days": [
+        {
+          "day_number": 1,
+          "date": "2026-07-12",
+          "day_of_week": "Sunday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": null,
+              "recipe_name": "Easy night - leftovers or out. Prep is 20 minutes of jar-shaking.",
+              "display_order": 2
+            },
+            {
+              "meal_type": "snack",
+              "recipe_id": null,
+              "recipe_name": "Whatever's around",
+              "display_order": 3
+            }
+          ]
+        },
+        {
+          "day_number": 2,
+          "date": "2026-07-13",
+          "day_of_week": "Monday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "brinner-pancakes-eggs-bacon",
+              "recipe_name": "brinner pancakes eggs bacon",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 3,
+          "date": "2026-07-14",
+          "day_of_week": "Tuesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Leftover pancakes reheat great in the toaster",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "ground-beef-tacos",
+              "recipe_name": "ground beef tacos",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 4,
+          "date": "2026-07-15",
+          "day_of_week": "Wednesday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "cheese-quesadillas",
+              "recipe_name": "cheese quesadillas",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 5,
+          "date": "2026-07-16",
+          "day_of_week": "Thursday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "brinner-pancakes-eggs-bacon",
+              "recipe_name": "brinner pancakes eggs bacon",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 6,
+          "date": "2026-07-17",
+          "day_of_week": "Friday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "hot-chicken-tenders",
+              "recipe_name": "hot chicken tenders",
+              "display_order": 2
+            }
+          ]
+        },
+        {
+          "day_number": 7,
+          "date": "2026-07-18",
+          "day_of_week": "Saturday",
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_id": null,
+              "recipe_name": "Leftover pancakes if any survived",
+              "display_order": 0
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_id": null,
+              "recipe_name": "Cook's choice",
+              "display_order": 1
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_id": "white-bean-parmesan-pasta",
+              "recipe_name": "white bean parmesan pasta",
               "display_order": 2
             }
           ]
