@@ -1,6 +1,6 @@
 {
   "name": "meal-planner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Dad's Meals - the Sullivan family meal planner: plan, shop, prep, cook",
   "type": "module",
   "bin": {
