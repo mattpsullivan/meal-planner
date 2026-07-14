@@ -108,7 +108,14 @@ function parseQuantityValue(quantity) {
     // Calculate decimal: whole + (num/den)
     return whole + (den > 0 ? num / den : 0);
 }
-function extractInstructions(sections, ingredients) {
+function formatTimer(timer) {
+    const value = parseQuantityValue(timer?.quantity);
+    const unit = timer?.quantity?.unit;
+    if (value === null)
+        return timer?.name ?? '';
+    return unit ? `${String(value)} ${unit}` : String(value);
+}
+function extractInstructions(sections, ingredients, cookware = [], timers = []) {
     const instructions = [];
     for (const section of sections) {
         if (!section.content)
@@ -127,9 +134,9 @@ function extractInstructions(sections, ingredients) {
                     return ing.name;
                 }
                 if (item.type === 'cookware')
-                    return '[cookware]';
+                    return cookware[item.index ?? 0]?.name ?? '';
                 if (item.type === 'timer')
-                    return '[timer]';
+                    return formatTimer(timers[item.index ?? 0]);
                 return '';
             })
                 .join('');
@@ -204,7 +211,7 @@ export function parseRecipeFile(filePath, parser, recipesDir, recipeMap) {
         };
     });
     // Parse instructions from sections
-    const instructions = extractInstructions(result.recipe.sections, result.recipe.ingredients);
+    const instructions = extractInstructions(result.recipe.sections, result.recipe.ingredients, result.recipe.cookware ?? [], result.recipe.timers ?? []);
     // Determine meal types based on category
     let mealTypes = [];
     if (category.includes('breakfast')) {

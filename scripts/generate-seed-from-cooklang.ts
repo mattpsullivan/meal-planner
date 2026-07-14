@@ -334,7 +334,25 @@ interface CooklangResult {
   recipe: {
     ingredients: CooklangIngredient[];
     sections: CooklangSection[];
+    cookware?: CooklangCookware[];
+    timers?: CooklangTimer[];
   };
+}
+
+interface CooklangCookware {
+  name?: string | null;
+}
+
+interface CooklangTimer {
+  name?: string | null;
+  quantity?: CooklangQuantity & { unit?: string | null };
+}
+
+function formatTimer(timer?: CooklangTimer): string {
+  const value = parseQuantityValue(timer?.quantity);
+  const unit = timer?.quantity?.unit;
+  if (value === null) return timer?.name ?? '';
+  return unit ? `${String(value)} ${unit}` : String(value);
 }
 
 function parseQuantityValue(quantity?: CooklangQuantity): number | null {
@@ -344,7 +362,9 @@ function parseQuantityValue(quantity?: CooklangQuantity): number | null {
 
 function extractInstructions(
   sections: CooklangSection[],
-  ingredients: CooklangIngredient[]
+  ingredients: CooklangIngredient[],
+  cookware: CooklangCookware[] = [],
+  timers: CooklangTimer[] = []
 ): string[] {
   const instructions: string[] = [];
 
@@ -363,8 +383,8 @@ function extractInstructions(
             const ing = ingredients[item.index ?? 0];
             return ing?.name ?? '';
           }
-          if (item.type === 'cookware') return '[cookware]';
-          if (item.type === 'timer') return '[timer]';
+          if (item.type === 'cookware') return cookware[item.index ?? 0]?.name ?? '';
+          if (item.type === 'timer') return formatTimer(timers[item.index ?? 0]);
           return '';
         })
         .join('');
@@ -455,7 +475,12 @@ function parseRecipeFile(
   });
 
   // Parse instructions from sections
-  const instructions = extractInstructions(result.recipe.sections, result.recipe.ingredients);
+  const instructions = extractInstructions(
+    result.recipe.sections,
+    result.recipe.ingredients,
+    result.recipe.cookware ?? [],
+    result.recipe.timers ?? []
+  );
 
   // Determine meal types based on category
   let mealTypes: string[] = [];

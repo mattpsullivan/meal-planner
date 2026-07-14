@@ -154,6 +154,17 @@ export interface CooklangResult {
     recipe: {
         ingredients: CooklangIngredient[];
         sections: CooklangSection[];
+        cookware?: CooklangCookware[];
+        timers?: CooklangTimer[];
+    };
+}
+export interface CooklangCookware {
+    name?: string | null;
+}
+export interface CooklangTimer {
+    name?: string | null;
+    quantity?: CooklangQuantity & {
+        unit?: string | null;
     };
 }
 //# sourceMappingURL=types.d.ts.map
