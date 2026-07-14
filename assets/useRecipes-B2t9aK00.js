@@ -1,0 +1,2 @@
+import{u as r}from"./query-DCkDE9t2.js";import{h as i,i as u}from"./Skeleton-TsQuz_GP.js";import{q as s}from"./index-DuODI51u.js";function y(){return r({queryKey:s.recipes,queryFn:()=>Promise.resolve(i()),staleTime:1/0})}function a(e){return r({queryKey:s.recipe(e),queryFn:()=>Promise.resolve(u(e)??null),enabled:e>0,staleTime:1/0})}export{y as a,a as u};
+//# sourceMappingURL=useRecipes-B2t9aK00.js.map

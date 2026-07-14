@@ -1,0 +1,2 @@
+import{u as r}from"./query-DCkDE9t2.js";import"./vendor-BJn0j1Ag.js";import{e as u,g as t}from"./Skeleton-TsQuz_GP.js";import{q as s}from"./index-DuODI51u.js";function m(){return r({queryKey:s.weeks,queryFn:()=>Promise.resolve(u()),staleTime:1/0})}function a(e){return r({queryKey:s.week(e),queryFn:()=>Promise.resolve(t(e)??null),enabled:e>0,staleTime:1/0})}export{a,m as u};
+//# sourceMappingURL=useWeeks-BoumUEVH.js.map
